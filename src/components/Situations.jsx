@@ -1,57 +1,56 @@
-import { AlertCircle } from 'lucide-react'
-
 const situations = [
   {
     title: 'After Hospital Discharge',
-    problem: 'Unclear instructions and difficult follow-ups make it hard to know what level of care is needed.',
-    solution: 'We provide structured in-home support managing medications and monitoring recovery safely.',
+    problem: "You've been told your loved one needs supervision at home, but instructions are unclear, follow-ups are hard to coordinate, and you're unsure what level of care is actually required. Small gaps in care can quickly turn into setbacks.",
+    solution: 'We provide structured in-home support after discharge—helping manage medications, monitor recovery, and maintain stability so progress continues safely at home.',
   },
   {
     title: 'Increasing Falls or Mobility Issues',
-    problem: 'Simple movements are unpredictable. Near-falls and hesitation increase injury risk.',
-    solution: 'Safe movement assistance reduces fall risk while maintaining independence and confidence.',
+    problem: 'Simple movements—getting out of bed, using the bathroom, walking short distances—are becoming unpredictable. You\'re noticing near-falls or hesitations, and the risk of injury is increasing.',
+    solution: 'We assist with safe movement, transfers, and ambulation—reducing fall risk while helping maintain as much independence as possible.',
   },
   {
     title: 'Medication Mismanagement',
-    problem: 'Medications are missed, taken incorrectly, or causing confusion in daily routines.',
-    solution: 'We ensure correct administration on time, reducing health risks and improving consistency.',
+    problem: 'Medications are being missed, taken incorrectly, or causing confusion. You\'re concerned, but managing schedules and dosages consistently is becoming difficult.',
+    solution: 'We ensure medications are administered correctly and on time, reducing health risks and bringing consistency to daily routines.',
   },
   {
-    title: 'Cognitive Changes Affecting Safety',
-    problem: 'Forgetfulness, confusion, or behavioral changes affecting safety and daily routines.',
-    solution: 'Structured supervision maintains safety, reinforces routines, and supports cognitive engagement.',
+    title: 'When Cognitive Changes Begin to Affect Safety or Daily Routines',
+    problem: "You're noticing forgetfulness, confusion, or changes in behavior that are starting to affect safety: missed medications, wandering, or difficulty following daily routines.",
+    solution: 'We provide structured support and consistent supervision to help maintain safety, reinforce routines, and support cognitive engagement in a calm, familiar environment.',
   },
   {
     title: 'Declining Daily Function',
-    problem: 'Tasks like bathing, dressing, and toileting now require assistance. Dignity is at risk.',
-    solution: 'Respectful daily care assistance maintains comfort, hygiene, and emotional stability.',
+    problem: 'Tasks that were once routine, like bathing, dressing, toileting, moving around, now require assistance. Maintaining dignity and consistency is becoming more difficult without support.',
+    solution: 'We assist with essential daily care in a respectful, structured way; helping maintain comfort, hygiene, and stability.',
   },
   {
     title: 'Caregiver Burnout',
-    problem: 'Balancing care, work, and personal life is becoming physically and emotionally unsustainable.',
-    solution: 'Dependable support eases the load so families aren\'t managing everything alone.',
+    problem: "You're doing everything you can: balancing care, work, and personal responsibilities; but it's becoming physically and emotionally unsustainable. There's little time to rest, and the pressure keeps building.",
+    solution: 'We provide dependable, ongoing support that eases the load, so care continues without interruption, and you\'re not managing it alone.',
   },
 ]
 
 export default function Situations() {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
-      {/* Decorative */}
-      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-yellow-400/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="max-w-2xl mb-20">
-          <p className="text-accent font-bold text-sm uppercase tracking-widest mb-3">When to Seek Help</p>
-          <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-            Situations We Address
+        <div className="max-w-3xl mb-20">
+          <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+            SITUATIONS WE STEP IN QUICKLY
           </h2>
+          <p className="text-xl text-slate-600">
+            Recognizing when professional support becomes essential
+          </p>
         </div>
 
         {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {situations.map(({ title, problem, solution }, i) => (
-            <div key={i} className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary/30 hover:shadow-lg transition-all">
+            <div key={i} className="bg-slate-50 rounded-2xl p-8 border-2 border-slate-200 hover:shadow-lg transition-all">
               {/* Number */}
               <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-6 text-sm">
                 {String(i + 1).padStart(2, '0')}
@@ -61,15 +60,15 @@ export default function Situations() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">{title}</h3>
 
               {/* Problem */}
-              <div className="mb-6 pb-6 border-b border-slate-200">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">The Challenge</p>
-                <p className="text-sm text-slate-700">{problem}</p>
+              <div className="mb-6 pb-6 border-b border-slate-300">
+                <p className="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3">The Situation</p>
+                <p className="text-slate-700 leading-relaxed">{problem}</p>
               </div>
 
               {/* Solution */}
               <div>
-                <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">Our Solution</p>
-                <p className="text-sm text-slate-700">{solution}</p>
+                <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">How we step in</p>
+                <p className="text-slate-700 leading-relaxed">{solution}</p>
               </div>
             </div>
           ))}
@@ -77,14 +76,14 @@ export default function Situations() {
 
         {/* Bottom Message */}
         <div className="mt-20 p-12 bg-primary/5 border-l-4 border-primary rounded-lg">
-          <div className="flex gap-4">
-            <AlertCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-            <div>
-              <p className="font-bold text-slate-900 mb-2">Early Intervention Matters</p>
-              <p className="text-slate-700">
-                When these situations begin to appear, consistent support prevents complications, stabilizes care, and significantly reduces stress on families.
-              </p>
-            </div>
+          <p className="text-slate-900 font-semibold mb-2 text-lg">When these situations begin to appear, consistent support makes a measurable difference in safety, recovery, and quality of life.</p>
+          <div className="flex flex-col sm:flex-row gap-4 pt-6">
+            <a href="tel:+14434608684" className="inline-flex px-8 py-4 bg-primary text-white rounded-lg font-bold shadow-lg hover:bg-primary-dark transition-all">
+              Call Now for Immediate Assistance +1 (443) 460-8684
+            </a>
+            <a href="#form" className="inline-flex px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary/5 transition-all">
+              Get Help Understanding Your Care Options
+            </a>
           </div>
         </div>
       </div>

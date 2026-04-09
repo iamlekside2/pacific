@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about" className="py-32 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Image */}
           <div className="bg-primary/10 rounded-2xl aspect-square flex items-center justify-center border-2 border-primary/20">
             <div className="text-center">
@@ -15,46 +15,45 @@ export default function About() {
 
           {/* Content */}
           <div className="space-y-8">
-            <div>
-              <p className="text-accent font-bold text-sm uppercase tracking-widest mb-3">About</p>
-              <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                Professional Care Built on Personal Commitment
-              </h2>
-            </div>
+            <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+              BUILT ON PROFESSIONAL CARE AND PERSONAL COMMITMENT
+            </h2>
 
             <div>
-              <p className="text-accent font-bold text-sm uppercase tracking-widest mb-3">Founder</p>
+              <p className="text-sm font-bold text-primary uppercase tracking-widest mb-2">Founder</p>
               <h3 className="text-3xl font-bold text-slate-900 mb-4">Blessing Okeke</h3>
               <p className="text-lg text-slate-700 leading-relaxed">
-                Pacific Home Healthcare is led by a dedicated healthcare professional committed to delivering dependable, patient-centered in-home care that families can trust.
+                Pacific Home Healthcare is led by a dedicated healthcare professional focused on delivering dependable, patient-centered in-home care.
               </p>
             </div>
 
-            <blockquote className="border-l-4 border-primary pl-6 py-4">
-              <p className="text-slate-700 text-lg italic">
-                "Care is structured to be consistent, responsive, and reliable so families are not left managing uncertainty on their own."
-              </p>
-            </blockquote>
+            <p className="text-lg text-slate-700 leading-relaxed border-l-4 border-primary pl-6">
+              Care is structured to be consistent, responsive, and reliable so families are not left managing uncertainty on their own.
+            </p>
 
             <a href="#" className="inline-flex px-6 py-3 bg-primary text-white rounded-lg font-bold hover:bg-primary-dark transition-all shadow-md">
-              Learn More
+              View Full Profile
             </a>
           </div>
         </div>
 
-        {/* Service Areas */}
-        <div className="mt-24 grid md:grid-cols-3 gap-8 p-12 bg-white rounded-2xl border-2 border-primary/10">
-          <div>
-            <p className="text-sm font-bold text-primary uppercase tracking-widest mb-2">Primary Service Area</p>
-            <p className="text-2xl font-bold text-slate-900">Towson, MD</p>
-          </div>
-          <div>
-            <p className="text-sm font-bold text-primary uppercase tracking-widest mb-2">Extended Coverage</p>
-            <p className="text-2xl font-bold text-slate-900">Baltimore County</p>
-          </div>
-          <div>
-            <p className="text-sm font-bold text-primary uppercase tracking-widest mb-2">Service Region</p>
-            <p className="text-2xl font-bold text-slate-900">Surrounding MD</p>
+        {/* Serving Families */}
+        <div className="bg-white rounded-2xl p-12 border-2 border-primary/10">
+          <h3 className="text-3xl font-bold text-slate-900 mb-8">SERVING FAMILIES ACROSS MARYLAND</h3>
+          <p className="text-slate-600 mb-8 text-lg">Providing in-home healthcare services in:</p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <p className="text-2xl font-bold text-slate-900">Towson, MD</p>
+              <p className="text-slate-600 mt-2">Primary service area</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-slate-900">Baltimore County</p>
+              <p className="text-slate-600 mt-2">Extended coverage</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-slate-900">Surrounding Maryland</p>
+              <p className="text-slate-600 mt-2">Service region</p>
+            </div>
           </div>
         </div>
       </div>
