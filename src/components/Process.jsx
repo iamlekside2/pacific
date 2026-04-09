@@ -5,19 +5,19 @@ const steps = [
     num: '1',
     title: 'Call or Request Support',
     desc: 'Provide information to help us understand your situation and immediate needs.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a775?w=600&h=400&fit=crop&q=85',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&q=85',
   },
   {
     num: '2',
     title: 'Care Assessment',
     desc: 'We determine the appropriate level of care needed based on real conditions.',
-    image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&h=400&fit=crop&q=85',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop&q=85',
   },
   {
     num: '3',
     title: 'Care Begins',
     desc: 'Services are implemented quickly and swiftly, typically within 24–48 hours.',
-    image: 'https://images.unsplash.com/photo-1631217314997-dc67240b8232?w=600&h=400&fit=crop&q=85',
+    image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop&q=85',
   },
 ]
 
