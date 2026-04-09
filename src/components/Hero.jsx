@@ -112,32 +112,25 @@ export default function Hero() {
                 {/* Animated Background Gradients */}
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 via-transparent to-cyan-400/5 group-hover:from-blue-500/20 group-hover:via-blue-400/10 transition-all duration-700" />
 
-                {/* Main Visual Content */}
-                <div className="relative z-10 text-center space-y-8 group-hover:scale-110 transition-transform duration-700">
-                  {/* Large Healthcare Icon with Multiple Rings */}
-                  <div className="flex items-center justify-center">
-                    <div className="relative w-56 h-56">
-                      {/* Outer pulsing ring */}
-                      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/30 to-blue-500/30 blur-2xl animate-pulse" style={{animationDelay: '0.5s'}} />
-                      {/* Middle ring */}
-                      <div className="absolute inset-4 rounded-full border-2 border-blue-400/40 animate-pulse" style={{animationDelay: '0.3s'}} />
-                      {/* Inner glowing circle */}
-                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/40 to-cyan-400/30 border-2 border-blue-300/60 flex items-center justify-center shadow-2xl shadow-blue-500/50 group-hover:shadow-blue-400/80 transition-all duration-500">
-                        <svg className="w-32 h-32 text-cyan-200 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
+                {/* Image Placeholder Area */}
+                <div className="relative z-10 w-full h-full flex flex-col items-center justify-center space-y-6 px-8">
+                  {/* Large Image Area - Ready for Real Photos */}
+                  <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-blue-400/30 to-cyan-400/20 border-2 border-blue-300/60 flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-500 shadow-2xl shadow-blue-500/50">
+                    {/* Image placeholder with gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/40 via-cyan-500/20 to-blue-700/40 flex items-center justify-center">
+                      <div className="text-center">
+                        <svg className="w-40 h-40 text-white/60 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
+                        <p className="text-white/70 text-sm font-medium">Healthcare Professional</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Text Content */}
-                  <div className="space-y-3">
-                    <h3 className="text-3xl font-bold text-white">Professional Healthcare</h3>
-                    <p className="text-blue-100/80 text-lg">Trusted in-home support available 24/7</p>
-                    <div className="flex gap-2 justify-center pt-2">
-                      <span className="px-3 py-1 bg-blue-500/30 border border-blue-400/50 rounded-full text-xs font-semibold text-blue-100">Licensed Care</span>
-                      <span className="px-3 py-1 bg-cyan-500/30 border border-cyan-400/50 rounded-full text-xs font-semibold text-cyan-100">24/7 Available</span>
-                    </div>
+                  <div className="text-center space-y-3">
+                    <h3 className="text-2xl font-bold text-white">Professional In-Home Care</h3>
+                    <p className="text-blue-100/80 text-base">Expert caregivers available 24/7</p>
                   </div>
                 </div>
 
