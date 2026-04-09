@@ -18,53 +18,96 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md ${scrolled ? 'shadow-lg' : ''}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-xl">P</span>
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-primary to-teal-700 rounded-lg flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-2xl">P</span>
             </div>
-            <span className="font-bold text-xl text-primary hidden sm:block">Pacific Home Healthcare</span>
-            <span className="font-bold text-xl text-primary sm:hidden">Pacific</span>
+            <div className="hidden sm:block">
+              <p className="text-sm font-bold text-slate-900">Pacific</p>
+              <p className="text-xs text-slate-600">Home Healthcare</p>
+            </div>
           </div>
 
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            {['home', 'services', 'about', 'contact'].map(id => (
-              <a key={id} href={`#${id}`} onClick={e => scrollTo(e, `#${id}`)} className="nav-link relative text-slate-600 hover:text-primary font-medium transition-colors capitalize">
-                {id}
+            {[
+              { label: 'Home', id: '#home' },
+              { label: 'Services', id: '#services' },
+              { label: 'Resources', id: '#faq' },
+              { label: 'About', id: '#about' },
+              { label: 'Contact', id: '#contact' },
+            ].map(({ label, id }) => (
+              <a
+                key={id}
+                href={id}
+                onClick={e => scrollTo(e, id)}
+                className="text-slate-700 hover:text-primary font-medium text-sm transition-colors"
+              >
+                {label}
               </a>
             ))}
           </div>
 
+          {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="tel:+14434608684" className="flex items-center gap-2 px-4 py-2 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-all">
-              <Phone className="w-4 h-4" /> Call Now
+            <a
+              href="tel:+14434608684"
+              className="flex items-center gap-2 px-4 py-2.5 text-primary hover:bg-primary hover:text-white border-2 border-primary rounded-lg font-semibold transition-all text-sm"
+            >
+              <Phone className="w-4 h-4" /> Call
             </a>
-            <a href="#form" onClick={e => scrollTo(e, '#form')} className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <a
+              href="#form"
+              onClick={e => scrollTo(e, '#form')}
+              className="px-6 py-2.5 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-all text-sm shadow-lg"
+            >
               Request Support
             </a>
           </div>
 
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden p-2 text-slate-600">
+          {/* Mobile Menu Button */}
+          <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden p-2 text-slate-700">
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-slate-200">
+        <div className="md:hidden bg-white border-t border-slate-200 shadow-lg">
           <div className="px-4 py-4 space-y-3">
-            {['home', 'services', 'about', 'contact'].map(id => (
-              <a key={id} href={`#${id}`} onClick={e => scrollTo(e, `#${id}`)} className="block py-2 text-slate-600 hover:text-primary font-medium capitalize">
-                {id}
+            {[
+              { label: 'Home', id: '#home' },
+              { label: 'Services', id: '#services' },
+              { label: 'Resources', id: '#faq' },
+              { label: 'About', id: '#about' },
+              { label: 'Contact', id: '#contact' },
+            ].map(({ label, id }) => (
+              <a
+                key={id}
+                href={id}
+                onClick={e => scrollTo(e, id)}
+                className="block py-2 text-slate-700 hover:text-primary font-medium"
+              >
+                {label}
               </a>
             ))}
             <div className="pt-4 space-y-3 border-t border-slate-200">
-              <a href="tel:+14434608684" className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary rounded-lg font-semibold">
+              <a
+                href="tel:+14434608684"
+                className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary rounded-lg font-semibold w-full"
+              >
                 <Phone className="w-4 h-4" /> Call Now
               </a>
-              <a href="#form" onClick={e => scrollTo(e, '#form')} className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-lg font-semibold">
+              <a
+                href="#form"
+                onClick={e => scrollTo(e, '#form')}
+                className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-lg font-semibold w-full"
+              >
                 Request Support
               </a>
             </div>

@@ -1,55 +1,8 @@
 import { useState } from 'react'
-import { Send, Clock } from 'lucide-react'
-
-const careForOptions = ['Parent', 'Spouse', 'Self', 'Other']
-const ageOptions = ['Under 50', '50–64', '65–74', '75–84', '85+']
-const situationOptions = [
-  'Recent hospital discharge',
-  'Difficulty with walking',
-  'Frequent falls or fall risk',
-  'Needs help with bathing/dressing',
-  'Medication concerns',
-  'Memory issues or confusion',
-  'Caregiver overwhelmed',
-  'Ongoing illness/recovery',
-]
-const urgencyOptions = [
-  { value: 'immediate', label: 'ASAP (24–48 hours)' },
-  { value: 'few_days', label: 'Within a few days' },
-  { value: 'weeks', label: 'Within 1–2 weeks' },
-  { value: 'exploring', label: 'Just exploring' },
-]
-
-function RadioGroup({ name, options, selected, onChange }) {
-  return (
-    <div className="flex flex-wrap gap-3">
-      {options.map(opt => {
-        const value = typeof opt === 'string' ? opt : opt.value
-        const label = typeof opt === 'string' ? opt : opt.label
-        return (
-          <label key={value} className="cursor-pointer">
-            <input type="radio" name={name} value={value} checked={selected === value} onChange={() => onChange(value)} className="sr-only peer" />
-            <div className="flex items-center gap-2 px-4 py-2 rounded-lg border-2 border-slate-200 peer-checked:border-accent peer-checked:bg-blue-50 peer-checked:text-primary transition-all">
-              {name === 'urgency' && <Clock className="w-4 h-4" />}
-              <span className="text-sm font-medium">{label}</span>
-            </div>
-          </label>
-        )
-      })}
-    </div>
-  )
-}
+import { Send, Check } from 'lucide-react'
 
 export default function ConsultationForm() {
-  const [careFor, setCareFor] = useState('')
-  const [age, setAge] = useState('')
-  const [urgency, setUrgency] = useState('')
-  const [situations, setSituations] = useState([])
   const [submitted, setSubmitted] = useState(false)
-
-  const toggleSituation = (s) => {
-    setSituations(prev => prev.includes(s) ? prev.filter(x => x !== s) : [...prev, s])
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -58,15 +11,15 @@ export default function ConsultationForm() {
 
   if (submitted) {
     return (
-      <section id="form" className="py-24 bg-blue-50">
+      <section id="form" className="py-24 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl text-center">
+          <div className="bg-white rounded-2xl p-12 shadow-lg border border-slate-200 text-center">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Send className="w-8 h-8 text-green-600" />
+              <Check className="w-8 h-8 text-green-600" />
             </div>
-            <h2 className="text-3xl font-bold text-primary mb-3">Thank You!</h2>
-            <p className="text-slate-600 text-lg">We've received your request. A care coordinator will review your information and reach out shortly.</p>
-            <p className="text-slate-600 mt-4">If you need immediate assistance, call <a href="tel:+14434608684" className="text-accent font-semibold">+1 (443) 460-8684</a></p>
+            <h2 className="text-4xl font-bold text-slate-900 mb-3">Thank You!</h2>
+            <p className="text-slate-700 text-lg mb-4">We've received your consultation request. A care coordinator will review your information and reach out within 24 hours.</p>
+            <p className="text-slate-600">For immediate assistance, call <a href="tel:+14434608684" className="text-primary font-bold">+1 (443) 460-8684</a></p>
           </div>
         </div>
       </section>
@@ -74,74 +27,143 @@ export default function ConsultationForm() {
   }
 
   return (
-    <section id="form" className="py-24 bg-blue-50">
+    <section id="form" className="py-24 bg-gradient-to-b from-white to-slate-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-primary mb-3">Care Consultation Request</h2>
-            <p className="text-slate-600">Tell us what's going on and we'll help you understand the next step.</p>
+        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-slate-200">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm font-semibold text-primary mb-4">
+              Next Steps
+            </span>
+            <h2 className="text-4xl font-bold text-slate-900 mb-3">Care Consultation Request</h2>
+            <p className="text-slate-600 text-lg">Tell us about your situation and we'll help determine the right care plan</p>
           </div>
 
+          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-8">
-            <div>
-              <label className="block text-sm font-semibold text-primary mb-3">Who is this care for?</label>
-              <RadioGroup name="careFor" options={careForOptions} selected={careFor} onChange={setCareFor} />
+            {/* Row 1: Care For & Age */}
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">Who is this care for?</label>
+                <select required className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-primary focus:outline-none transition-colors text-slate-900">
+                  <option>-- Select --</option>
+                  <option>Parent</option>
+                  <option>Spouse</option>
+                  <option>Self</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">Age Range</label>
+                <select required className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-primary focus:outline-none transition-colors text-slate-900">
+                  <option>-- Select --</option>
+                  <option>Under 50</option>
+                  <option>50–64</option>
+                  <option>65–74</option>
+                  <option>75–84</option>
+                  <option>85+</option>
+                </select>
+              </div>
             </div>
 
+            {/* Situations */}
             <div>
-              <label className="block text-sm font-semibold text-primary mb-3">Age Range</label>
-              <RadioGroup name="age" options={ageOptions} selected={age} onChange={setAge} />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-primary mb-3">What's Happening Right Now? (Select all that apply)</label>
+              <label className="block text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">What's Happening? (Select all that apply)</label>
               <div className="grid sm:grid-cols-2 gap-3">
-                {situationOptions.map(s => (
-                  <label key={s} className={`flex items-center gap-3 p-3 rounded-lg border-2 cursor-pointer transition-all ${situations.includes(s) ? 'border-accent bg-blue-50' : 'border-slate-200 hover:border-accent'}`}>
-                    <input type="checkbox" checked={situations.includes(s)} onChange={() => toggleSituation(s)} className="w-4 h-4 text-accent rounded border-slate-300 focus:ring-accent" />
-                    <span className="text-sm">{s}</span>
+                {[
+                  'Recent hospital discharge',
+                  'Difficulty with walking',
+                  'Frequent falls or fall risk',
+                  'Needs help with bathing/dressing',
+                  'Medication concerns',
+                  'Memory issues or confusion',
+                  'Caregiver overwhelmed',
+                  'Ongoing illness/recovery',
+                ].map(option => (
+                  <label key={option} className="flex items-center gap-3 p-3 rounded-lg border-2 border-slate-200 cursor-pointer hover:border-primary/30 transition-all">
+                    <input type="checkbox" className="w-4 h-4 rounded border-slate-300 text-primary" />
+                    <span className="text-sm text-slate-700">{option}</span>
                   </label>
                 ))}
               </div>
             </div>
 
+            {/* Urgency */}
             <div>
-              <label className="block text-sm font-semibold text-primary mb-3">Level of Urgency</label>
-              <RadioGroup name="urgency" options={urgencyOptions} selected={urgency} onChange={setUrgency} />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-primary mb-3">Briefly describe the situation (optional)</label>
-              <textarea rows={4} placeholder="Anything you share helps us better understand how to support you..." className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-accent focus:ring-0 focus:outline-none resize-none transition-colors" />
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-semibold text-primary mb-2">Full Name *</label>
-                <input type="text" required className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-accent focus:ring-0 focus:outline-none transition-colors" />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-primary mb-2">Phone Number</label>
-                <input type="tel" className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-accent focus:ring-0 focus:outline-none transition-colors" />
+              <label className="block text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">When is care needed?</label>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[
+                  { value: 'immediate', label: 'As soon as possible (24–48 hours)' },
+                  { value: 'few_days', label: 'Within a few days' },
+                  { value: 'weeks', label: 'Within 1–2 weeks' },
+                  { value: 'exploring', label: 'Just exploring options' },
+                ].map(opt => (
+                  <label key={opt.value} className="flex items-center gap-3 p-3 rounded-lg border-2 border-slate-200 cursor-pointer hover:border-primary/30 transition-all">
+                    <input type="radio" name="urgency" value={opt.value} className="w-4 h-4 border-slate-300 text-primary" />
+                    <span className="text-sm text-slate-700">{opt.label}</span>
+                  </label>
+                ))}
               </div>
             </div>
 
+            {/* Description */}
             <div>
-              <label className="block text-sm font-semibold text-primary mb-2">Email Address (optional)</label>
-              <input type="email" className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-accent focus:ring-0 focus:outline-none transition-colors" />
+              <label className="block text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider">Describe your situation (optional)</label>
+              <textarea
+                rows={4}
+                placeholder="Any details help us understand your needs..."
+                className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-primary focus:outline-none resize-none transition-colors"
+              />
             </div>
 
-            <div>
-              <label className="block text-sm font-semibold text-primary mb-2">Location</label>
-              <input type="text" placeholder="City / ZIP Code" className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-accent focus:ring-0 focus:outline-none transition-colors" />
+            {/* Contact Info */}
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-bold text-slate-900 mb-2 uppercase tracking-wider">Full Name *</label>
+                <input
+                  type="text"
+                  required
+                  className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-primary focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-bold text-slate-900 mb-2 uppercase tracking-wider">Phone Number</label>
+                <input
+                  type="tel"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-primary focus:outline-none transition-colors"
+                />
+              </div>
             </div>
 
-            <button type="submit" className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition-all shadow-lg hover:shadow-xl">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-bold text-slate-900 mb-2 uppercase tracking-wider">Email (optional)</label>
+                <input
+                  type="email"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-primary focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-bold text-slate-900 mb-2 uppercase tracking-wider">Location</label>
+                <input
+                  type="text"
+                  placeholder="City / ZIP Code"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-primary focus:outline-none transition-colors"
+                />
+              </div>
+            </div>
+
+            {/* Submit */}
+            <button
+              type="submit"
+              className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-teal-600 text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all"
+            >
               <Send className="w-5 h-5" /> Submit Request
             </button>
 
+            {/* Privacy */}
             <p className="text-xs text-slate-500 text-center leading-relaxed">
-              By submitting this form, you agree to be contacted by Pacific Home Healthcare regarding your request. Your information will be kept confidential and used only to respond to your inquiry and coordinate care.
+              By submitting, you agree to be contacted by Pacific Home Healthcare. Your information is confidential and used only for your inquiry.
             </p>
           </form>
         </div>
