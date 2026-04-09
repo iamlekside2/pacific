@@ -7,10 +7,10 @@ export default function Footer() {
   }
 
   return (
-    <footer id="contact" className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 relative overflow-hidden">
+    <footer id="contact" className="bg-gradient-to-r from-slate-900 via-slate-900 to-blue-900 text-white py-16 relative overflow-hidden border-t border-white/10">
       {/* Animated Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '0.5s'}} />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

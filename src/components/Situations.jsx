@@ -33,7 +33,7 @@ const situations = [
 
 export default function Situations() {
   return (
-    <section className="py-32 bg-white relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-400/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '0.5s'}} />
       <div className="absolute top-20 -right-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
@@ -41,10 +41,10 @@ export default function Situations() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="max-w-3xl mb-20 animate-fade-in-up">
-          <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+          <h2 className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             SITUATIONS WE STEP IN QUICKLY
           </h2>
-          <p className="text-xl text-slate-600">
+          <p className="text-xl text-blue-200/80">
             Recognizing when professional support becomes essential
           </p>
         </div>
@@ -54,45 +54,45 @@ export default function Situations() {
           {situations.map(({ title, problem, solution }, i) => (
             <div
               key={i}
-              className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 border-2 border-slate-200 hover:border-blue-400/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all group animate-fade-in-up"
+              className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 rounded-2xl p-8 border-2 border-white/10 hover:border-blue-400/60 hover:border-blue-500/40 hover:shadow-2xl hover:shadow-blue-500/20 transition-all group animate-fade-in-up backdrop-blur-sm"
               style={{animationDelay: `${0.1 + i * 0.06}s`}}
             >
               {/* Number */}
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold mb-6 text-sm group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-500/30">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full flex items-center justify-center font-bold mb-6 text-sm group-hover:scale-125 transition-transform duration-300 shadow-lg shadow-blue-500/40 group-hover:shadow-blue-500/70">
                 {String(i + 1).padStart(2, '0')}
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">{title}</h3>
+              <h3 className="text-lg font-bold text-white mb-4 group-hover:text-cyan-300 transition-colors">{title}</h3>
 
               {/* Problem */}
-              <div className="mb-6 pb-6 border-b border-slate-300">
-                <p className="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3">The Situation</p>
-                <p className="text-slate-700 leading-relaxed">{problem}</p>
+              <div className="mb-6 pb-6 border-b border-white/10">
+                <p className="text-xs font-bold text-blue-300/80 uppercase tracking-wider mb-3">The Situation</p>
+                <p className="text-white/80 leading-relaxed">{problem}</p>
               </div>
 
               {/* Solution */}
               <div>
-                <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">How we step in</p>
-                <p className="text-slate-700 leading-relaxed">{solution}</p>
+                <p className="text-xs font-bold text-cyan-300/80 uppercase tracking-wider mb-3">How we step in</p>
+                <p className="text-white/80 leading-relaxed">{solution}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Bottom Message */}
-        <div className="mt-20 p-12 bg-gradient-to-r from-blue-500/10 to-blue-400/5 border-l-4 border-blue-500 rounded-lg animate-fade-in-up" style={{animationDelay: '0.5s'}}>
-          <p className="text-slate-900 font-semibold mb-6 text-lg">When these situations begin to appear, consistent support makes a measurable difference in safety, recovery, and quality of life.</p>
+        <div className="mt-20 p-12 bg-gradient-to-r from-blue-500/20 via-cyan-400/10 to-blue-500/20 border-2 border-blue-400/40 rounded-2xl backdrop-blur-sm animate-fade-in-up" style={{animationDelay: '0.5s'}}>
+          <p className="text-white font-semibold mb-6 text-lg">When these situations begin to appear, consistent support makes a measurable difference in safety, recovery, and quality of life.</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="tel:+14434608684"
-              className="inline-flex px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 transition-all"
+              className="group inline-flex px-8 py-4 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-500/40 hover:shadow-blue-500/70 hover:scale-105 hover:-translate-y-1 transition-all border border-white/20"
             >
               Call Now for Immediate Assistance +1 (443) 460-8684
             </a>
             <a
               href="#form"
-              className="inline-flex px-8 py-4 border-2 border-blue-500 text-blue-600 rounded-lg font-bold hover:bg-blue-500/5 hover:border-blue-600 hover:scale-105 transition-all"
+              className="group inline-flex px-8 py-4 border-2 border-cyan-400/60 text-cyan-300 rounded-xl font-bold hover:bg-cyan-400/10 hover:border-cyan-300 hover:scale-105 hover:-translate-y-1 transition-all backdrop-blur-sm"
             >
               Get Help Understanding Your Care Options
             </a>

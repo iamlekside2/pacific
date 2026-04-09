@@ -59,17 +59,18 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               <a
                 href="tel:+14434608684"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl font-bold text-lg shadow-2xl shadow-blue-500/40 hover:shadow-blue-500/60 hover:scale-105 transition-all duration-300"
+                className="group inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-2xl font-bold text-lg shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/80 hover:scale-110 hover:-translate-y-1 transition-all duration-300 border border-white/20"
               >
-                <Phone className="w-5 h-5" /> Call Now: +1 (443) 460-8684
+                <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
+                <span>Call Now: +1 (443) 460-8684</span>
               </a>
               <a
                 href="#form"
                 onClick={e => scrollTo(e, '#form')}
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/30 text-white rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white/10 hover:border-white/50 hover:scale-105 transition-all duration-300"
+                className="group inline-flex items-center justify-center gap-3 px-8 py-5 border-2 border-white/40 text-white rounded-2xl font-bold text-lg backdrop-blur-md bg-white/10 hover:bg-white/20 hover:border-white/70 hover:scale-110 hover:-translate-y-1 transition-all duration-300"
               >
                 <span>Get Help Understanding Your Care Options</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
             </div>
 
@@ -91,48 +92,79 @@ export default function Hero() {
           </div>
 
           {/* Right: Beautiful Image Area with Animation */}
-          <div className="relative hidden lg:block h-[600px] animate-fade-in-down">
+          <div className="relative hidden lg:flex lg:items-center lg:justify-center h-[650px] animate-fade-in-down">
+            {/* Outer Glow Effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-blue-500/20 rounded-3xl blur-3xl animate-pulse" style={{animationDelay: '0.2s'}} />
+
             {/* Main Image Card */}
-            <div className="absolute inset-0 rounded-3xl overflow-hidden group">
-              {/* Gradient Border Animation */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-400 rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000 animate-pulse" />
+            <div className="relative w-full h-full rounded-3xl overflow-hidden group">
+              {/* Animated Gradient Border - Multiple Layers */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 rounded-3xl blur opacity-60 group-hover:opacity-100 transition duration-1000 animate-pulse" />
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 rounded-3xl blur opacity-40 group-hover:opacity-80 transition duration-1000" style={{animationDelay: '0.3s'}} />
 
-              {/* Image Container */}
-              <div className="relative inset-0 rounded-3xl bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-slate-900/80 backdrop-blur-sm border border-white/20 flex items-center justify-center overflow-hidden group-hover:border-white/40 transition-all duration-300">
-                {/* Animated Background */}
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-500/0 via-blue-400/10 to-transparent group-hover:from-blue-500/10 transition-all duration-500" />
-
-                {/* Icon + Text */}
-                <div className="text-center z-10 group-hover:scale-110 transition-transform duration-500">
-                  <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-400/30 to-cyan-400/20 border-2 border-blue-400/50 flex items-center justify-center animate-pulse">
-                    <svg className="w-24 h-24 text-blue-300" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
-                    </svg>
-                  </div>
-                  <p className="text-white font-bold text-xl mb-2">Healthcare Professional</p>
-                  <p className="text-blue-200/60 text-sm">Expert Care Available</p>
+              {/* Main Content Container */}
+              <div className="relative w-full h-full rounded-3xl bg-gradient-to-br from-slate-800/95 via-blue-900/90 to-slate-900/95 backdrop-blur-xl border border-white/30 flex flex-col items-center justify-center overflow-hidden group-hover:border-white/60 transition-all duration-500">
+                {/* Animated Grid Background */}
+                <div className="absolute inset-0 opacity-20">
+                  <div style={{backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(59,130,246,.1) 25%, rgba(59,130,246,.1) 26%, transparent 27%, transparent 74%, rgba(59,130,246,.1) 75%, rgba(59,130,246,.1) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(59,130,246,.1) 25%, rgba(59,130,246,.1) 26%, transparent 27%, transparent 74%, rgba(59,130,246,.1) 75%, rgba(59,130,246,.1) 76%, transparent 77%, transparent)', backgroundSize: '60px 60px'}} className="w-full h-full" />
                 </div>
 
-                {/* Animated Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/0 to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-pulse" />
+                {/* Animated Background Gradients */}
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 via-transparent to-cyan-400/5 group-hover:from-blue-500/20 group-hover:via-blue-400/10 transition-all duration-700" />
+
+                {/* Main Visual Content */}
+                <div className="relative z-10 text-center space-y-8 group-hover:scale-110 transition-transform duration-700">
+                  {/* Large Healthcare Icon with Multiple Rings */}
+                  <div className="flex items-center justify-center">
+                    <div className="relative w-56 h-56">
+                      {/* Outer pulsing ring */}
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/30 to-blue-500/30 blur-2xl animate-pulse" style={{animationDelay: '0.5s'}} />
+                      {/* Middle ring */}
+                      <div className="absolute inset-4 rounded-full border-2 border-blue-400/40 animate-pulse" style={{animationDelay: '0.3s'}} />
+                      {/* Inner glowing circle */}
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/40 to-cyan-400/30 border-2 border-blue-300/60 flex items-center justify-center shadow-2xl shadow-blue-500/50 group-hover:shadow-blue-400/80 transition-all duration-500">
+                        <svg className="w-32 h-32 text-cyan-200 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Text Content */}
+                  <div className="space-y-3">
+                    <h3 className="text-3xl font-bold text-white">Professional Healthcare</h3>
+                    <p className="text-blue-100/80 text-lg">Trusted in-home support available 24/7</p>
+                    <div className="flex gap-2 justify-center pt-2">
+                      <span className="px-3 py-1 bg-blue-500/30 border border-blue-400/50 rounded-full text-xs font-semibold text-blue-100">Licensed Care</span>
+                      <span className="px-3 py-1 bg-cyan-500/30 border border-cyan-400/50 rounded-full text-xs font-semibold text-cyan-100">24/7 Available</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Animated Shine Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-30 transition-opacity duration-500 -skew-x-12 animate-pulse" />
               </div>
             </div>
 
-            {/* Floating Info Cards */}
-            <div className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20 shadow-2xl max-w-xs animate-bounce" style={{animationDelay: '0.3s'}}>
+            {/* Floating Info Cards - Enhanced */}
+            <div className="absolute -bottom-8 -left-8 bg-gradient-to-br from-blue-500/20 to-cyan-400/10 backdrop-blur-lg px-6 py-5 rounded-2xl border border-white/30 shadow-2xl shadow-blue-500/30 max-w-xs animate-bounce group hover:shadow-blue-500/50 transition-all" style={{animationDelay: '0.3s'}}>
               <div className="flex items-center gap-3 mb-2">
-                <Zap className="w-5 h-5 text-blue-300" />
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
+                  <Zap className="w-5 h-5 text-white" />
+                </div>
                 <p className="font-bold text-white">Quick Response</p>
               </div>
-              <p className="text-white/70 text-sm">Care within 24-48 hours of assessment</p>
+              <p className="text-white/70 text-sm ml-13">Care within 24-48 hours of assessment</p>
             </div>
 
-            <div className="absolute -top-6 -right-6 bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20 shadow-2xl max-w-xs animate-bounce" style={{animationDelay: '0.5s'}}>
+            <div className="absolute -top-8 -right-8 bg-gradient-to-br from-cyan-500/20 to-blue-400/10 backdrop-blur-lg px-6 py-5 rounded-2xl border border-white/30 shadow-2xl shadow-cyan-500/30 max-w-xs animate-bounce group hover:shadow-cyan-500/50 transition-all" style={{animationDelay: '0.5s'}}>
               <div className="flex items-center gap-3 mb-2">
-                <Heart className="w-5 h-5 text-blue-300" />
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-400 flex items-center justify-center">
+                  <Heart className="w-5 h-5 text-white" />
+                </div>
                 <p className="font-bold text-white">24/7 Support</p>
               </div>
-              <p className="text-white/70 text-sm">Always available when you need us</p>
+              <p className="text-white/70 text-sm ml-13">Always available when you need us</p>
             </div>
           </div>
         </div>
