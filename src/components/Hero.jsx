@@ -112,19 +112,18 @@ export default function Hero() {
                 {/* Animated Background Gradients */}
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 via-transparent to-cyan-400/5 group-hover:from-blue-500/20 group-hover:via-blue-400/10 transition-all duration-700" />
 
-                {/* Image Placeholder Area */}
+                {/* Real Image Area */}
                 <div className="relative z-10 w-full h-full flex flex-col items-center justify-center space-y-6 px-8">
-                  {/* Large Image Area - Ready for Real Photos */}
-                  <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-blue-400/30 to-cyan-400/20 border-2 border-blue-300/60 flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-500 shadow-2xl shadow-blue-500/50">
-                    {/* Image placeholder with gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/40 via-cyan-500/20 to-blue-700/40 flex items-center justify-center">
-                      <div className="text-center">
-                        <svg className="w-40 h-40 text-white/60 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        <p className="text-white/70 text-sm font-medium">Healthcare Professional</p>
-                      </div>
-                    </div>
+                  {/* Large Image Container */}
+                  <div className="relative w-80 h-80 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-500 shadow-2xl shadow-blue-500/60">
+                    {/* Actual Image */}
+                    <img
+                      src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=600&fit=crop"
+                      alt="Professional Healthcare Caregiver"
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-600/30 via-transparent to-transparent" />
                   </div>
 
                   {/* Text Content */}
