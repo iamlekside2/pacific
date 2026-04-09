@@ -51,18 +51,16 @@ export default function Hero() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="bg-white rounded-3xl p-8 shadow-2xl border border-slate-100 relative z-10">
-              <h3 className="text-xl font-bold text-primary mb-6">How to Know When Home Healthcare is Needed</h3>
-              <ul className="space-y-4">
-                {indicators.map((text, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-0.5">
-                      <CheckCircle2 className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="text-slate-600">{text}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl overflow-hidden shadow-2xl border border-slate-100 relative z-10 h-[500px] flex items-center justify-center">
+              <div className="text-center">
+                <div className="w-40 h-40 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-20 h-20 text-primary/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p className="text-slate-500 font-medium">Hero Image</p>
+                <p className="text-sm text-slate-400 mt-2">Replace with your image</p>
+              </div>
             </div>
             <div className="absolute -top-4 -right-4 bg-white px-4 py-3 rounded-xl shadow-lg border border-slate-100 animate-float">
               <span className="text-sm font-semibold text-primary flex items-center gap-2"><Clock className="w-4 h-4" /> 24/7 Available</span>

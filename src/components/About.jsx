@@ -6,12 +6,19 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-blue-100 to-white rounded-3xl flex items-center justify-center border border-slate-200 shadow-xl">
-              <div className="text-center">
-                <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <User className="w-16 h-16 text-primary/40" />
+            <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-blue-100 via-blue-50 to-white rounded-3xl overflow-hidden border-4 border-primary/20 shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=600&fit=crop"
+                alt="Blessing Okeke - Founder"
+                className="w-full h-full object-cover"
+              />
+              {/* Placeholder with fallback styling */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                <div className="text-center">
+                  <User className="w-24 h-24 text-primary/40 mx-auto mb-4" />
+                  <span className="text-slate-400 font-medium block">Upload founder photo</span>
+                  <p className="text-sm text-slate-400 mt-2">Recommended: 600x600px</p>
                 </div>
-                <span className="text-slate-400 font-medium">Founder Photo</span>
               </div>
             </div>
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/10 rounded-full blur-2xl" />

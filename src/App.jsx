@@ -5,6 +5,7 @@ import Situations from './components/Situations'
 import Trust from './components/Trust'
 import Process from './components/Process'
 import About from './components/About'
+import Testimonials from './components/Testimonials'
 import ConsultationForm from './components/ConsultationForm'
 import CTA from './components/CTA'
 import FAQ from './components/FAQ'
@@ -20,6 +21,7 @@ export default function App() {
       <Trust />
       <Process />
       <About />
+      <Testimonials />
       <ConsultationForm />
       <CTA />
       <FAQ />
