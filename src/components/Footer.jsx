@@ -7,21 +7,25 @@ export default function Footer() {
   }
 
   return (
-    <footer id="contact" className="bg-primary text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer id="contact" className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '0.5s'}} />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          <div>
+          <div className="group hover:scale-105 transition-transform duration-300">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center font-bold text-xl">P</div>
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center font-bold text-xl group-hover:bg-white/30 transition-colors">P</div>
               <div><p className="text-sm font-bold">Pacific</p><p className="text-xs text-white/80">Home Healthcare</p></div>
             </div>
             <p className="text-white/80 text-sm mb-6">Professional in-home healthcare across Maryland, delivered with consistency, compassion, and clinical expertise.</p>
             <div className="space-y-3 text-sm">
-              <a href="tel:+14434608684" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
-                <Phone className="w-4 h-4" /> +1 (443) 460-8684
+              <a href="tel:+14434608684" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors group/link">
+                <Phone className="w-4 h-4 group-hover/link:scale-110 transition-transform" /> +1 (443) 460-8684
               </a>
-              <a href="mailto:info@pacifichomehealthcare.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
-                <Mail className="w-4 h-4" /> info@pacifichomehealthcare.com
+              <a href="mailto:info@pacifichomehealthcare.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors group/link">
+                <Mail className="w-4 h-4 group-hover/link:scale-110 transition-transform" /> info@pacifichomehealthcare.com
               </a>
               <span className="flex items-center gap-2 text-white/80">
                 <MapPin className="w-4 h-4" /> 403 W Pennsylvania Ave, Towson, MD
@@ -29,17 +33,17 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h4 className="font-bold mb-6">Navigation</h4>
+          <div className="group hover:scale-105 transition-transform duration-300">
+            <h4 className="font-bold mb-6 group-hover:text-blue-100 transition-colors">Navigation</h4>
             <ul className="space-y-3 text-sm text-white/80">
               {[{label: 'Home', id: '#home'}, {label: 'Services', id: '#services'}, {label: 'Resources', id: '#faq'}, {label: 'About', id: '#about'}].map(({label, id}) => (
-                <li key={id}><a href={id} onClick={e => scrollTo(e, id)} className="hover:text-white transition-colors">{label}</a></li>
+                <li key={id}><a href={id} onClick={e => scrollTo(e, id)} className="hover:text-white hover:translate-x-1 transition-all inline-block">{label}</a></li>
               ))}
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold mb-6">Services</h4>
+          <div className="group hover:scale-105 transition-transform duration-300">
+            <h4 className="font-bold mb-6 group-hover:text-blue-100 transition-colors">Services</h4>
             <ul className="space-y-3 text-sm text-white/80">
               <li>Medication Management</li>
               <li>Mobility Assistance</li>
@@ -49,8 +53,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold mb-6">Service Areas</h4>
+          <div className="group hover:scale-105 transition-transform duration-300">
+            <h4 className="font-bold mb-6 group-hover:text-blue-100 transition-colors">Service Areas</h4>
             <ul className="space-y-3 text-sm text-white/80">
               <li>Towson, MD</li>
               <li>Baltimore County</li>
@@ -59,14 +63,32 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 animate-fade-in-up">
           <p className="text-white/60 text-sm">&copy; 2026 Pacific Home Healthcare. All rights reserved.</p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-white/60 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-white/60 hover:text-white transition-colors">Terms & Conditions</a>
+            <a href="#" className="text-white/60 hover:text-white transition-colors hover:scale-110">Privacy Policy</a>
+            <a href="#" className="text-white/60 hover:text-white transition-colors hover:scale-110">Terms & Conditions</a>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fade-in-up {
+          animation: fade-in-up 0.6s ease-out forwards;
+          opacity: 0;
+        }
+      `}</style>
     </footer>
   )
 }

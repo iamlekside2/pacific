@@ -24,10 +24,14 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section id="faq" className="py-32 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-32 bg-white relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1.5s'}} />
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-4">
             COMMON QUESTIONS
           </h2>
@@ -41,22 +45,23 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-2 border-slate-200 rounded-lg overflow-hidden transition-all hover:border-primary/30 hover:shadow-lg"
+              className="border-2 border-slate-200 rounded-lg overflow-hidden transition-all hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/10 group animate-fade-in-up"
+              style={{animationDelay: `${0.1 + index * 0.05}s`}}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                 className="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition-colors"
               >
-                <span className="text-left font-bold text-slate-900 text-lg">{faq.question}</span>
+                <span className="text-left font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">{faq.question}</span>
                 <ChevronDown
-                  className={`w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300 ${
+                  className={`w-6 h-6 text-blue-600 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                 />
               </button>
 
               {openIndex === index && (
-                <div className="px-6 py-4 bg-slate-50 border-t-2 border-slate-200">
+                <div className="px-6 py-4 bg-slate-50 border-t-2 border-slate-200 animate-fade-in-up">
                   <p className="text-slate-700 leading-relaxed text-lg">{faq.answer}</p>
                 </div>
               )}
@@ -65,25 +70,45 @@ export default function FAQ() {
         </div>
 
         {/* Bottom Message */}
-        <div className="mt-20 p-12 bg-primary/5 border-l-4 border-primary rounded-lg">
+        <div className="mt-20 p-12 bg-gradient-to-r from-blue-500/10 to-blue-400/5 border-l-4 border-blue-500 rounded-lg animate-fade-in-up" style={{animationDelay: '0.3s'}}>
           <h3 className="text-2xl font-bold text-slate-900 mb-4">IF CARE IS BECOMING UNCERTAIN, IT'S TIME TO ACT</h3>
           <p className="text-slate-700 text-lg mb-8">
             Delays can lead to avoidable complications. Early support stabilizes care and reduces pressure on families.
           </p>
-          <a
-            href="tel:+14434608684"
-            className="inline-flex px-8 py-4 bg-primary text-white rounded-lg font-bold shadow-lg hover:bg-primary-dark transition-all"
-          >
-            Call Now for Immediate Assistance +1 (443) 460-8684
-          </a>
-          <a
-            href="#form"
-            className="inline-flex ml-4 px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary/5 transition-all"
-          >
-            Request Support
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="tel:+14434608684"
+              className="inline-flex px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 transition-all"
+            >
+              Call Now for Immediate Assistance +1 (443) 460-8684
+            </a>
+            <a
+              href="#form"
+              className="inline-flex px-8 py-4 border-2 border-blue-500 text-blue-600 rounded-lg font-bold hover:bg-blue-500/5 hover:border-blue-600 hover:scale-105 transition-all"
+            >
+              Request Support
+            </a>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fade-in-up {
+          animation: fade-in-up 0.6s ease-out forwards;
+          opacity: 0;
+        }
+      `}</style>
     </section>
   )
 }

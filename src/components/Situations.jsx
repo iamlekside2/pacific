@@ -34,11 +34,13 @@ const situations = [
 export default function Situations() {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
-      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-yellow-400/5 rounded-full blur-3xl" />
+      {/* Animated Background Elements */}
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-400/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '0.5s'}} />
+      <div className="absolute top-20 -right-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="max-w-3xl mb-20">
+        <div className="max-w-3xl mb-20 animate-fade-in-up">
           <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
             SITUATIONS WE STEP IN QUICKLY
           </h2>
@@ -50,14 +52,18 @@ export default function Situations() {
         {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {situations.map(({ title, problem, solution }, i) => (
-            <div key={i} className="bg-slate-50 rounded-2xl p-8 border-2 border-slate-200 hover:shadow-lg transition-all">
+            <div
+              key={i}
+              className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 border-2 border-slate-200 hover:border-blue-400/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all group animate-fade-in-up"
+              style={{animationDelay: `${0.1 + i * 0.06}s`}}
+            >
               {/* Number */}
-              <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-6 text-sm">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold mb-6 text-sm group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-500/30">
                 {String(i + 1).padStart(2, '0')}
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-bold text-slate-900 mb-4">{title}</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">{title}</h3>
 
               {/* Problem */}
               <div className="mb-6 pb-6 border-b border-slate-300">
@@ -67,7 +73,7 @@ export default function Situations() {
 
               {/* Solution */}
               <div>
-                <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">How we step in</p>
+                <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">How we step in</p>
                 <p className="text-slate-700 leading-relaxed">{solution}</p>
               </div>
             </div>
@@ -75,18 +81,42 @@ export default function Situations() {
         </div>
 
         {/* Bottom Message */}
-        <div className="mt-20 p-12 bg-primary/5 border-l-4 border-primary rounded-lg">
-          <p className="text-slate-900 font-semibold mb-2 text-lg">When these situations begin to appear, consistent support makes a measurable difference in safety, recovery, and quality of life.</p>
-          <div className="flex flex-col sm:flex-row gap-4 pt-6">
-            <a href="tel:+14434608684" className="inline-flex px-8 py-4 bg-primary text-white rounded-lg font-bold shadow-lg hover:bg-primary-dark transition-all">
+        <div className="mt-20 p-12 bg-gradient-to-r from-blue-500/10 to-blue-400/5 border-l-4 border-blue-500 rounded-lg animate-fade-in-up" style={{animationDelay: '0.5s'}}>
+          <p className="text-slate-900 font-semibold mb-6 text-lg">When these situations begin to appear, consistent support makes a measurable difference in safety, recovery, and quality of life.</p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="tel:+14434608684"
+              className="inline-flex px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 transition-all"
+            >
               Call Now for Immediate Assistance +1 (443) 460-8684
             </a>
-            <a href="#form" className="inline-flex px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary/5 transition-all">
+            <a
+              href="#form"
+              className="inline-flex px-8 py-4 border-2 border-blue-500 text-blue-600 rounded-lg font-bold hover:bg-blue-500/5 hover:border-blue-600 hover:scale-105 transition-all"
+            >
               Get Help Understanding Your Care Options
             </a>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fade-in-up {
+          animation: fade-in-up 0.6s ease-out forwards;
+          opacity: 0;
+        }
+      `}</style>
     </section>
   )
 }
