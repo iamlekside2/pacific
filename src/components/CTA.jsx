@@ -7,32 +7,28 @@ export default function CTA() {
   }
 
   return (
-    <section className="py-24 bg-gradient-to-r from-primary via-teal-600 to-teal-700 text-white relative overflow-hidden">
-      {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+    <section className="py-32 bg-slate-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
           You Don't Have to Figure This Out Alone
         </h2>
-        <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed mb-10">
-          Most families delay care—not by choice, but because the next step isn't clear. A short consultation helps you understand what level of care is needed, how quickly support can begin, and what the process looks like.
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10">
+          Most families delay care because the next step isn't clear. A short consultation helps you understand what care level is needed, how quickly support can begin, and what the process looks like.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="tel:+14434608684"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-100 transition-all shadow-lg hover:scale-105"
+            className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-xl hover:bg-primary-dark transition-all"
           >
             <Phone className="w-5 h-5" /> Call Now
           </a>
           <a
             href="#form"
             onClick={e => scrollTo(e, '#form')}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all"
+            className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold text-lg hover:bg-primary/5 transition-all"
           >
-            <span>Book Consultation</span>
+            <span>Request Consultation</span>
             <ArrowRight className="w-5 h-5" />
           </a>
         </div>

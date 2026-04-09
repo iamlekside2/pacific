@@ -18,33 +18,27 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-teal-700 rounded-lg flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-2xl">P</span>
+          <a href="#" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center font-bold text-white text-xl">
+              P
             </div>
             <div className="hidden sm:block">
               <p className="text-sm font-bold text-slate-900">Pacific</p>
               <p className="text-xs text-slate-600">Home Healthcare</p>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
-            {[
-              { label: 'Home', id: '#home' },
-              { label: 'Services', id: '#services' },
-              { label: 'Resources', id: '#faq' },
-              { label: 'About', id: '#about' },
-              { label: 'Contact', id: '#contact' },
-            ].map(({ label, id }) => (
+          <div className="hidden md:flex items-center gap-10">
+            {['Home', 'Services', 'Resources', 'About', 'Contact'].map(label => (
               <a
-                key={id}
-                href={id}
-                onClick={e => scrollTo(e, id)}
+                key={label}
+                href={`#${label.toLowerCase()}`}
+                onClick={e => scrollTo(e, `#${label.toLowerCase()}`)}
                 className="text-slate-700 hover:text-primary font-medium text-sm transition-colors"
               >
                 {label}
@@ -52,45 +46,39 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Buttons */}
+          {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
               href="tel:+14434608684"
-              className="flex items-center gap-2 px-4 py-2.5 text-primary hover:bg-primary hover:text-white border-2 border-primary rounded-lg font-semibold transition-all text-sm"
+              className="px-4 py-2 text-primary font-semibold hover:bg-primary/5 rounded-lg transition-colors text-sm"
             >
-              <Phone className="w-4 h-4" /> Call
+              +1 (443) 460-8684
             </a>
             <a
               href="#form"
               onClick={e => scrollTo(e, '#form')}
-              className="px-6 py-2.5 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-all text-sm shadow-lg"
+              className="px-6 py-2 bg-primary text-white rounded-lg font-semibold text-sm hover:bg-primary-dark transition-all shadow-md"
             >
-              Request Support
+              Get Support
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden p-2 text-slate-700">
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {/* Mobile Menu */}
+          <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden p-2">
+            {mobileOpen ? <X className="w-6 h-6 text-slate-900" /> : <Menu className="w-6 h-6 text-slate-900" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-slate-200 shadow-lg">
+        <div className="md:hidden bg-white border-t border-slate-200">
           <div className="px-4 py-4 space-y-3">
-            {[
-              { label: 'Home', id: '#home' },
-              { label: 'Services', id: '#services' },
-              { label: 'Resources', id: '#faq' },
-              { label: 'About', id: '#about' },
-              { label: 'Contact', id: '#contact' },
-            ].map(({ label, id }) => (
+            {['Home', 'Services', 'Resources', 'About', 'Contact'].map(label => (
               <a
-                key={id}
-                href={id}
-                onClick={e => scrollTo(e, id)}
+                key={label}
+                href={`#${label.toLowerCase()}`}
+                onClick={e => scrollTo(e, `#${label.toLowerCase()}`)}
                 className="block py-2 text-slate-700 hover:text-primary font-medium"
               >
                 {label}
@@ -99,16 +87,16 @@ export default function Navbar() {
             <div className="pt-4 space-y-3 border-t border-slate-200">
               <a
                 href="tel:+14434608684"
-                className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary rounded-lg font-semibold w-full"
+                className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary rounded-lg font-semibold"
               >
-                <Phone className="w-4 h-4" /> Call Now
+                <Phone className="w-4 h-4" /> Call
               </a>
               <a
                 href="#form"
                 onClick={e => scrollTo(e, '#form')}
-                className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-lg font-semibold w-full"
+                className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-lg font-semibold"
               >
-                Request Support
+                Get Support
               </a>
             </div>
           </div>

@@ -1,105 +1,91 @@
-import { AlertCircle, Check } from 'lucide-react'
+import { AlertCircle } from 'lucide-react'
 
 const situations = [
   {
     title: 'After Hospital Discharge',
-    problem: 'Instructions unclear, follow-ups difficult, unsure about care level needed',
-    solution: 'Structured in-home support managing medications and monitoring recovery',
+    problem: 'Unclear instructions and difficult follow-ups make it hard to know what level of care is needed.',
+    solution: 'We provide structured in-home support managing medications and monitoring recovery safely.',
   },
   {
     title: 'Increasing Falls or Mobility Issues',
-    problem: 'Simple movements becoming unpredictable, near-falls increasing injury risk',
-    solution: 'Safe movement assistance reducing fall risk while maintaining independence',
+    problem: 'Simple movements are unpredictable. Near-falls and hesitation increase injury risk.',
+    solution: 'Safe movement assistance reduces fall risk while maintaining independence and confidence.',
   },
   {
     title: 'Medication Mismanagement',
-    problem: 'Medications missed or taken incorrectly, managing schedules is difficult',
-    solution: 'Correct administration on time, reducing health risks and improving consistency',
+    problem: 'Medications are missed, taken incorrectly, or causing confusion in daily routines.',
+    solution: 'We ensure correct administration on time, reducing health risks and improving consistency.',
   },
   {
     title: 'Cognitive Changes Affecting Safety',
-    problem: 'Forgetfulness, confusion affecting safety—missed meds, wandering, routine issues',
-    solution: 'Structured support and supervision maintaining safety and routines at home',
+    problem: 'Forgetfulness, confusion, or behavioral changes affecting safety and daily routines.',
+    solution: 'Structured supervision maintains safety, reinforces routines, and supports cognitive engagement.',
   },
   {
     title: 'Declining Daily Function',
-    problem: 'Routine tasks like bathing and dressing now require assistance',
-    solution: 'Respectful daily care assistance maintaining comfort, hygiene, and stability',
+    problem: 'Tasks like bathing, dressing, and toileting now require assistance. Dignity is at risk.',
+    solution: 'Respectful daily care assistance maintains comfort, hygiene, and emotional stability.',
   },
   {
     title: 'Caregiver Burnout',
-    problem: 'Balancing care, work, and personal life becoming unsustainable',
-    solution: 'Dependable support easing the load so care continues without interruption',
+    problem: 'Balancing care, work, and personal life is becoming physically and emotionally unsustainable.',
+    solution: 'Dependable support eases the load so families aren\'t managing everything alone.',
   },
 ]
 
 export default function Situations() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-32 bg-white relative overflow-hidden">
+      {/* Decorative */}
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm font-semibold text-primary mb-4">
-            When To Seek Help
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Situations We Handle
+        <div className="max-w-2xl mb-20">
+          <p className="text-accent font-bold text-sm uppercase tracking-widest mb-3">When to Seek Help</p>
+          <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+            Situations We Address
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Early intervention prevents complications and reduces family stress
-          </p>
         </div>
 
-        {/* Situations Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {situations.map(({ title, problem, solution }, i) => (
-            <div
-              key={i}
-              className="bg-gradient-to-b from-white to-slate-50 rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300"
-            >
-              {/* Title with Number */}
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-teal-600 text-white flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                  {i + 1}
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 pt-1">{title}</h3>
+            <div key={i} className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary/30 hover:shadow-lg transition-all">
+              {/* Number */}
+              <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-6 text-sm">
+                {String(i + 1).padStart(2, '0')}
               </div>
+
+              {/* Title */}
+              <h3 className="text-lg font-bold text-slate-900 mb-4">{title}</h3>
 
               {/* Problem */}
               <div className="mb-6 pb-6 border-b border-slate-200">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">The Situation</p>
-                <p className="text-slate-700">{problem}</p>
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">The Challenge</p>
+                <p className="text-sm text-slate-700">{problem}</p>
               </div>
 
               {/* Solution */}
-              <div className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">How We Help</p>
-                  <p className="text-slate-700">{solution}</p>
-                </div>
+              <div>
+                <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">Our Solution</p>
+                <p className="text-sm text-slate-700">{solution}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-16 p-12 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/5 rounded-3xl border border-primary/20 text-center">
-          <AlertCircle className="w-12 h-12 text-primary mx-auto mb-4" />
-          <h3 className="text-3xl font-bold text-slate-900 mb-3">Early Support Makes a Difference</h3>
-          <p className="text-slate-700 text-lg max-w-2xl mx-auto mb-8">
-            When these situations begin to appear, consistent support prevents complications and improves quality of life for the whole family.
-          </p>
-          <a
-            href="#form"
-            onClick={e => {
-              e.preventDefault()
-              document.querySelector('#form')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-all shadow-lg"
-          >
-            Start a Consultation
-          </a>
+        {/* Bottom Message */}
+        <div className="mt-20 p-12 bg-primary/5 border-l-4 border-primary rounded-lg">
+          <div className="flex gap-4">
+            <AlertCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+            <div>
+              <p className="font-bold text-slate-900 mb-2">Early Intervention Matters</p>
+              <p className="text-slate-700">
+                When these situations begin to appear, consistent support prevents complications, stabilizes care, and significantly reduces stress on families.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
