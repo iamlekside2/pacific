@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Phone, Menu, X } from 'lucide-react'
+import logo from '../assets/logo.png'
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -22,14 +23,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center font-bold text-white text-xl">
-              P
-            </div>
-            <div className="hidden sm:block">
-              <p className="text-sm font-bold text-slate-900">Pacific</p>
-              <p className="text-xs text-slate-600">Home Healthcare</p>
-            </div>
+          <a href="#" className="flex items-center hover:opacity-80 transition-opacity">
+            <img src={logo} alt="Pacific Home Healthcare" className="h-14 w-auto" />
           </a>
 
           {/* Desktop Menu */}

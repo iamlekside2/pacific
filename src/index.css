@@ -108,12 +108,12 @@ html {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+  background: linear-gradient(90deg, #3545e8, #0a13a8);
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover {
-  color: #3b82f6;
+  color: #3545e8;
 }
 
 .nav-link:hover::after {
@@ -130,7 +130,7 @@ html {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(30, 58, 138, 0.05));
+  background: linear-gradient(135deg, rgba(13, 25, 211, 0.05), rgba(10, 19, 168, 0.05));
   border-radius: inherit;
   opacity: 0;
   transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,7 +139,7 @@ html {
 
 .card-hover:hover {
   transform: translateY(-12px);
-  box-shadow: 0 25px 50px -12px rgba(30, 58, 138, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(10, 19, 168, 0.2);
 }
 
 .card-hover:hover::before {
@@ -185,7 +185,7 @@ html {
 
 /* Premium Gradient Text */
 .gradient-text {
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #0ea5e9 100%);
+  background: linear-gradient(135deg, #0a13a8 0%, #3545e8 50%, #6b6fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -195,7 +195,7 @@ html {
 /* Premium Divider */
 .divider-premium {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(10, 19, 168, 0.3), transparent);
 }
 
 /* Smooth Scrollbar */
@@ -219,11 +219,11 @@ html {
 
 /* Selection Premium */
 ::selection {
-  background: #3b82f6;
+  background: #0d19d3;
   color: white;
 }
 
 ::-moz-selection {
-  background: #3b82f6;
+  background: #0d19d3;
   color: white;
 }
