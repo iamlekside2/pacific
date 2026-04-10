@@ -2,21 +2,21 @@ import { Star } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Margaret Johnson',
-    role: 'Family Member',
-    text: 'Peace of mind knowing my mother was safe and cared for. The team was professional, compassionate, and truly reliable.',
+    name: 'Margaret Walterson',
+    role: 'Family of Care Recipient',
+    text: 'The peace of mind we gained knowing my mother was safe and well-cared for was invaluable. The team was professional, compassionate, and reliable.',
     rating: 5,
   },
   {
-    name: 'Robert Chen',
+    name: 'Dicta Cheng',
     role: 'Care Recipient',
-    text: 'After surgery, the support made recovery smooth and comfortable. Treated with dignity and helped me regain confidence.',
+    text: 'After my surgery, the support made my recovery smooth and comfortable. The caregivers treated me with dignity and helped me regain confidence.',
     rating: 5,
   },
   {
-    name: 'Patricia Williams',
-    role: 'Family Member',
-    text: 'We were overwhelmed. Pacific stepped in, gave us breathing room, and ensured excellent care. Highly recommend.',
+    name: 'Patricia Oakley',
+    role: 'Family of Care Recipient',
+    text: 'We were overwhelmed with caregiving. Pacific stepped in and gave us breathing room while ensuring excellent care. Highly recommend.',
     rating: 5,
   },
 ]

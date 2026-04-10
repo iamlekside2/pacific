@@ -13,6 +13,8 @@ export default {
           dark: '#0a13a8',
         },
         accent: '#ff6b35',
+        navy: '#0a0f8a',
+        'light-bg': '#f5f6ff',
         blue: {
           50: '#eef0ff',
           100: '#dee2ff',

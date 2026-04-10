@@ -1,13 +1,4 @@
-import { Phone, ArrowRight, CheckCircle2, Heart, Zap } from 'lucide-react'
-
-const indicators = [
-  'When cognitive changes begin to affect safety or daily routines',
-  'When mobility becomes unsafe or unstable',
-  'When medication routines are no longer reliable',
-  'When recovery requires supervision at home',
-  'When daily personal care cannot be done independently',
-  'When family support is no longer enough',
-]
+import { Phone, ArrowRight, Heart, Zap } from 'lucide-react'
 
 export default function Hero() {
   const scrollTo = (e, id) => {
@@ -142,24 +133,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* How to Know Section */}
-        <div className="mt-20 pt-16 border-t border-white/10 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-          <h3 className="text-3xl font-bold text-white mb-8">How to Know When Home Healthcare is Needed</h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {indicators.map((text, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-300 group"
-              >
-                <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300" />
-                <span className="text-white/80 group-hover:text-white transition-colors duration-300 text-sm leading-relaxed">{text}</span>
-              </div>
-            ))}
-          </div>
-          <p className="text-white/50 text-sm mt-6 italic">
-            Early support helps prevent complications and reduces long-term risk.
-          </p>
-        </div>
       </div>
 
       <style jsx>{`

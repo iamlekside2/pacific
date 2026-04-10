@@ -36,7 +36,7 @@ export default function ConsultationForm() {
               Next Steps
             </span>
             <h2 className="text-4xl font-bold text-slate-900 mb-3">Care Consultation Request</h2>
-            <p className="text-slate-600 text-lg">Tell us about your situation and we'll help determine the right care plan</p>
+            <p className="text-slate-600 text-lg">Tell us what's going on and we'll help you understand the next step. A short consultation helps clarify what level of care is needed and how quickly support can begin.</p>
           </div>
 
           {/* Form */}
@@ -77,8 +77,9 @@ export default function ConsultationForm() {
                   'Needs help with bathing/dressing',
                   'Medication concerns',
                   'Memory issues or confusion',
-                  'Caregiver overwhelmed',
-                  'Ongoing illness/recovery',
+                  'Caregiver support is becoming overwhelming',
+                  'Ongoing illness or recovery support needed',
+                  'Not sure',
                 ].map(option => (
                   <label key={option} className="flex items-center gap-3 p-3 rounded-lg border-2 border-slate-200 cursor-pointer hover:border-primary/30 transition-all">
                     <input type="checkbox" className="w-4 h-4 rounded border-slate-300 text-primary" />

@@ -1,10 +1,7 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
-  const scrollTo = (e, id) => {
-    e.preventDefault()
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
 
   return (
     <footer id="contact" className="bg-gradient-to-r from-slate-900 via-slate-900 to-blue-900 text-white py-16 relative overflow-hidden border-t border-white/10">
@@ -36,8 +33,8 @@ export default function Footer() {
           <div className="group hover:scale-105 transition-transform duration-300">
             <h4 className="font-bold mb-6 group-hover:text-blue-100 transition-colors">Navigation</h4>
             <ul className="space-y-3 text-sm text-white/80">
-              {[{label: 'Home', id: '#home'}, {label: 'Services', id: '#services'}, {label: 'Resources', id: '#faq'}, {label: 'About', id: '#about'}].map(({label, id}) => (
-                <li key={id}><a href={id} onClick={e => scrollTo(e, id)} className="hover:text-white hover:translate-x-1 transition-all inline-block">{label}</a></li>
+              {[{label: 'Home', to: '/'}, {label: 'Services', to: '/services'}, {label: 'About', to: '/about'}, {label: 'Founder', to: '/about#founder'}, {label: 'Contact', to: '/contact'}].map(({label, to}) => (
+                <li key={to}><Link to={to} className="hover:text-white hover:translate-x-1 transition-all inline-block">{label}</Link></li>
               ))}
             </ul>
           </div>
