@@ -18,7 +18,7 @@ export default function Trust() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-5xl lg:text-6xl font-bold text-center mb-20 leading-tight">
-          CARE YOU CAN RELY ON WITHOUT UNCERTAINTY
+          Care You Can Rely On Without Uncertainty
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

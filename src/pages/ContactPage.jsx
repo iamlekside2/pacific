@@ -54,7 +54,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">WHEN TO REACH OUT</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">When to Reach Out</h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">You don't need to wait until things become critical. Most families contact us when:</p>
               <ul className="space-y-3 mb-6">
                 {whenToReach.map(item => (
@@ -89,7 +89,7 @@ export default function ContactPage() {
           ) : (
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-slate-200">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-slate-900 mb-3">CARE CONSULTATION REQUEST</h2>
+                <h2 className="text-4xl font-bold text-slate-900 mb-3">Care Consultation Request</h2>
                 <p className="text-slate-600 text-lg">Tell us what's going on—we'll help you understand the next step.</p>
               </div>
               <form onSubmit={handleSubmit} className="space-y-8">
@@ -198,7 +198,7 @@ export default function ContactPage() {
       {/* What Happens After */}
       <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-slate-900 mb-16">WHAT HAPPENS AFTER YOU CONTACT US</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-16">What Happens After You Contact Us</h2>
           <div className="grid md:grid-cols-3 gap-12 mb-16">
             {[
               { num: '1', title: 'Initial Conversation', desc: 'We listen and understand your situation in detail.' },
@@ -222,7 +222,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-8">OUR LOCATION</h2>
+              <h2 className="text-4xl font-bold text-slate-900 mb-8">Our Location</h2>
               <div className="bg-white rounded-2xl p-8 border-2 border-slate-200 shadow-sm mb-6">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Pacific Home Healthcare</h3>
                 <p className="text-lg text-slate-600">403 W Pennsylvania Avenue<br />Towson, MD 21204</p>
@@ -232,7 +232,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-8">CONTACT DETAILS</h2>
+              <h2 className="text-4xl font-bold text-slate-900 mb-8">Contact Details</h2>
               <div className="space-y-6 mb-8">
                 <a href="tel:+14434608684" className="flex items-center gap-4 p-6 bg-white rounded-2xl border-2 border-slate-200 shadow-sm hover:border-blue-400 hover:shadow-lg transition-all group">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500/10 to-blue-400/5 rounded-2xl flex items-center justify-center group-hover:from-blue-500/20 group-hover:to-blue-400/10 transition-all">

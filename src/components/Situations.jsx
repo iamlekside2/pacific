@@ -48,7 +48,7 @@ export default function Situations() {
         {/* Header */}
         <div className="max-w-3xl mb-20 animate-fade-in-up">
           <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-            SITUATIONS WE STEP IN QUICKLY
+            Situations We Step In Quickly
           </h2>
           <p className="text-xl text-slate-600">
             Recognizing when professional support becomes essential

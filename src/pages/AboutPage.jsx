@@ -68,7 +68,7 @@ export default function AboutPage() {
       <section className="py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100/40 rounded-full blur-3xl" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-20">WHAT MAKES OUR APPROACH DIFFERENT</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-20">What Makes Our Approach Different</h2>
           <div className="grid md:grid-cols-2 gap-12">
             {differentiators.map(({ title, desc, icon: Icon }) => (
               <div key={title} className="flex gap-5 group">
@@ -113,7 +113,7 @@ export default function AboutPage() {
       {/* Our Commitment + Founder */}
       <section className="py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">OUR COMMITMENT TO CARE</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Commitment to Care</h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-6">We approach every care situation with:</p>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[

@@ -104,7 +104,7 @@ export default function ServicesPage() {
       {/* Understanding Your Care Needs */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">UNDERSTANDING YOUR CARE NEEDS</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">Understanding Your Care Needs</h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-4">Choosing the right level of care isn't always straightforward.</p>
           <p className="text-lg text-slate-600 leading-relaxed mb-4">What starts as a small concern (missed medication, unsteady movement, or difficulty with daily routines) can quickly develop into larger risks without consistent support.</p>
           <p className="text-lg text-slate-600 leading-relaxed">Our services are structured to address real, day-to-day care needs with clarity, consistency, and professional oversight.</p>
@@ -115,7 +115,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100/40 rounded-full blur-3xl" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-20">OUR IN-HOME CARE SERVICES</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-20">Our In-Home Care Services</h2>
           <div className="space-y-20">
             {services.map(({ icon: Icon, title, image, includes, why, bestFor, ensure }, i) => (
               <div key={i} className={`flex flex-col lg:flex-row gap-12 items-start ${i % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
@@ -163,7 +163,7 @@ export default function ServicesPage() {
       {/* How These Services Work Together */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">HOW THESE SERVICES WORK TOGETHER</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-6">How These Services Work Together</h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-4">Most individuals don't need just one type of support. Care is often a combination of:</p>
           <ul className="space-y-2 mb-6">
             {['Medication management', 'Mobility assistance', 'Personal care', 'Supervision and companionship'].map(item => (
@@ -177,7 +177,7 @@ export default function ServicesPage() {
       {/* When to Start + Simple Steps */}
       <section className="py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">WHEN TO START CARE</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-6">When to Start Care</h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-4">A person may need support if:</p>
           <ul className="space-y-2 mb-6">
             {['Daily routines are becoming difficult to maintain', 'Safety concerns are increasing at home', 'Recovery requires supervision', 'Caregiving is becoming overwhelming'].map(item => (
@@ -191,7 +191,7 @@ export default function ServicesPage() {
       {/* Starting Care Is Simple */}
       <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-slate-900 mb-16">STARTING CARE IS SIMPLE</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-16">Starting Care Is Simple</h2>
           <div className="grid md:grid-cols-3 gap-12 mb-16">
             {[
               { num: '1', title: 'Speak with a Care Coordinator', desc: 'We understand the situation and immediate needs.' },
@@ -222,7 +222,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.1) 10px, rgba(255,255,255,.1) 20px)'}} />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-4xl font-bold mb-8">WHY FAMILIES CHOOSE PACIFIC HOME HEALTHCARE</h2>
+          <h2 className="text-4xl font-bold mb-8">Why Families Choose Pacific Home Healthcare</h2>
           <ul className="space-y-3 mb-8">
             {whyChoose.map(item => (
               <li key={item} className="flex items-center gap-3 text-white/90 text-lg"><CheckCircle className="w-5 h-5 flex-shrink-0" /> {item}</li>
@@ -235,7 +235,7 @@ export default function ServicesPage() {
       {/* Not Sure CTA */}
       <section className="py-24 bg-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">NOT SURE WHAT SERVICE YOU NEED?</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Not Sure What Service You Need?</h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-4">You don't need to have everything figured out. A short conversation can help clarify:</p>
           <ul className="text-lg text-slate-600 space-y-2 mb-10">
             <li>• What level of care is appropriate</li>

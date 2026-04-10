@@ -14,7 +14,7 @@ export default function CTA() {
       </div>
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-8 leading-tight">
-          YOU DON'T HAVE TO FIGURE THIS OUT ALONE
+          You Don't Have to Figure This Out Alone
         </h2>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-6">
           Most families delay care.Not by choice, but because the next step isn't clear. A short consultation helps you understand:

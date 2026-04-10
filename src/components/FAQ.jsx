@@ -36,7 +36,7 @@ export default function FAQ() {
         {/* Header */}
         <div className="mb-16 animate-fade-in-up">
           <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-4">
-            COMMON QUESTIONS
+            Common Questions
           </h2>
           <p className="text-xl text-slate-600">
             Everything you need to know about our services
@@ -85,7 +85,7 @@ export default function FAQ() {
 
         {/* Bottom Message */}
         <div className="mt-20 p-12 bg-gradient-to-r from-blue-50 to-blue-50/50 border-l-4 border-blue-500 rounded-lg animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">IF CARE IS BECOMING UNCERTAIN, IT'S TIME TO ACT</h3>
+          <h3 className="text-2xl font-bold text-slate-900 mb-4">If Care Is Becoming Uncertain, It's Time to Act</h3>
           <p className="text-slate-700 text-lg mb-8">
             Delays can lead to avoidable complications. Early support stabilizes care and reduces pressure on families.
           </p>

@@ -49,7 +49,7 @@ export default function Services() {
         {/* Header */}
         <div className="max-w-3xl mb-20 animate-fade-in-up">
           <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-            IN-HOME CARE SUPPORT DESIGNED FOR DAILY REALITY
+            In-Home Care Support Designed for Daily Reality
           </h2>
           <p className="text-xl text-slate-600">
             Comprehensive services tailored to maintain dignity, safety, and independence at home.

@@ -33,7 +33,7 @@ export default function Process() {
         {/* Header */}
         <div className="mb-16 animate-fade-in-up">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-4">
-            SIMPLE, CLEAR, AND FAST TO START
+            Simple, Clear, and Fast to Start
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl">
             Get clarity without delay. Care typically begins within 24–48 hours.

@@ -47,7 +47,7 @@ export default function About() {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                BUILT ON PROFESSIONAL CARE AND PERSONAL COMMITMENT
+                Built on Professional Care and Personal Commitment
               </h2>
             </div>
 
@@ -74,7 +74,7 @@ export default function About() {
 
         {/* Service Areas */}
         <div className="bg-white rounded-3xl p-12 border-2 border-slate-200 shadow-sm">
-          <h3 className="text-3xl font-bold text-slate-900 mb-2">SERVING FAMILIES ACROSS MARYLAND</h3>
+          <h3 className="text-3xl font-bold text-slate-900 mb-2">Serving Families Across Maryland</h3>
           <p className="text-slate-600 mb-10 text-lg">Providing in-home healthcare services in:</p>
           <div className="grid md:grid-cols-3 gap-8">
             {areas.map(({ city, note }) => (
