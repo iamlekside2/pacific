@@ -28,7 +28,24 @@ export default function ConsultationForm() {
 
   return (
     <section id="form" className="py-24 bg-gradient-to-b from-white to-slate-50">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-5 gap-12">
+          {/* Left: Image + info */}
+          <div className="lg:col-span-2 hidden lg:block space-y-6">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=500&fit=crop&q=85"
+              alt="Caregiver helping patient"
+              className="w-full h-72 object-cover rounded-2xl shadow-xl"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=500&fit=crop&q=85"
+              alt="Home healthcare support"
+              className="w-full h-72 object-cover rounded-2xl shadow-xl"
+            />
+          </div>
+
+          {/* Right: Form */}
+          <div className="lg:col-span-3">
         <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-slate-200">
           {/* Header */}
           <div className="text-center mb-12">
@@ -167,6 +184,8 @@ export default function ConsultationForm() {
               By submitting, you agree to be contacted by Pacific Home Healthcare. Your information is confidential and used only for your inquiry.
             </p>
           </form>
+        </div>
+          </div>
         </div>
       </div>
     </section>

@@ -6,30 +6,35 @@ const services = [
     title: 'Medication Administration',
     desc: 'Accurate, timely medication support to prevent missed doses and health complications.',
     best: 'Best for: Patients with complex prescriptions or post-hospital care needs.',
+    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=300&fit=crop&q=80',
   },
   {
     icon: Users,
     title: 'Ambulatory & Transfer Assistance',
     desc: 'Safe movement support to reduce fall risk and improve mobility confidence.',
     best: 'Best for: Individuals with weakness, instability, or recent injury.',
+    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&h=300&fit=crop&q=80',
   },
   {
     icon: Bath,
     title: 'Personal Care (Bathing, Toileting, Incontinence Support)',
     desc: 'Dignified assistance with essential daily routines.',
     best: 'Best for: Individuals who require help maintaining hygiene and daily comfort.',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=300&fit=crop&q=80',
   },
   {
     icon: Brain,
     title: 'Cognitive Stimulation',
     desc: 'Structured engagement to support mental clarity and emotional stability.',
     best: 'Best for: Patients experiencing memory decline or reduced cognitive activity.',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=300&fit=crop&q=80',
   },
   {
     icon: Heart,
     title: 'Companionship Support',
     desc: 'Consistent presence to reduce isolation and improve overall well-being.',
     best: 'Best for: Individuals who spend long periods alone or require social support.',
+    image: 'https://images.unsplash.com/photo-1516307365426-bea591f05011?w=600&h=300&fit=crop&q=80',
   },
 ]
 
@@ -53,12 +58,16 @@ export default function Services() {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {services.map(({ icon: Icon, title, desc, best }, i) => (
+          {services.map(({ icon: Icon, title, desc, best, image }, i) => (
             <div
               key={title}
-              className="bg-white rounded-2xl p-8 border-2 border-slate-200 shadow-sm hover:shadow-xl hover:border-blue-400 transition-all group animate-fade-in-up hover:scale-105 hover:-translate-y-1"
+              className="bg-white rounded-2xl border-2 border-slate-200 shadow-sm hover:shadow-xl hover:border-blue-400 transition-all group animate-fade-in-up hover:scale-105 hover:-translate-y-1 overflow-hidden"
               style={{animationDelay: `${0.1 + i * 0.06}s`}}
             >
+              <div className="overflow-hidden">
+                <img src={image} alt={title} className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-8">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500/10 to-blue-400/5 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:from-blue-500/20 group-hover:to-blue-400/10 transition-all">
                 <Icon className="w-7 h-7 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
               </div>
@@ -73,6 +82,7 @@ export default function Services() {
                 >
                   Learn More →
                 </a>
+              </div>
               </div>
             </div>
           ))}

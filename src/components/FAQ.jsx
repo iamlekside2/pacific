@@ -29,9 +29,12 @@ export default function FAQ() {
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-50/60 rounded-full blur-3xl" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left: FAQ Content */}
+          <div>
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className="mb-16 animate-fade-in-up">
           <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-4">
             COMMON QUESTIONS
           </h2>
@@ -67,6 +70,17 @@ export default function FAQ() {
               )}
             </div>
           ))}
+        </div>
+          </div>
+
+          {/* Right: Image */}
+          <div className="hidden lg:block">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=800&fit=crop&q=85"
+              alt="Healthcare professional"
+              className="w-full h-[600px] object-cover rounded-2xl shadow-xl sticky top-28"
+            />
+          </div>
         </div>
 
         {/* Bottom Message */}

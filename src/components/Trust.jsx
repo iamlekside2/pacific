@@ -10,6 +10,10 @@ const items = [
 export default function Trust() {
   return (
     <section className="py-32 bg-primary text-white relative overflow-hidden">
+      {/* Background image overlay */}
+      <div className="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&h=800&fit=crop&q=80" alt="" className="w-full h-full object-cover opacity-[0.08]" />
+      </div>
       <div className="absolute inset-0 opacity-5" style={{backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.1) 10px, rgba(255,255,255,.1) 20px)'}} />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

@@ -3,31 +3,37 @@ const situations = [
     title: 'After Hospital Discharge',
     problem: "You've been told your loved one needs supervision at home, but instructions are unclear, follow-ups are hard to coordinate, and you're unsure what level of care is actually required. Small gaps in care can quickly turn into setbacks.",
     solution: 'We provide structured in-home support after discharge—helping manage medications, monitor recovery, and maintain stability so progress continues safely at home.',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=250&fit=crop&q=80',
   },
   {
     title: 'Increasing Falls or Mobility Issues',
     problem: 'Simple movements—getting out of bed, using the bathroom, walking short distances—are becoming unpredictable. You\'re noticing near-falls or hesitations, and the risk of injury is increasing.',
     solution: 'We assist with safe movement, transfers, and ambulation—reducing fall risk while helping maintain as much independence as possible.',
+    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=400&h=250&fit=crop&q=80',
   },
   {
     title: 'Medication Mismanagement',
     problem: 'Medications are being missed, taken incorrectly, or causing confusion. You\'re concerned, but managing schedules and dosages consistently is becoming difficult.',
     solution: 'We ensure medications are administered correctly and on time, reducing health risks and bringing consistency to daily routines.',
+    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=250&fit=crop&q=80',
   },
   {
     title: 'When Cognitive Changes Begin to Affect Safety or Daily Routines',
     problem: "You're noticing forgetfulness, confusion, or changes in behavior that are starting to affect safety: missed medications, wandering, or difficulty following daily routines.",
     solution: 'We provide structured support and consistent supervision to help maintain safety, reinforce routines, and support cognitive engagement in a calm, familiar environment.',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop&q=80',
   },
   {
     title: 'Declining Daily Function',
     problem: 'Tasks that were once routine, like bathing, dressing, toileting, moving around, now require assistance. Maintaining dignity and consistency is becoming more difficult without support.',
     solution: 'We assist with essential daily care in a respectful, structured way; helping maintain comfort, hygiene, and stability.',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop&q=80',
   },
   {
     title: 'Caregiver Burnout',
     problem: "You're doing everything you can: balancing care, work, and personal responsibilities; but it's becoming physically and emotionally unsustainable. There's little time to rest, and the pressure keeps building.",
     solution: 'We provide dependable, ongoing support that eases the load, so care continues without interruption, and you\'re not managing it alone.',
+    image: 'https://images.unsplash.com/photo-1516307365426-bea591f05011?w=400&h=250&fit=crop&q=80',
   },
 ]
 
@@ -51,12 +57,16 @@ export default function Situations() {
 
         {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {situations.map(({ title, problem, solution }, i) => (
+          {situations.map(({ title, problem, solution, image }, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-8 border-2 border-slate-200 hover:border-blue-400 hover:shadow-xl shadow-sm transition-all group animate-fade-in-up"
+              className="bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-400 hover:shadow-xl shadow-sm transition-all group animate-fade-in-up overflow-hidden"
               style={{animationDelay: `${0.1 + i * 0.06}s`}}
             >
+              <div className="overflow-hidden">
+                <img src={image} alt={title} className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-8">
               {/* Number */}
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold mb-6 text-sm group-hover:scale-125 group-hover:shadow-lg group-hover:shadow-blue-500/40 transition-all duration-300">
                 {String(i + 1).padStart(2, '0')}
@@ -75,6 +85,7 @@ export default function Situations() {
               <div>
                 <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">How we step in</p>
                 <p className="text-slate-700 leading-relaxed">{solution}</p>
+              </div>
               </div>
             </div>
           ))}

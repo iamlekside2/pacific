@@ -51,15 +51,26 @@ export default function ContactPage() {
 
       {/* When to Reach Out */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">WHEN TO REACH OUT</h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-6">You don't need to wait until things become critical. Most families contact us when:</p>
-          <ul className="space-y-3 mb-6">
-            {whenToReach.map(item => (
-              <li key={item} className="flex items-center gap-3 text-slate-700 text-lg"><CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" /> {item}</li>
-            ))}
-          </ul>
-          <p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-blue-500 pl-6">If any of these sound familiar, it's the right time to speak with someone.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">WHEN TO REACH OUT</h2>
+              <p className="text-lg text-slate-600 leading-relaxed mb-6">You don't need to wait until things become critical. Most families contact us when:</p>
+              <ul className="space-y-3 mb-6">
+                {whenToReach.map(item => (
+                  <li key={item} className="flex items-center gap-3 text-slate-700 text-lg"><CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" /> {item}</li>
+                ))}
+              </ul>
+              <p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-blue-500 pl-6">If any of these sound familiar, it's the right time to speak with someone.</p>
+            </div>
+            <div className="hidden lg:block">
+              <img
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=700&fit=crop&q=85"
+                alt="Healthcare professional with patient"
+                className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
