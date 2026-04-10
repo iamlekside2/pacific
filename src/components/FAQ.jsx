@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Plus, Minus, Phone } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: 'How do I know what level of care is needed?',
-    answer: 'A consultation helps determine the appropriate care plan.',
+    answer: 'A consultation helps determine the appropriate care plan for your specific situation.',
   },
 ]
 
@@ -24,74 +24,91 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section id="faq" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Left: FAQ Accordion */}
-          <div>
-            <div className="mb-10">
-              <h2 className="text-[32px] font-medium text-slate-900 mb-4">COMMON QUESTIONS</h2>
-              <p className="text-base text-slate-600 leading-[1.7]">Everything you need to know about our services</p>
-            </div>
+    <section id="faq" className="py-32 bg-white relative overflow-hidden">
+      {/* Subtle Background Elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-50/60 rounded-full blur-3xl" />
 
-            <div className="space-y-0">
-              {faqs.map((faq, index) => (
-                <div key={index} className="border-b border-gray-200">
-                  <button
-                    onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                    className="w-full py-5 flex items-center justify-between text-left"
-                  >
-                    <span className="text-lg font-medium text-slate-900">{faq.question}</span>
-                    {openIndex === index ? (
-                      <Minus className="w-5 h-5 text-primary flex-shrink-0" />
-                    ) : (
-                      <Plus className="w-5 h-5 text-primary flex-shrink-0" />
-                    )}
-                  </button>
-
-                  {openIndex === index && (
-                    <div className="pb-5 pl-4 border-l-2 border-primary ml-0">
-                      <p className="text-base text-slate-600 leading-[1.7]">{faq.answer}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right: Decorative Image */}
-          <div className="hidden lg:block">
-            <img
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=700&fit=crop&q=85"
-              alt="Healthcare professional"
-              className="w-full h-[500px] object-cover rounded-xl shadow-lg"
-            />
-          </div>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in-up">
+          <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-4">
+            COMMON QUESTIONS
+          </h2>
+          <p className="text-xl text-slate-600">
+            Everything you need to know about our services
+          </p>
         </div>
 
-        {/* Bottom CTA Banner */}
-        <div className="mt-16 bg-navy rounded-xl py-10 px-8 text-center text-white">
-          <h3 className="text-[20px] font-medium mb-3">IF CARE IS BECOMING UNCERTAIN, IT'S TIME TO ACT</h3>
-          <p className="text-white/80 text-base mb-8 max-w-2xl mx-auto leading-[1.7]">
+        {/* FAQ Accordion */}
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border-2 border-slate-200 rounded-xl overflow-hidden transition-all hover:border-blue-400 hover:shadow-lg shadow-sm group animate-fade-in-up bg-white"
+              style={{animationDelay: `${0.1 + index * 0.05}s`}}
+            >
+              <button
+                onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
+                className="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition-colors"
+              >
+                <span className="text-left font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">{faq.question}</span>
+                <ChevronDown
+                  className={`w-6 h-6 text-blue-600 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 ${
+                    openIndex === index ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
+
+              {openIndex === index && (
+                <div className="px-6 py-4 bg-slate-50 border-t-2 border-slate-200 animate-fade-in-up">
+                  <p className="text-slate-700 leading-relaxed text-lg">{faq.answer}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom Message */}
+        <div className="mt-20 p-12 bg-gradient-to-r from-blue-50 to-blue-50/50 border-l-4 border-blue-500 rounded-lg animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+          <h3 className="text-2xl font-bold text-slate-900 mb-4">IF CARE IS BECOMING UNCERTAIN, IT'S TIME TO ACT</h3>
+          <p className="text-slate-700 text-lg mb-8">
             Delays can lead to avoidable complications. Early support stabilizes care and reduces pressure on families.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="tel:+14434608684"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-navy rounded-md font-medium hover:bg-slate-50 transition-colors"
+              className="group inline-flex px-8 py-5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 hover:-translate-y-1 transition-all border border-white/20"
             >
-              <Phone className="w-4 h-4" />
               Call Now for Immediate Assistance +1 (443) 460-8684
             </a>
             <a
               href="#form"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 border-[1.5px] border-white text-white rounded-md font-medium hover:bg-white/10 transition-colors"
+              className="group inline-flex px-8 py-5 border-2 border-blue-500 text-blue-600 rounded-xl font-bold hover:bg-blue-50 hover:border-blue-600 hover:scale-105 hover:-translate-y-1 transition-all"
             >
               Request Support
             </a>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fade-in-up {
+          animation: fade-in-up 0.6s ease-out forwards;
+          opacity: 0;
+        }
+      `}</style>
     </section>
   )
 }
