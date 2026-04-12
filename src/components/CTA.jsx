@@ -7,49 +7,53 @@ export default function CTA() {
   }
 
   return (
-    <section className="py-32 bg-slate-50 relative overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1600&h=800&fit=crop&q=80" alt="" className="w-full h-full object-cover opacity-[0.04]" />
-      </div>
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-8 leading-tight">
-          You Don't Have to Figure This Out Alone
-        </h2>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-6">
-          Most families delay care.Not by choice, but because the next step isn't clear. A short consultation helps you understand:
-        </p>
+    <section className="py-24 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left: Text + Buttons */}
+          <div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+              You Don't Have to Figure This Out Alone
+            </h2>
+            <p className="text-lg text-slate-600 leading-relaxed mb-6">
+              Most families delay care. Not by choice, but because the next step isn't clear. A short consultation helps you understand:
+            </p>
 
-        <ul className="text-lg text-slate-700 max-w-2xl mx-auto mb-10 space-y-3 text-left ml-8">
-          <li>• What level of care is actually needed</li>
-          <li>• How quickly support can begin</li>
-          <li>• What the process looks like from start to care delivery</li>
-        </ul>
+            <ul className="text-lg text-slate-700 mb-8 space-y-3">
+              <li>• What level of care is actually needed</li>
+              <li>• How quickly support can begin</li>
+              <li>• What the process looks like from start to care delivery</li>
+            </ul>
 
-        <p className="text-slate-600 text-lg mb-10">Speak with a care coordinator today.</p>
+            <p className="text-slate-600 text-lg mb-8">Speak with a care coordinator today.</p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="tel:+14434608684"
-            className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-xl hover:bg-primary-dark transition-all"
-          >
-            <Phone className="w-5 h-5" /> Call Now
-          </a>
-          <a
-            href="#form"
-            onClick={e => scrollTo(e, '#form')}
-            className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold text-lg hover:bg-primary/5 transition-all"
-          >
-            <span>Book a Consultation</span>
-            <ArrowRight className="w-5 h-5" />
-          </a>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="tel:+14434608684"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-xl hover:bg-primary-dark transition-all"
+              >
+                <Phone className="w-5 h-5" /> Call Now
+              </a>
+              <a
+                href="#form"
+                onClick={e => scrollTo(e, '#form')}
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold text-lg hover:bg-primary/5 transition-all"
+              >
+                <span>Book a Consultation</span>
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Right: Image */}
+          <div className="hidden lg:block">
+            <img
+              src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=700&h=800&fit=crop&q=85"
+              alt="Caregiver with patient"
+              className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
+            />
+          </div>
         </div>
-      </div>
-
-      {/* Side image on desktop */}
-      <div className="hidden lg:block absolute right-0 top-0 w-1/3 h-full">
-        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=800&fit=crop&q=80" alt="Caregiver with patient" className="w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-50 to-transparent" />
       </div>
     </section>
   )
