@@ -1,20 +1,23 @@
 import { ArrowRight } from 'lucide-react'
+import imgHero from '../assets/images/hero.png'
+import imgMedication from '../assets/images/medication.png'
+import img75 from '../assets/images/75.png'
 
 const blogs = [
   {
     title: 'How to Know When Home Healthcare Is Needed',
     excerpt: 'Recognizing the signs early can make a significant difference in safety and quality of life for your loved ones.',
-    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&h=400&fit=crop&q=80',
+    image: imgHero,
   },
   {
     title: 'Understanding Different Types of In-Home Care',
     excerpt: 'From medication management to companionship, learn about the range of services available for home healthcare.',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop&q=80',
+    image: imgMedication,
   },
   {
     title: 'How to Reduce Fall Risk at Home',
     excerpt: 'Simple steps and professional support that can help prevent falls and improve mobility confidence.',
-    image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop&q=80',
+    image: img75,
   },
 ]
 

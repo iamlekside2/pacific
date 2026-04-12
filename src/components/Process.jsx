@@ -1,23 +1,26 @@
 import { Phone } from 'lucide-react'
+import imgAssessment from '../assets/images/care-assessment.png'
+import imgCareBegins from '../assets/images/care-begins.png'
+import img67 from '../assets/images/67.png'
 
 const steps = [
   {
     num: '1',
     title: 'Call or Request Support',
     desc: 'Provide information to help us understand your situation and immediate needs.',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&q=85',
+    image: img67,
   },
   {
     num: '2',
     title: 'Care Assessment',
     desc: 'We determine the appropriate level of care needed based on real conditions.',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop&q=85',
+    image: imgAssessment,
   },
   {
     num: '3',
     title: 'Care Begins',
     desc: 'Services are implemented quickly and swiftly, typically within 24–48 hours.',
-    image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop&q=85',
+    image: imgCareBegins,
   },
 ]
 

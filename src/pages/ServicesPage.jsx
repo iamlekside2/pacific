@@ -1,11 +1,16 @@
 import { Phone, ArrowRight, Pill, Users, Bath, Brain, Heart, CheckCircle } from 'lucide-react'
+import imgMedication from '../assets/images/medication.png'
+import imgAmbulatory from '../assets/images/ambulatory.png'
+import imgPersonalCare from '../assets/images/personal-care.png'
+import imgCognitive from '../assets/images/cognitive.png'
+import imgCompanionship from '../assets/images/companionship.png'
 import { Link } from 'react-router-dom'
 
 const services = [
   {
     icon: Pill,
     title: 'Medication Administration',
-    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=500&fit=crop&q=85',
+    image: imgMedication,
     includes: 'Accurate, timely support with prescribed medications, ensuring correct dosage and adherence to schedules.',
     why: 'Missed or incorrect medications can lead to complications, hospital readmissions, or worsening health conditions.',
     bestFor: [
@@ -18,7 +23,7 @@ const services = [
   {
     icon: Users,
     title: 'Ambulatory & Transfer Assistance',
-    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&h=500&fit=crop&q=85',
+    image: imgAmbulatory,
     includes: 'Support with walking, repositioning, and safe transfers (bed to chair, bathroom use, etc.).',
     why: 'Unassisted movement increases the risk of falls, injuries, and loss of confidence.',
     bestFor: [
@@ -31,7 +36,7 @@ const services = [
   {
     icon: Bath,
     title: 'Personal Care Support (Bathing, Toileting, Incontinence Care)',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop&q=85',
+    image: imgPersonalCare,
     includes: 'Hands-on assistance with essential hygiene and personal care routines.',
     why: 'When personal care becomes difficult, it impacts dignity, comfort, and overall health.',
     bestFor: [
@@ -44,7 +49,7 @@ const services = [
   {
     icon: Brain,
     title: 'Cognitive Stimulation & Support',
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop&q=85',
+    image: imgCognitive,
     includes: 'Structured engagement designed to support mental activity, memory, and emotional stability.',
     why: 'Cognitive decline can affect safety, routines, and overall well-being if left unaddressed.',
     bestFor: [
@@ -57,7 +62,7 @@ const services = [
   {
     icon: Heart,
     title: 'Companionship Services',
-    image: 'https://images.unsplash.com/photo-1516307365426-bea591f05011?w=800&h=500&fit=crop&q=85',
+    image: imgCompanionship,
     includes: 'Meaningful social interaction, conversation, and presence throughout the day.',
     why: 'Isolation can lead to emotional decline, reduced motivation, and worsening health outcomes.',
     bestFor: [

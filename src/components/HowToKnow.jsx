@@ -1,4 +1,5 @@
 import { CheckCircle2, ArrowRight } from 'lucide-react'
+import imgHero from '../assets/images/hero.png'
 
 const indicators = [
   'When cognitive changes begin to affect safety or daily routines',
@@ -20,7 +21,7 @@ export default function HowToKnow() {
       {/* Background image overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1600&h=800&fit=crop&q=80"
+          src={imgHero}
           alt=""
           className="w-full h-full object-cover opacity-10"
         />

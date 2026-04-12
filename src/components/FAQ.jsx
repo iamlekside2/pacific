@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import imgFaq from '../assets/images/faq.png'
 import { ChevronDown } from 'lucide-react'
 
 const faqs = [
@@ -76,7 +77,7 @@ export default function FAQ() {
           {/* Right: Image */}
           <div className="hidden lg:block">
             <img
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=800&fit=crop&q=85"
+              src={imgFaq}
               alt="Healthcare professional"
               className="w-full h-[600px] object-cover rounded-2xl shadow-xl sticky top-28"
             />

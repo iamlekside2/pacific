@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, Shield, Send, Check, CheckCircle } from 'lucide-react'
+import img67 from '../assets/images/67.png'
 
 const whenToReach = [
   'Care needs suddenly increase',
@@ -65,7 +66,7 @@ export default function ContactPage() {
             </div>
             <div className="hidden lg:block">
               <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=700&fit=crop&q=85"
+                src={img67}
                 alt="Healthcare professional with patient"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
               />

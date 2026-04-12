@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Send, Check, ArrowRight, ArrowLeft } from 'lucide-react'
+import imgConsultation from '../assets/images/consultation.png'
+import img68 from '../assets/images/68.png'
 
 export default function ConsultationForm() {
   const [step, setStep] = useState(1)
@@ -34,12 +36,12 @@ export default function ConsultationForm() {
           {/* Left: Image + info */}
           <div className="lg:col-span-2 hidden lg:block space-y-6">
             <img
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=500&fit=crop&q=85"
+              src={imgConsultation}
               alt="Caregiver helping patient"
               className="w-full h-72 object-cover rounded-2xl shadow-xl"
             />
             <img
-              src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=500&fit=crop&q=85"
+              src={img68}
               alt="Home healthcare support"
               className="w-full h-72 object-cover rounded-2xl shadow-xl"
             />

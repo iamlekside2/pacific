@@ -1,39 +1,46 @@
+import imgHospital from '../assets/images/hospital-discharge.png'
+import imgFalls from '../assets/images/falls.png'
+import imgMedMis from '../assets/images/medication-mismanagement.png'
+import imgCogChanges from '../assets/images/cognitive-changes.png'
+import imgDeclining from '../assets/images/declining-function.png'
+import imgBurnout from '../assets/images/caregiver-burnout.png'
+
 const situations = [
   {
     title: 'After Hospital Discharge',
     problem: "You've been told your loved one needs supervision at home, but instructions are unclear, follow-ups are hard to coordinate, and you're unsure what level of care is actually required. Small gaps in care can quickly turn into setbacks.",
     solution: 'We provide structured in-home support after discharge—helping manage medications, monitor recovery, and maintain stability so progress continues safely at home.',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=250&fit=crop&q=80',
+    image: imgHospital,
   },
   {
     title: 'Increasing Falls or Mobility Issues',
     problem: 'Simple movements—getting out of bed, using the bathroom, walking short distances—are becoming unpredictable. You\'re noticing near-falls or hesitations, and the risk of injury is increasing.',
     solution: 'We assist with safe movement, transfers, and ambulation—reducing fall risk while helping maintain as much independence as possible.',
-    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=400&h=250&fit=crop&q=80',
+    image: imgFalls,
   },
   {
     title: 'Medication Mismanagement',
     problem: 'Medications are being missed, taken incorrectly, or causing confusion. You\'re concerned, but managing schedules and dosages consistently is becoming difficult.',
     solution: 'We ensure medications are administered correctly and on time, reducing health risks and bringing consistency to daily routines.',
-    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=250&fit=crop&q=80',
+    image: imgMedMis,
   },
   {
     title: 'When Cognitive Changes Begin to Affect Safety or Daily Routines',
     problem: "You're noticing forgetfulness, confusion, or changes in behavior that are starting to affect safety: missed medications, wandering, or difficulty following daily routines.",
     solution: 'We provide structured support and consistent supervision to help maintain safety, reinforce routines, and support cognitive engagement in a calm, familiar environment.',
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop&q=80',
+    image: imgCogChanges,
   },
   {
     title: 'Declining Daily Function',
     problem: 'Tasks that were once routine, like bathing, dressing, toileting, moving around, now require assistance. Maintaining dignity and consistency is becoming more difficult without support.',
     solution: 'We assist with essential daily care in a respectful, structured way; helping maintain comfort, hygiene, and stability.',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop&q=80',
+    image: imgDeclining,
   },
   {
     title: 'Caregiver Burnout',
     problem: "You're doing everything you can: balancing care, work, and personal responsibilities; but it's becoming physically and emotionally unsustainable. There's little time to rest, and the pressure keeps building.",
     solution: 'We provide dependable, ongoing support that eases the load, so care continues without interruption, and you\'re not managing it alone.',
-    image: 'https://images.unsplash.com/photo-1516307365426-bea591f05011?w=400&h=250&fit=crop&q=80',
+    image: imgBurnout,
   },
 ]
 

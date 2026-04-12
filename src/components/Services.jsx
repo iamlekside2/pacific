@@ -1,4 +1,9 @@
 import { Pill, Users, Bath, Brain, Heart } from 'lucide-react'
+import imgMedication from '../assets/images/medication.png'
+import imgAmbulatory from '../assets/images/ambulatory.png'
+import imgPersonalCare from '../assets/images/personal-care.png'
+import imgCognitive from '../assets/images/cognitive.png'
+import imgCompanionship from '../assets/images/companionship.png'
 
 const services = [
   {
@@ -6,35 +11,35 @@ const services = [
     title: 'Medication Administration',
     desc: 'Accurate, timely medication support to prevent missed doses and health complications.',
     best: 'Best for: Patients with complex prescriptions or post-hospital care needs.',
-    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=300&fit=crop&q=80',
+    image: imgMedication,
   },
   {
     icon: Users,
     title: 'Ambulatory & Transfer Assistance',
     desc: 'Safe movement support to reduce fall risk and improve mobility confidence.',
     best: 'Best for: Individuals with weakness, instability, or recent injury.',
-    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&h=300&fit=crop&q=80',
+    image: imgAmbulatory,
   },
   {
     icon: Bath,
     title: 'Personal Care (Bathing, Toileting, Incontinence Support)',
     desc: 'Dignified assistance with essential daily routines.',
     best: 'Best for: Individuals who require help maintaining hygiene and daily comfort.',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=300&fit=crop&q=80',
+    image: imgPersonalCare,
   },
   {
     icon: Brain,
     title: 'Cognitive Stimulation',
     desc: 'Structured engagement to support mental clarity and emotional stability.',
     best: 'Best for: Patients experiencing memory decline or reduced cognitive activity.',
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=300&fit=crop&q=80',
+    image: imgCognitive,
   },
   {
     icon: Heart,
     title: 'Companionship Support',
     desc: 'Consistent presence to reduce isolation and improve overall well-being.',
     best: 'Best for: Individuals who spend long periods alone or require social support.',
-    image: 'https://images.unsplash.com/photo-1516307365426-bea591f05011?w=600&h=300&fit=crop&q=80',
+    image: imgCompanionship,
   },
 ]
 

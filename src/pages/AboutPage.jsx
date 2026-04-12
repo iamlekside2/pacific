@@ -1,4 +1,5 @@
 import { Phone, CheckCircle, Shield, Clock, Users, Heart, ArrowRight } from 'lucide-react'
+import img71 from '../assets/images/71.png'
 import { Link } from 'react-router-dom'
 
 const differentiators = [
@@ -142,7 +143,7 @@ export default function AboutPage() {
               <div className="absolute -inset-3 bg-gradient-to-r from-blue-400/20 to-blue-600/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-slate-200 group-hover:border-blue-400 group-hover:shadow-2xl group-hover:shadow-blue-500/15 transition-all duration-500">
                 <img
-                  src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=700&h=800&fit=crop&q=90"
+                  src={img71}
                   alt="Blessing Okeke – Founder, Pacific Home Healthcare"
                   className="w-full h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />

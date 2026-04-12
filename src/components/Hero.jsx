@@ -1,4 +1,6 @@
 import { Phone, ArrowRight } from 'lucide-react'
+import heroImg from '../assets/images/hero.png'
+import underHeroImg from '../assets/images/under-hero.png'
 
 export default function Hero() {
   const scrollTo = (e, id) => {
@@ -34,7 +36,7 @@ export default function Hero() {
             Reliable in-home healthcare for individuals who need help with medication, mobility, and personal care. Delivered with consistency and professional oversight.
           </p>
 
-          {/* CTA Buttons — moved up, right after subtitle */}
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <a
               href="tel:+14434608684"
@@ -55,18 +57,18 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Large Image — overlaps hero, top visible */}
+      {/* Large Image — overlaps hero */}
       <div className="relative -mt-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/30 border border-white/10">
           <img
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1400&h=600&fit=crop&q=90"
+            src={underHeroImg}
             alt="Professional Healthcare Caregiver"
             className="w-full h-[450px] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-60" />
         </div>
 
-        {/* Service Tags — below the image */}
+        {/* Service Tags */}
         <div className="flex flex-wrap justify-center gap-2 mt-8">
           {['Medication Support', 'Mobility Assistance', 'Personal Care', 'Companionship', 'Cognitive Support'].map((tag) => (
             <span key={tag} className="px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-medium text-blue-700 hover:bg-blue-100 hover:border-blue-300 transition-all duration-300 hover:scale-105">

@@ -1,4 +1,5 @@
 import { Phone, ArrowRight } from 'lucide-react'
+import img69 from '../assets/images/69.png'
 
 export default function CTA() {
   const scrollTo = (e, id) => {
@@ -48,7 +49,7 @@ export default function CTA() {
           {/* Right: Image */}
           <div className="hidden lg:block">
             <img
-              src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=700&h=800&fit=crop&q=85"
+              src={img69}
               alt="Caregiver with patient"
               className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
             />

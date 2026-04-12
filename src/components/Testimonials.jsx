@@ -1,4 +1,7 @@
 import { Star } from 'lucide-react'
+import img72 from '../assets/images/72.png'
+import img73 from '../assets/images/73.png'
+import img74 from '../assets/images/74.png'
 
 const testimonials = [
   {
@@ -6,21 +9,21 @@ const testimonials = [
     role: 'Family of Care Recipient',
     text: 'The peace of mind we gained knowing my mother was safe and well-cared for was invaluable. The team was professional, compassionate, and reliable.',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&q=80',
+    avatar: img72,
   },
   {
     name: 'Dicta Cheng',
     role: 'Care Recipient',
     text: 'After my surgery, the support made my recovery smooth and comfortable. The caregivers treated me with dignity and helped me regain confidence.',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80',
+    avatar: img73,
   },
   {
     name: 'Patricia Oakley',
     role: 'Family of Care Recipient',
     text: 'We were overwhelmed with caregiving. Pacific stepped in and gave us breathing room while ensuring excellent care. Highly recommend.',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&q=80',
+    avatar: img74,
   },
 ]
 
