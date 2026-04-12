@@ -10,15 +10,12 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative pt-20 overflow-hidden">
-      {/* Dark Hero Area */}
-      <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 pb-56">
-        {/* Animated Background Elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
-
-        {/* Grid Background */}
-        <div className="absolute inset-0 opacity-10">
-          <div style={{backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%, transparent)', backgroundSize: '50px 50px'}} className="w-full h-full" />
+      {/* Hero Area with background image */}
+      <div className="relative pb-56">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-slate-900/70" />
         </div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-4 relative z-10 text-center">
