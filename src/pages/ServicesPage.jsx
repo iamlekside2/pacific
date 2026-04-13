@@ -227,7 +227,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.1) 10px, rgba(255,255,255,.1) 20px)'}} />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-4xl font-bold mb-8">Why Families Choose Pacific Home Healthcare</h2>
+          <h2 className="text-4xl font-bold mb-8">Why Families Choose THE PACIFIC HOMECARE</h2>
           <ul className="space-y-3 mb-8">
             {whyChoose.map(item => (
               <li key={item} className="flex items-center gap-3 text-white/90 text-lg"><CheckCircle className="w-5 h-5 flex-shrink-0" /> {item}</li>

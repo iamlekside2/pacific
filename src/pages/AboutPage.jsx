@@ -37,7 +37,7 @@ export default function AboutPage() {
             Care Built on Professional Responsibility and Personal Commitment
           </h1>
           <p className="text-lg text-blue-100/80 max-w-2xl mx-auto leading-relaxed mb-10">
-            Pacific Home Healthcare provides structured, dependable in-home care designed to support safety, stability, and dignity for individuals and the families who rely on us.
+            THE PACIFIC HOMECARE provides structured, dependable in-home care designed to support safety, stability, and dignity for individuals and the families who rely on us.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+14434608684" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-2xl font-bold shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/80 hover:scale-105 hover:-translate-y-1 transition-all duration-300 border border-white/20">
@@ -54,7 +54,7 @@ export default function AboutPage() {
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">WHO WE ARE</h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-4">Pacific Home Healthcare is a residential healthcare provider focused on delivering consistent, high-quality in-home care for individuals who require daily support.</p>
+          <p className="text-lg text-slate-600 leading-relaxed mb-4">THE PACIFIC HOMECARE is a residential healthcare provider focused on delivering consistent, high-quality in-home care for individuals who require daily support.</p>
           <p className="text-lg text-slate-600 leading-relaxed mb-4">We work with families navigating:</p>
           <ul className="space-y-2 mb-6">
             {['Recovery after hospital discharge', 'Ongoing health conditions', 'Age-related decline', 'Increasing care needs at home'].map(item => (
@@ -144,14 +144,14 @@ export default function AboutPage() {
               <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-slate-200 group-hover:border-blue-400 group-hover:shadow-2xl group-hover:shadow-blue-500/15 transition-all duration-500">
                 <img
                   src={img71}
-                  alt="Blessing Okeke – Founder, Pacific Home Healthcare"
+                  alt="Blessing Okeke – Founder, THE PACIFIC HOMECARE"
                   className="w-full h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="bg-white/10 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/30">
                     <p className="text-white font-bold text-lg">Blessing Okeke</p>
-                    <p className="text-blue-200 text-sm">Founder, Pacific Home Healthcare</p>
+                    <p className="text-blue-200 text-sm">Founder, THE PACIFIC HOMECARE</p>
                   </div>
                 </div>
               </div>
@@ -159,7 +159,7 @@ export default function AboutPage() {
             <div className="space-y-8">
               <p className="text-sm font-bold text-blue-600 uppercase tracking-widest">Founder Profile</p>
               <h2 className="text-4xl font-bold text-slate-900">Blessing Okeke</h2>
-              <p className="text-lg text-slate-700 leading-relaxed">Pacific Home Healthcare is led by a dedicated healthcare professional focused on delivering dependable, patient-centered in-home care.</p>
+              <p className="text-lg text-slate-700 leading-relaxed">THE PACIFIC HOMECARE is led by a dedicated healthcare professional focused on delivering dependable, patient-centered in-home care.</p>
               <p className="text-lg text-slate-700 leading-relaxed border-l-4 border-blue-500 pl-6 bg-blue-50/50 py-4 rounded-r-xl italic">
                 Care is structured to be consistent, responsive, and reliable so families are not left managing uncertainty on their own.
               </p>

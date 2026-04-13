@@ -188,7 +188,7 @@ export default function ContactPage() {
                 </button>
 
                 <p className="text-xs text-slate-500 text-center leading-relaxed">
-                  By submitting this form, you agree to be contacted by Pacific Home Healthcare regarding your request. This may include phone calls, text messages, or email using the information you provided. Your information will be kept confidential and used only to respond to your inquiry and coordinate care.
+                  By submitting this form, you agree to be contacted by THE PACIFIC HOMECARE regarding your request. This may include phone calls, text messages, or email using the information you provided. Your information will be kept confidential and used only to respond to your inquiry and coordinate care.
                 </p>
               </form>
             </div>
@@ -225,7 +225,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-4xl font-bold text-slate-900 mb-8">Our Location</h2>
               <div className="bg-white rounded-2xl p-8 border-2 border-slate-200 shadow-sm mb-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Pacific Home Healthcare</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">THE PACIFIC HOMECARE</h3>
                 <p className="text-lg text-slate-600">403 W Pennsylvania Avenue<br />Towson, MD 21204</p>
               </div>
               <div className="bg-slate-200 rounded-2xl h-64 flex items-center justify-center">

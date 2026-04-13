@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="group hover:scale-105 transition-transform duration-300">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center font-bold text-xl group-hover:bg-white/30 transition-colors">P</div>
-              <div><p className="text-sm font-bold">Pacific</p><p className="text-xs text-white/80">Home Healthcare</p></div>
+              <div><p className="text-sm font-bold">THE PACIFIC</p><p className="text-xs text-white/80">HOMECARE</p></div>
             </div>
             <p className="text-white/80 text-sm mb-6">Professional in-home healthcare across Maryland, delivered with consistency, compassion, and clinical expertise.</p>
             <div className="space-y-3 text-sm">
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 animate-fade-in-up">
-          <p className="text-white/60 text-sm">&copy; 2026 Pacific Home Healthcare. All rights reserved.</p>
+          <p className="text-white/60 text-sm">&copy; 2026 THE PACIFIC HOMECARE. All rights reserved.</p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-white/60 hover:text-white transition-colors hover:scale-110">Privacy Policy</a>
             <a href="#" className="text-white/60 hover:text-white transition-colors hover:scale-110">Terms & Conditions</a>

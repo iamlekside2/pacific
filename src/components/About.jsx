@@ -28,7 +28,7 @@ export default function About() {
             <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-slate-200 group-hover:border-blue-400 group-hover:shadow-2xl group-hover:shadow-blue-500/15 transition-all duration-500">
               <img
                 src={img71}
-                alt="Blessing Okeke – Founder, Pacific Home Healthcare"
+                alt="Blessing Okeke – Founder, THE PACIFIC HOMECARE"
                 className="w-full h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               {/* Gradient overlay */}
@@ -38,7 +38,7 @@ export default function About() {
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/30">
                   <p className="text-white font-bold text-lg">Blessing Okeke</p>
-                  <p className="text-blue-200 text-sm">Founder, Pacific Home Healthcare</p>
+                  <p className="text-blue-200 text-sm">Founder, THE PACIFIC HOMECARE</p>
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function About() {
               <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Founder</p>
               <h3 className="text-3xl font-bold text-slate-900 mb-4">Blessing Okeke</h3>
               <p className="text-lg text-slate-700 leading-relaxed">
-                Pacific Home Healthcare is led by a dedicated healthcare professional focused on delivering dependable, patient-centered in-home care.
+                THE PACIFIC HOMECARE is led by a dedicated healthcare professional focused on delivering dependable, patient-centered in-home care.
               </p>
             </div>
 

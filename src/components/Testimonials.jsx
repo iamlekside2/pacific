@@ -21,7 +21,7 @@ const testimonials = [
   {
     name: 'Patricia Oakley',
     role: 'Family of Care Recipient',
-    text: 'We were overwhelmed with caregiving. Pacific stepped in and gave us breathing room while ensuring excellent care. Highly recommend.',
+    text: 'We were overwhelmed with caregiving. The Pacific Homecare stepped in and gave us breathing room while ensuring excellent care. Highly recommend.',
     rating: 5,
     avatar: img74,
   },

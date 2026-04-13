@@ -190,7 +190,7 @@ export default function ConsultationForm() {
                     </div>
 
                     <p className="text-[11px] text-slate-400 text-center leading-relaxed">
-                      By submitting, you agree to be contacted by Pacific Home Healthcare. Your information is confidential and used only for your inquiry.
+                      By submitting, you agree to be contacted by THE PACIFIC HOMECARE. Your information is confidential and used only for your inquiry.
                     </p>
                   </div>
                 )}
