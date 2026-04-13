@@ -66,8 +66,8 @@ export default function Footer() {
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 animate-fade-in-up">
           <p className="text-white/60 text-sm">&copy; 2026 THE PACIFIC HOMECARE. All rights reserved.</p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-white/60 hover:text-white transition-colors hover:scale-110">Privacy Policy</a>
-            <a href="#" className="text-white/60 hover:text-white transition-colors hover:scale-110">Terms & Conditions</a>
+            <Link to="/privacy-policy" className="text-white/60 hover:text-white transition-colors hover:scale-110">Privacy Policy</Link>
+            <Link to="/terms-conditions" className="text-white/60 hover:text-white transition-colors hover:scale-110">Terms & Conditions</Link>
           </div>
         </div>
       </div>
