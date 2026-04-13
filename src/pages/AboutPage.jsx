@@ -1,5 +1,6 @@
 import { Phone, CheckCircle, Shield, Clock, Users, Heart, ArrowRight } from 'lucide-react'
 import imgProfile from '../assets/images/profile.jpeg'
+import img82 from '../assets/images/82.png'
 import { Link } from 'react-router-dom'
 
 const differentiators = [
@@ -52,16 +53,34 @@ export default function AboutPage() {
 
       {/* Who We Are */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">WHO WE ARE</h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-4">THE PACIFIC HOMECARE is a residential healthcare provider focused on delivering consistent, high-quality in-home care for individuals who require daily support.</p>
-          <p className="text-lg text-slate-600 leading-relaxed mb-4">We work with families navigating:</p>
-          <ul className="space-y-2 mb-6">
-            {['Recovery after hospital discharge', 'Ongoing health conditions', 'Age-related decline', 'Increasing care needs at home'].map(item => (
-              <li key={item} className="flex items-center gap-2 text-slate-700 text-lg"><CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" /> {item}</li>
-            ))}
-          </ul>
-          <p className="text-lg text-slate-600 leading-relaxed">Our role is simple but critical: to bring clarity, structure, and reliable care into situations that often feel uncertain.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Content */}
+            <div>
+              <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">About Us</p>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Who We Are</h2>
+              <p className="text-lg text-slate-600 leading-relaxed mb-5">THE PACIFIC HOMECARE is a residential healthcare provider focused on delivering consistent, high-quality in-home care for individuals who require daily support.</p>
+              <p className="text-lg text-slate-700 font-semibold mb-4">We work with families navigating:</p>
+              <ul className="space-y-3 mb-6">
+                {['Recovery after hospital discharge', 'Ongoing health conditions', 'Age-related decline', 'Increasing care needs at home'].map(item => (
+                  <li key={item} className="flex items-center gap-3 text-slate-700 text-lg">
+                    <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-5 h-5 text-blue-600" />
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-xl">
+                <p className="text-slate-700 leading-relaxed italic">Our role is simple but critical: to bring <span className="font-bold text-blue-700">clarity, structure, and reliable care</span> into situations that often feel uncertain.</p>
+              </div>
+            </div>
+
+            {/* Right: Image */}
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img src={img82} alt="Caregiver supporting patient" className="w-full h-[550px] object-cover" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -89,7 +108,7 @@ export default function AboutPage() {
       {/* Who We Support */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12">WHO WE SUPPORT</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-12">Who We Support</h2>
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Our services are designed for individuals who:</h3>
