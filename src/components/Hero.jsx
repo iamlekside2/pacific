@@ -56,13 +56,21 @@ export default function Hero() {
 
       {/* Large Image — overlaps hero */}
       <div className="relative -mt-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/30 border border-white/10">
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/30 border border-white/10">
           <img
             src={underHeroImg}
             alt="Professional Healthcare Caregiver"
             className="w-full h-[450px] object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-60" />
+          {/* Darker gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+
+          {/* Title overlay */}
+          <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg max-w-4xl">
+              Because We Understand How Stressful Caring Alone Can Be
+            </h2>
+          </div>
         </div>
 
         {/* Service Tags */}
