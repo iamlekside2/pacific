@@ -108,21 +108,51 @@ export default function AboutPage() {
       {/* Who We Support */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12">Who We Support</h2>
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Our services are designed for individuals who:</h3>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Our Community</p>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Who We Support</h2>
+            <p className="text-lg text-slate-600">Whether it's individual care or family relief — we're built to serve both.</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Individuals Card */}
+            <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-10 border-2 border-blue-200 shadow-sm hover:shadow-xl transition-all duration-300">
+              <div className="flex items-center gap-4 mb-6 pb-6 border-b-2 border-blue-100">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30">
+                  <Users className="w-7 h-7 text-white" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold text-blue-600 uppercase tracking-wider">For Individuals</p>
+                  <h3 className="text-xl font-bold text-slate-900">Our services are designed for individuals who:</h3>
+                </div>
+              </div>
               <ul className="space-y-3">
                 {weSupport.map(item => (
-                  <li key={item} className="flex items-start gap-2 text-slate-700 leading-relaxed"><CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-1" /> {item}</li>
+                  <li key={item} className="flex items-start gap-3 text-slate-700 leading-relaxed">
+                    <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
                 ))}
               </ul>
             </div>
-            <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">We also support families who are:</h3>
+
+            {/* Families Card */}
+            <div className="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-10 border-2 border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300">
+              <div className="flex items-center gap-4 mb-6 pb-6 border-b-2 border-slate-100">
+                <div className="w-14 h-14 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl flex items-center justify-center shadow-lg shadow-slate-500/30">
+                  <Heart className="w-7 h-7 text-white" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">For Families</p>
+                  <h3 className="text-xl font-bold text-slate-900">We also support families who are:</h3>
+                </div>
+              </div>
               <ul className="space-y-3">
                 {familySupport.map(item => (
-                  <li key={item} className="flex items-start gap-2 text-slate-700 leading-relaxed"><CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-1" /> {item}</li>
+                  <li key={item} className="flex items-start gap-3 text-slate-700 leading-relaxed">
+                    <CheckCircle className="w-5 h-5 text-slate-700 flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
                 ))}
               </ul>
             </div>
