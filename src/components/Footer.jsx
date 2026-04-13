@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 export default function Footer() {
 
@@ -12,9 +13,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="group hover:scale-105 transition-transform duration-300">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center font-bold text-xl group-hover:bg-white/30 transition-colors">P</div>
-              <div><p className="text-sm font-bold">THE PACIFIC</p><p className="text-xs text-white/80">HOMECARE</p></div>
+            <div className="mb-6">
+              <img src={logo} alt="THE PACIFIC HOMECARE" className="h-16 w-auto brightness-0 invert" />
             </div>
             <p className="text-white/80 text-sm mb-6">Professional in-home healthcare across Maryland, delivered with consistency, compassion, and clinical expertise.</p>
             <div className="space-y-3 text-sm">
