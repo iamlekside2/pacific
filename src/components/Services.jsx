@@ -118,7 +118,7 @@ export default function Services() {
               </div>
               <div className="flex items-center gap-3 text-sm text-white/90">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>info@pacifichomehealthcare.com</span>
+                <span>info@thepacifichomecare.com</span>
               </div>
             </div>
 

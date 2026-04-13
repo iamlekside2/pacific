@@ -244,13 +244,22 @@ export default function ContactPage() {
                     <p className="text-lg font-bold text-slate-900">+1 (443) 460-8684</p>
                   </div>
                 </a>
-                <a href="mailto:info@pacifichomehealthcare.com" className="flex items-center gap-4 p-6 bg-white rounded-2xl border-2 border-slate-200 shadow-sm hover:border-blue-400 hover:shadow-lg transition-all group">
+                <a href="mailto:info@thepacifichomecare.com" className="flex items-center gap-4 p-6 bg-white rounded-2xl border-2 border-slate-200 shadow-sm hover:border-blue-400 hover:shadow-lg transition-all group">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500/10 to-blue-400/5 rounded-2xl flex items-center justify-center group-hover:from-blue-500/20 group-hover:to-blue-400/10 transition-all">
                     <Mail className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
                     <p className="text-sm text-slate-500">Email</p>
-                    <p className="text-lg font-bold text-slate-900">info@pacifichomehealthcare.com</p>
+                    <p className="text-lg font-bold text-slate-900">info@thepacifichomecare.com</p>
+                  </div>
+                </a>
+                <a href="mailto:referrals@thepacifichomecare.com" className="flex items-center gap-4 p-6 bg-white rounded-2xl border-2 border-slate-200 shadow-sm hover:border-blue-400 hover:shadow-lg transition-all group">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500/10 to-blue-400/5 rounded-2xl flex items-center justify-center group-hover:from-blue-500/20 group-hover:to-blue-400/10 transition-all">
+                    <Mail className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-slate-500">Referrals</p>
+                    <p className="text-lg font-bold text-slate-900">referrals@thepacifichomecare.com</p>
                   </div>
                 </a>
               </div>
