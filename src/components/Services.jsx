@@ -92,19 +92,6 @@ export default function Services() {
             </div>
           ))}
 
-          {/* Contact Card */}
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white flex flex-col justify-between shadow-lg shadow-blue-500/30 group animate-fade-in-up" style={{animationDelay: `${0.1 + services.length * 0.06}s`}}>
-            <div className="group-hover:scale-110 transition-transform duration-300">
-              <h3 className="text-2xl font-bold mb-3">Speak with a care coordinator</h3>
-              <p className="text-white/90 mb-8">Determine the right level of support for your unique situation.</p>
-            </div>
-            <a
-              href="tel:+14434608684"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-600 rounded-xl font-bold hover:bg-slate-100 hover:scale-105 hover:-translate-y-1 transition-all shadow-lg"
-            >
-              Call Now +1 (443) 460-8684
-            </a>
-          </div>
         </div>
 
         {/* Bottom CTA */}
