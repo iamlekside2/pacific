@@ -1,5 +1,5 @@
 import { MapPin } from 'lucide-react'
-import img71 from '../assets/images/71.png'
+import imgProfile from '../assets/images/profile.jpeg'
 
 const areas = [
   { city: 'Towson, MD', note: 'Primary service area' },
@@ -27,7 +27,7 @@ export default function About() {
             {/* Image card */}
             <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-slate-200 group-hover:border-blue-400 group-hover:shadow-2xl group-hover:shadow-blue-500/15 transition-all duration-500">
               <img
-                src={img71}
+                src={imgProfile}
                 alt="Blessing Okeke – Founder, THE PACIFIC HOMECARE"
                 className="w-full h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
