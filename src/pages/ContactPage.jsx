@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, Shield, Send, Check, CheckCircle } from 'lucide-react'
 import img67 from '../assets/images/67.png'
+import img86 from '../assets/images/86.png'
 
 const whenToReach = [
   'Care needs suddenly increase',
@@ -228,9 +229,30 @@ export default function ContactPage() {
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">THE PACIFIC HOMECARE</h3>
                 <p className="text-lg text-slate-600">403 W Pennsylvania Avenue<br />Towson, MD 21204</p>
               </div>
-              <div className="bg-slate-200 rounded-2xl h-64 flex items-center justify-center">
-                <p className="text-slate-500">Map — Towson, MD 21204</p>
-              </div>
+              <a
+                href="https://maps.google.com/?q=403+W+Pennsylvania+Avenue,+Towson,+MD+21204"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative rounded-2xl overflow-hidden shadow-lg group"
+              >
+                <img
+                  src={img86}
+                  alt="THE PACIFIC HOMECARE location"
+                  className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-xl px-5 py-4 flex items-center gap-3 shadow-lg">
+                    <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-slate-500">Visit Us</p>
+                      <p className="font-bold text-slate-900">Get Directions →</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
             <div>
               <h2 className="text-4xl font-bold text-slate-900 mb-8">Contact Details</h2>
