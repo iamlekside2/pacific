@@ -1,5 +1,6 @@
 import { MapPin } from 'lucide-react'
 import imgProfile from '../assets/images/profile.jpeg'
+import { useFormModal } from '../context/FormModalContext'
 
 const areas = [
   { city: 'Towson, MD', note: 'Primary service area' },
@@ -8,6 +9,7 @@ const areas = [
 ]
 
 export default function About() {
+  const { openModal } = useFormModal()
   return (
     <section id="about" className="py-32 bg-slate-50 relative overflow-hidden">
       {/* Subtle background */}
@@ -54,12 +56,12 @@ export default function About() {
               Care is structured to be consistent, responsive, and reliable so families are not left managing uncertainty on their own.
             </p>
 
-            <a
-              href="#form"
+            <button
+              onClick={openModal}
               className="inline-flex px-7 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 hover:-translate-y-1 transition-all border border-white/20"
             >
               Get In Touch
-            </a>
+            </button>
           </div>
         </div>
 

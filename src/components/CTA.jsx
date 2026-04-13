@@ -1,11 +1,9 @@
 import { Phone, ArrowRight } from 'lucide-react'
 import img69 from '../assets/images/69.png'
+import { useFormModal } from '../context/FormModalContext'
 
 export default function CTA() {
-  const scrollTo = (e, id) => {
-    e.preventDefault()
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
+  const { openModal } = useFormModal()
 
   return (
     <section className="py-24 bg-slate-50">
@@ -35,14 +33,13 @@ export default function CTA() {
               >
                 <Phone className="w-5 h-5" /> Call Now
               </a>
-              <a
-                href="#form"
-                onClick={e => scrollTo(e, '#form')}
+              <button
+                onClick={openModal}
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold text-lg hover:bg-primary/5 transition-all"
               >
                 <span>Book a Consultation</span>
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </button>
             </div>
           </div>
 

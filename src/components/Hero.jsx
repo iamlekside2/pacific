@@ -1,12 +1,10 @@
 import { Phone, ArrowRight } from 'lucide-react'
 import heroImg from '../assets/images/hero.png'
 import underHeroImg from '../assets/images/under-hero.png'
+import { useFormModal } from '../context/FormModalContext'
 
 export default function Hero() {
-  const scrollTo = (e, id) => {
-    e.preventDefault()
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
+  const { openModal } = useFormModal()
 
   return (
     <section id="home" className="relative pt-20 overflow-hidden">
@@ -42,14 +40,13 @@ export default function Hero() {
               <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
               <span>Call Now: +1 (443) 460-8684</span>
             </a>
-            <a
-              href="#form"
-              onClick={e => scrollTo(e, '#form')}
+            <button
+              onClick={openModal}
               className="group inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-white/40 text-white rounded-2xl font-bold text-base backdrop-blur-md bg-white/10 hover:bg-white/20 hover:border-white/70 hover:scale-105 hover:-translate-y-1 transition-all duration-300"
             >
               <span>Get Help Understanding Your Care Options</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </a>
+            </button>
           </div>
         </div>
       </div>

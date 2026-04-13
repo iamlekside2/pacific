@@ -44,7 +44,10 @@ const situations = [
   },
 ]
 
+import { useFormModal } from '../context/FormModalContext'
+
 export default function Situations() {
+  const { openModal } = useFormModal()
   return (
     <section className="py-32 bg-white relative overflow-hidden">
       {/* Subtle Background Elements */}
@@ -108,12 +111,12 @@ export default function Situations() {
             >
               Call Now for Immediate Assistance +1 (443) 460-8684
             </a>
-            <a
-              href="#form"
+            <button
+              onClick={openModal}
               className="group inline-flex px-8 py-5 border-2 border-blue-500 text-blue-600 rounded-xl font-bold hover:bg-blue-50 hover:border-blue-600 hover:scale-105 hover:-translate-y-1 transition-all"
             >
               Get Help Understanding Your Care Options
-            </a>
+            </button>
           </div>
         </div>
       </div>

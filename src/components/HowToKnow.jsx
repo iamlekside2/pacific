@@ -1,5 +1,6 @@
 import { CheckCircle2, ArrowRight } from 'lucide-react'
 import imgHero from '../assets/images/hero.png'
+import { useFormModal } from '../context/FormModalContext'
 
 const indicators = [
   'When cognitive changes begin to affect safety or daily routines',
@@ -11,10 +12,7 @@ const indicators = [
 ]
 
 export default function HowToKnow() {
-  const scrollTo = (e, id) => {
-    e.preventDefault()
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
+  const { openModal } = useFormModal()
 
   return (
     <section className="relative mt-16 py-20 bg-navy overflow-hidden">
@@ -49,13 +47,12 @@ export default function HowToKnow() {
           <p className="text-white text-lg font-semibold">
             Early support helps prevent complications and reduces long-term risk.
           </p>
-          <a
-            href="#form"
-            onClick={e => scrollTo(e, '#form')}
+          <button
+            onClick={openModal}
             className="inline-flex items-center gap-2 px-6 py-3 bg-white text-navy rounded-xl font-bold text-sm hover:bg-blue-50 hover:scale-105 transition-all whitespace-nowrap shadow-lg"
           >
             Get a Free Consultation <ArrowRight className="w-4 h-4" />
-          </a>
+          </button>
         </div>
       </div>
     </section>

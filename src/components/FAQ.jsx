@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import imgFaq from '../assets/images/faq.png'
 import { ChevronDown } from 'lucide-react'
+import { useFormModal } from '../context/FormModalContext'
 
 const faqs = [
   {
@@ -22,6 +23,7 @@ const faqs = [
 ]
 
 export default function FAQ() {
+  const { openModal } = useFormModal()
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
@@ -97,12 +99,12 @@ export default function FAQ() {
             >
               Call Now for Immediate Assistance +1 (443) 460-8684
             </a>
-            <a
-              href="#form"
+            <button
+              onClick={openModal}
               className="group inline-flex px-8 py-5 border-2 border-blue-500 text-blue-600 rounded-xl font-bold hover:bg-blue-50 hover:border-blue-600 hover:scale-105 hover:-translate-y-1 transition-all"
             >
               Request Support
-            </a>
+            </button>
           </div>
         </div>
       </div>

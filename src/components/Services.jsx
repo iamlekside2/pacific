@@ -1,4 +1,5 @@
 import { Pill, Users, Bath, Brain, Heart, Phone, Mail, Clock, MessageCircle } from 'lucide-react'
+import { useFormModal } from '../context/FormModalContext'
 import imgMedication from '../assets/images/medication.png'
 import imgAmbulatory from '../assets/images/ambulatory.png'
 import imgPersonalCare from '../assets/images/personal-care.png'
@@ -44,6 +45,7 @@ const services = [
 ]
 
 export default function Services() {
+  const { openModal } = useFormModal()
   return (
     <section id="services" className="py-32 bg-slate-50 relative overflow-hidden">
       {/* Subtle Background Elements */}
@@ -143,12 +145,12 @@ export default function Services() {
             >
               Call Now +1 (443) 460-8684
             </a>
-            <a
-              href="#form"
+            <button
+              onClick={openModal}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary/5 hover:scale-105 hover:-translate-y-0.5 transition-all whitespace-nowrap"
             >
               Send a Support Request
-            </a>
+            </button>
           </div>
         </div>
       </div>

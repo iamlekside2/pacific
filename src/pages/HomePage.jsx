@@ -5,7 +5,6 @@ import Situations from '../components/Situations'
 import Trust from '../components/Trust'
 import Process from '../components/Process'
 import CTA from '../components/CTA'
-import ConsultationForm from '../components/ConsultationForm'
 import About from '../components/About'
 import Testimonials from '../components/Testimonials'
 import FAQ from '../components/FAQ'
@@ -21,7 +20,6 @@ export default function HomePage() {
       <Trust />
       <Process />
       <CTA />
-      <ConsultationForm />
       <About />
       <Testimonials />
       <FAQ />

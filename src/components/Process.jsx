@@ -2,6 +2,7 @@ import { Phone } from 'lucide-react'
 import imgAssessment from '../assets/images/care-assessment.png'
 import imgCareBegins from '../assets/images/care-begins.png'
 import imgPhone from '../assets/images/phone.jpeg'
+import { useFormModal } from '../context/FormModalContext'
 
 const steps = [
   {
@@ -25,6 +26,7 @@ const steps = [
 ]
 
 export default function Process() {
+  const { openModal } = useFormModal()
   return (
     <section className="py-24 bg-gradient-to-b from-white to-slate-50 relative overflow-hidden">
       {/* Subtle background blobs */}
@@ -100,12 +102,12 @@ export default function Process() {
               <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform" />
               Call Now +1 (443) 460-8684
             </a>
-            <a
-              href="#form"
+            <button
+              onClick={openModal}
               className="inline-flex items-center justify-center gap-3 px-8 py-5 border-2 border-blue-500 text-blue-600 rounded-xl font-bold text-base hover:bg-blue-50 hover:border-blue-600 hover:scale-105 hover:-translate-y-1 transition-all"
             >
               Get Help Understanding Your Care Options
-            </a>
+            </button>
           </div>
         </div>
       </div>

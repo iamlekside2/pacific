@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react'
 import { Phone, Menu, X } from 'lucide-react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import logo from '../assets/logo.png'
+import { useFormModal } from '../context/FormModalContext'
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
+  const { openModal } = useFormModal()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -67,13 +69,12 @@ export default function Navbar() {
             >
               +1 (443) 460-8684
             </a>
-            <a
-              href="/contact"
-              onClick={e => handleNavClick(e, '/contact', null)}
+            <button
+              onClick={openModal}
               className="px-6 py-2 bg-primary text-white rounded-lg font-semibold text-sm hover:bg-primary-dark transition-all shadow-md"
             >
               Get Support
-            </a>
+            </button>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -104,13 +105,12 @@ export default function Navbar() {
               >
                 <Phone className="w-4 h-4" /> Call
               </a>
-              <a
-                href="/contact"
-                onClick={e => handleNavClick(e, '/contact', null)}
+              <button
+                onClick={() => { openModal(); setMobileOpen(false) }}
                 className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-lg font-semibold"
               >
                 Get Support
-              </a>
+              </button>
             </div>
           </div>
         </div>
