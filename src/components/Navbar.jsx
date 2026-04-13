@@ -33,7 +33,7 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Home', path: '/', hash: null },
     { label: 'Services', path: '/services', hash: null },
-    { label: 'Resources', path: '/', hash: '#resources' },
+    { label: 'Resources', path: '/resources', hash: null },
     { label: 'About', path: '/about', hash: null },
     { label: 'Contact', path: '/contact', hash: null },
   ]
