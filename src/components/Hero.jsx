@@ -68,22 +68,22 @@ export default function Hero() {
         {/* Service Tags */}
         <div className="flex flex-wrap justify-center gap-2 mt-8">
           {['Medication Support', 'Mobility Assistance', 'Personal Care', 'Companionship', 'Cognitive Support'].map((tag) => (
-            <span key={tag} className="px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-medium text-blue-700 hover:bg-blue-100 hover:border-blue-300 transition-all duration-300 hover:scale-105">
+            <span key={tag} className="px-5 py-2.5 bg-blue-100 border-2 border-blue-300 rounded-full text-base font-semibold text-blue-800 hover:bg-blue-200 hover:border-blue-400 transition-all duration-300 hover:scale-105">
               {tag}
             </span>
           ))}
         </div>
 
         {/* Quick Stats */}
-        <div className="grid grid-cols-3 gap-4 max-w-lg mx-auto mt-8 pt-6 border-t border-slate-200">
+        <div className="grid grid-cols-3 gap-4 max-w-lg mx-auto mt-8 pt-6 border-t-2 border-slate-300">
           {[
             { value: '24-48h', label: 'Quick Start' },
             { value: '24/7', label: 'Available' },
             { value: '5+', label: 'Services' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center group cursor-default">
-              <p className="text-2xl lg:text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">{value}</p>
-              <p className="text-slate-500 text-sm mt-1">{label}</p>
+              <p className="text-3xl lg:text-4xl font-extrabold text-primary group-hover:scale-110 transition-transform duration-300 inline-block">{value}</p>
+              <p className="text-slate-700 text-base font-semibold mt-1">{label}</p>
             </div>
           ))}
         </div>
