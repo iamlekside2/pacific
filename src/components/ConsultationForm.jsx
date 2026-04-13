@@ -33,17 +33,12 @@ export default function ConsultationForm() {
     <section id="form" className="py-24 bg-gradient-to-b from-white to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-5 gap-12">
-          {/* Left: Image + info */}
-          <div className="lg:col-span-2 hidden lg:block space-y-6">
+          {/* Left: Image */}
+          <div className="lg:col-span-2 hidden lg:block">
             <img
               src={imgConsultation}
               alt="Caregiver helping patient"
-              className="w-full h-72 object-cover rounded-2xl shadow-xl"
-            />
-            <img
-              src={img68}
-              alt="Home healthcare support"
-              className="w-full h-72 object-cover rounded-2xl shadow-xl"
+              className="w-full h-full object-cover rounded-2xl shadow-xl"
             />
           </div>
 
