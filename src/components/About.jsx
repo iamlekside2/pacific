@@ -29,18 +29,8 @@ export default function About() {
               <img
                 src={imgProfile}
                 alt="Blessing Okeke – Founder, THE PACIFIC HOMECARE"
-                className="w-full h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-[600px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
-
-              {/* Name badge */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/30">
-                  <p className="text-white font-bold text-lg">Blessing Okeke</p>
-                  <p className="text-blue-200 text-sm">Founder, THE PACIFIC HOMECARE</p>
-                </div>
-              </div>
             </div>
           </div>
 
