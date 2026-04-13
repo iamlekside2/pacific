@@ -24,9 +24,6 @@ export default function Footer() {
               <a href="mailto:info@thepacifichomecare.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors group/link">
                 <Mail className="w-4 h-4 group-hover/link:scale-110 transition-transform" /> info@thepacifichomecare.com
               </a>
-              <a href="mailto:referrals@thepacifichomecare.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors group/link">
-                <Mail className="w-4 h-4 group-hover/link:scale-110 transition-transform" /> referrals@thepacifichomecare.com
-              </a>
               <span className="flex items-center gap-2 text-white/80">
                 <MapPin className="w-4 h-4" /> 403 W Pennsylvania Ave, Towson, MD
               </span>
