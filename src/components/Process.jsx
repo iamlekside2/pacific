@@ -1,14 +1,14 @@
 import { Phone } from 'lucide-react'
 import imgAssessment from '../assets/images/care-assessment.png'
 import imgCareBegins from '../assets/images/care-begins.png'
-import img67 from '../assets/images/67.png'
+import imgPhone from '../assets/images/phone.jpeg'
 
 const steps = [
   {
     num: '1',
     title: 'Call or Request Support',
     desc: 'Provide information to help us understand your situation and immediate needs.',
-    image: img67,
+    image: imgPhone,
   },
   {
     num: '2',
