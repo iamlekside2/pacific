@@ -65,7 +65,7 @@ export default function Hero() {
           {/* Title overlay */}
           <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg max-w-4xl">
-              Because We Understand How Stressful Caring Alone Can Be
+              Because We Understand The Strain Of Daily Care
             </h2>
           </div>
         </div>
