@@ -1,4 +1,4 @@
-import { Pill, Users, Bath, Brain, Heart } from 'lucide-react'
+import { Pill, Users, Bath, Brain, Heart, Phone, Mail, Clock, MessageCircle } from 'lucide-react'
 import imgMedication from '../assets/images/medication.png'
 import imgAmbulatory from '../assets/images/ambulatory.png'
 import imgPersonalCare from '../assets/images/personal-care.png'
@@ -93,16 +93,40 @@ export default function Services() {
           ))}
 
           {/* Contact Card */}
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white flex flex-col justify-between shadow-lg shadow-blue-500/30 group animate-fade-in-up" style={{animationDelay: `${0.1 + services.length * 0.06}s`}}>
-            <div className="group-hover:scale-110 transition-transform duration-300">
-              <h3 className="text-2xl font-bold mb-3">Speak with a care coordinator</h3>
-              <p className="text-white/90 mb-8">Determine the right level of support for your unique situation.</p>
+          <div className="relative bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white flex flex-col shadow-lg shadow-blue-500/30 group animate-fade-in-up overflow-hidden" style={{animationDelay: `${0.1 + services.length * 0.06}s`}}>
+            {/* Decorative pattern */}
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl -translate-y-12 translate-x-12" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full blur-3xl translate-y-8 -translate-x-8" />
+
+            {/* Icon */}
+            <div className="relative w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm border border-white/30 group-hover:scale-110 transition-transform duration-300">
+              <Phone className="w-7 h-7 text-white" />
             </div>
+
+            <h3 className="relative text-2xl font-bold mb-3">Speak with a care coordinator</h3>
+            <p className="relative text-white/90 mb-6">Determine the right level of support for your unique situation.</p>
+
+            {/* Quick info pills */}
+            <div className="relative space-y-3 mb-8 flex-1">
+              <div className="flex items-center gap-3 text-sm text-white/90">
+                <Clock className="w-4 h-4 flex-shrink-0" />
+                <span>Care available within 24–48 hours</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-white/90">
+                <MessageCircle className="w-4 h-4 flex-shrink-0" />
+                <span>Free consultation, no commitment</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-white/90">
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                <span>info@pacifichomehealthcare.com</span>
+              </div>
+            </div>
+
             <a
               href="tel:+14434608684"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-600 rounded-xl font-bold hover:bg-slate-100 hover:scale-105 hover:-translate-y-1 transition-all shadow-lg"
+              className="relative inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-600 rounded-xl font-bold hover:bg-slate-100 hover:scale-105 hover:-translate-y-1 transition-all shadow-lg"
             >
-              Call Now +1 (443) 460-8684
+              <Phone className="w-4 h-4" /> Call Now +1 (443) 460-8684
             </a>
           </div>
         </div>
