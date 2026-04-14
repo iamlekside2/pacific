@@ -8,6 +8,8 @@ import img81 from '../assets/images/81.jpg'
 import img82 from '../assets/images/82.jpg'
 import img83 from '../assets/images/83.jpg'
 import img86 from '../assets/images/86.jpg'
+import img68 from '../assets/images/68.jpg'
+import img69 from '../assets/images/69.jpg'
 import imgFaq from '../assets/images/faq.jpg'
 
 const commonQuestions = [
@@ -45,7 +47,7 @@ const careGuides = [
     slug: 'types-of-in-home-care',
     title: 'Understanding Different Types of In-Home Care',
     desc: 'Not all care is the same—and choosing incorrectly can lead to gaps in support.',
-    image: img82,
+    image: img68,
     points: [
       'The difference between medical and non-medical care',
       'What services apply to your situation',
@@ -100,7 +102,7 @@ const careGuides = [
     slug: 'incontinence-care',
     title: 'Incontinence Care at Home: Dignity & Practical Support',
     desc: 'Managing incontinence while protecting comfort, confidence, and daily routine.',
-    image: img84,
+    image: img69,
     points: [
       'Protect dignity during care routines',
       'Practical daily management steps',

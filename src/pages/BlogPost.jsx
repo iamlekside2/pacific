@@ -9,6 +9,8 @@ import img81 from '../assets/images/81.jpg'
 import img83 from '../assets/images/83.jpg'
 import img82 from '../assets/images/82.jpg'
 import img86 from '../assets/images/86.jpg'
+import img68 from '../assets/images/68.jpg'
+import img69 from '../assets/images/69.jpg'
 
 const posts = {
   'home-healthcare-needed': {
@@ -503,7 +505,7 @@ const posts = {
     title: 'Understanding Different Types of In-Home Care',
     metaTitle: 'Types of In-Home Care: What Families Need to Know',
     metaDesc: 'Learn the difference between medical and non-medical home care, what services apply to your situation, and how to choose the right level of support.',
-    image: img85,
+    image: img68,
     readTime: '8 min read',
     category: 'Care Guides',
     related: [
@@ -769,7 +771,7 @@ const posts = {
     title: 'How to Handle Incontinence Care at Home While Preserving Dignity and Daily Comfort',
     metaTitle: 'Incontinence Care at Home: Dignity & Practical Support',
     metaDesc: 'Learn how to manage incontinence care at home while protecting dignity, comfort, and safety. Practical guidance for families and caregivers.',
-    image: img84,
+    image: img69,
     readTime: '9 min read',
     category: 'Care Guides',
     related: [
