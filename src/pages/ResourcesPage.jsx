@@ -114,6 +114,7 @@ const careGuides = [
 const situations = [
   {
     icon: Heart,
+    slug: 'caregiver-burnout',
     title: 'When Caregiving Becomes Overwhelming',
     desc: 'Balancing care with work, family, and personal responsibilities can quickly become unsustainable.',
     points: [
@@ -124,6 +125,7 @@ const situations = [
   },
   {
     icon: Brain,
+    slug: 'cognitive-changes',
     title: 'When Cognitive Changes Begin to Affect Daily Life',
     desc: 'Memory loss and confusion often start subtly—but can quickly affect safety.',
     points: [
@@ -134,6 +136,7 @@ const situations = [
   },
   {
     icon: Activity,
+    slug: 'daily-activities-difficult',
     title: 'When Daily Activities Become Difficult',
     desc: 'Difficulty with bathing, dressing, or mobility often signals a need for support.',
     points: [
@@ -268,7 +271,7 @@ export default function ResourcesPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {situations.map(({ icon: Icon, title, desc, points }) => (
+            {situations.map(({ icon: Icon, slug, title, desc, points }) => (
               <div key={title} className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border-2 border-blue-100 hover:border-blue-400 hover:shadow-xl transition-all duration-300">
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-5 shadow-lg shadow-blue-500/30">
                   <Icon className="w-7 h-7 text-white" />
@@ -286,9 +289,9 @@ export default function ResourcesPage() {
                   ))}
                 </ul>
 
-                <button onClick={openModal} className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all">
+                <Link to={`/resources/${slug}`} className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all">
                   Read Guide <ArrowRight className="w-4 h-4" />
-                </button>
+                </Link>
               </div>
             ))}
           </div>
