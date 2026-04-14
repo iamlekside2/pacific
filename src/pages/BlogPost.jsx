@@ -499,6 +499,92 @@ const posts = {
       },
     ],
   },
+  'types-of-in-home-care': {
+    title: 'Understanding Different Types of In-Home Care',
+    metaTitle: 'Types of In-Home Care: What Families Need to Know',
+    metaDesc: 'Learn the difference between medical and non-medical home care, what services apply to your situation, and how to choose the right level of support.',
+    image: img85,
+    readTime: '8 min read',
+    category: 'Care Guides',
+    related: [
+      { slug: 'home-healthcare-needed', title: 'How to Know When Home Healthcare Is Needed' },
+      { slug: 'manage-medication-safely', title: 'Managing Medication Safely at Home' },
+    ],
+    sections: [
+      {
+        lead: `Not all care is the same. And when families begin looking into support options, the number of terms, categories, and service types can make a straightforward decision feel unnecessarily complicated.`,
+      },
+      {
+        body: [
+          `The challenge isn't a lack of options. It's knowing which option actually fits the situation. Choosing incorrectly can lead to gaps in support or services that don't address the real need.`,
+          `Understanding the difference between types of in-home care helps families make decisions based on what's actually required—not assumptions or incomplete information.`,
+        ],
+      },
+      {
+        heading: 'What Is the Difference Between Medical and Non-Medical Home Care?',
+        body: [
+          `Medical home care involves clinical services provided by licensed healthcare professionals. This can include wound care, IV therapy, physical therapy, or skilled nursing tasks that require medical training and oversight.`,
+          `Non-medical home care focuses on daily living support. This includes assistance with personal hygiene, mobility, medication reminders, meal preparation, companionship, and household routines. It is delivered by trained caregivers rather than clinical staff.`,
+          `Many families initially assume they need medical home care when what's actually required is consistent, structured non-medical support. The reverse can also be true—particularly after hospital discharge, when clinical needs may exist alongside daily living challenges.`,
+          `The distinction matters because it affects what kind of provider you need, what services are included, and how care is structured day to day.`,
+        ],
+      },
+      {
+        heading: 'What Types of Non-Medical In-Home Care Are Available?',
+        body: [`Non-medical in-home care covers a range of services designed to support daily life at home. The most common types include:`],
+        checklist: [
+          'Personal care assistance — bathing, dressing, grooming, and toileting support',
+          'Mobility and transfer support — help with walking, repositioning, and safe movement',
+          'Medication reminders and administration — ensuring medications are taken correctly and on time',
+          'Cognitive stimulation — structured engagement to support mental clarity and routine',
+          'Companionship — consistent social presence to reduce isolation and improve wellbeing',
+        ],
+        afterChecklist: `These services can be delivered individually or combined into a care plan that addresses multiple needs. The right combination depends on the person's current condition, daily routine, and level of independence.`,
+      },
+      {
+        heading: 'How Do You Know What Type of Care Your Situation Requires?',
+        body: [
+          `Start by looking at what's actually happening day to day. The type of care needed is usually determined by the specific tasks that have become difficult, unsafe, or inconsistent.`,
+          `If the primary concerns are medication management, mobility, personal hygiene, or maintaining daily routines, non-medical in-home care is often the appropriate starting point.`,
+          `If there are clinical needs such as wound management, catheter care, or post-surgical monitoring, medical home care may be required—either on its own or alongside non-medical support.`,
+          `Many situations fall somewhere in between. A person may need clinical follow-up after discharge but also require daily assistance with personal care and medication. In these cases, a combined approach works best.`,
+        ],
+      },
+      {
+        heading: 'What Happens When the Wrong Type of Care Is Chosen?',
+        body: [
+          `Choosing the wrong type of care usually shows up as gaps. A caregiver may be present, but the specific support needed isn't being provided. Or clinical services may be in place, but daily routines and personal care are left unaddressed.`,
+          `These gaps don't always appear immediately. They develop over days or weeks as unmet needs begin to affect stability, safety, or recovery.`,
+          `The most common mistake is underestimating the need for structured daily support. Families often focus on medical needs while overlooking the reality that daily living tasks—medications, movement, hygiene—are what hold the day together.`,
+        ],
+      },
+      {
+        heading: 'How Care Plans Are Built Around Real Needs',
+        body: [
+          `Effective care starts with understanding what the day actually looks like—not what it should look like.`,
+          `A care assessment evaluates current capabilities, safety risks, daily routines, and the level of support already in place. From there, a plan is built around the specific areas where consistency is breaking down.`,
+          `This means care isn't one-size-fits-all. A person recovering from surgery may need intensive short-term support. Someone managing a chronic condition may need long-term, steady assistance. A family navigating cognitive changes may need a combination of supervision, routine reinforcement, and companionship.`,
+          `The plan adapts as needs change—because they almost always do.`,
+        ],
+      },
+      {
+        heading: 'How to Choose the Right Level of Support',
+        body: [
+          `Choosing the right level of support doesn't require having all the answers upfront. It requires honest observation of what's happening now and willingness to adjust as things evolve.`,
+          `A short consultation can often clarify what's needed. By describing the current situation—what's working, what's not, and where concern is growing—families can receive guidance on which type of care fits best.`,
+          `The goal is not to choose the most comprehensive option. It's to choose the most appropriate one—and to have a plan that can grow if the situation changes.`,
+        ],
+      },
+      {
+        heading: 'Closing Thought',
+        body: [
+          `Understanding the types of in-home care available is the first step toward making a decision that actually fits.`,
+          `The right care isn't about doing the most. It's about doing what's needed—consistently, reliably, and in a way that supports both the person receiving care and the family around them.`,
+          `When the type of care matches the reality of the situation, everything else becomes easier to manage.`,
+        ],
+      },
+    ],
+  },
   'cognitive-changes': {
     title: 'When Cognitive Changes Begin to Affect Daily Life',
     metaTitle: 'When Cognitive Changes Affect Daily Life at Home',
