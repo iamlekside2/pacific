@@ -87,7 +87,23 @@ const careGuides = [
       'Know when structured support becomes necessary',
     ],
   },
+]
+
+const situations = [
   {
+    icon: Heart,
+    slug: 'caregiver-burnout',
+    title: 'When Caregiving Becomes Overwhelming',
+    desc: 'Balancing care with work, family, and personal responsibilities can quickly become unsustainable.',
+    image: img83,
+    points: [
+      'Recognize signs of burnout early',
+      'Understand your support options',
+      'Transition from doing everything alone to structured support',
+    ],
+  },
+  {
+    icon: Activity,
     slug: 'daily-activities-difficult',
     title: 'When Daily Activities Become Difficult',
     desc: 'Difficulty with bathing, dressing, or mobility often signals a need for support.',
@@ -99,6 +115,7 @@ const careGuides = [
     ],
   },
   {
+    icon: Users,
     slug: 'incontinence-care',
     title: 'Incontinence Care at Home: Dignity & Practical Support',
     desc: 'Managing incontinence while protecting comfort, confidence, and daily routine.',
@@ -107,42 +124,6 @@ const careGuides = [
       'Protect dignity during care routines',
       'Practical daily management steps',
       'When professional support helps most',
-    ],
-  },
-]
-
-const situations = [
-  {
-    icon: Heart,
-    slug: 'caregiver-burnout',
-    title: 'When Caregiving Becomes Overwhelming',
-    desc: 'Balancing care with work, family, and personal responsibilities can quickly become unsustainable.',
-    points: [
-      'Recognize signs of burnout early',
-      'Understand your support options',
-      'Transition from doing everything alone to structured support',
-    ],
-  },
-  {
-    icon: Brain,
-    slug: 'cognitive-changes',
-    title: 'When Cognitive Changes Begin to Affect Daily Life',
-    desc: 'Memory loss and confusion often start subtly—but can quickly affect safety.',
-    points: [
-      'Identify early cognitive changes',
-      'Understand risks and progression',
-      'Know when structured support becomes necessary',
-    ],
-  },
-  {
-    icon: Activity,
-    slug: 'daily-activities-difficult',
-    title: 'When Daily Activities Become Difficult',
-    desc: 'Difficulty with bathing, dressing, or mobility often signals a need for support.',
-    points: [
-      'Recognize declining daily function',
-      'Understand what level of care is appropriate',
-      'Maintain dignity while introducing support',
     ],
   },
 ]
@@ -271,27 +252,34 @@ export default function ResourcesPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {situations.map(({ icon: Icon, slug, title, desc, points }) => (
-              <div key={title} className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border-2 border-blue-100 hover:border-blue-400 hover:shadow-xl transition-all duration-300">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-5 shadow-lg shadow-blue-500/30">
-                  <Icon className="w-7 h-7 text-white" />
+            {situations.map(({ icon: Icon, slug, image, title, desc, points }) => (
+              <div key={title} className="group bg-white rounded-2xl border-2 border-slate-200 overflow-hidden hover:border-blue-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                <div className="overflow-hidden">
+                  <img src={image} alt={title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{title}</h3>
-                <p className="text-slate-600 leading-relaxed mb-5">{desc}</p>
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-md shadow-blue-500/30">
+                      <Icon className="w-5 h-5 text-white" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{title}</h3>
+                  </div>
+                  <p className="text-slate-600 leading-relaxed mb-4">{desc}</p>
 
-                <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">This guide helps you:</p>
-                <ul className="space-y-2 mb-6">
-                  {points.map(p => (
-                    <li key={p} className="flex items-start gap-2 text-sm text-slate-700">
-                      <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
-                      {p}
-                    </li>
-                  ))}
-                </ul>
+                  <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">This guide helps you:</p>
+                  <ul className="space-y-1.5 mb-5">
+                    {points.map(p => (
+                      <li key={p} className="flex items-start gap-2 text-sm text-slate-700">
+                        <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                        {p}
+                      </li>
+                    ))}
+                  </ul>
 
-                <Link to={`/resources/${slug}`} className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all">
-                  Read Guide <ArrowRight className="w-4 h-4" />
-                </Link>
+                  <Link to={`/resources/${slug}`} className="mt-auto inline-flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                    Read Guide <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
