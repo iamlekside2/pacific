@@ -87,7 +87,7 @@ export default function Situations() {
 
               {/* Problem */}
               <div className="mb-6 pb-6 border-b border-slate-200">
-                <p className="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3">The Situation</p>
+                <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">The Situation</p>
                 <p className="text-slate-700 leading-relaxed">{problem}</p>
               </div>
 
