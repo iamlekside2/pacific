@@ -1,5 +1,5 @@
 import { MapPin, ArrowRight } from 'lucide-react'
-import imgProfile from '../assets/images/profile.jpeg'
+import imgProfile from '../assets/images/profile.jpg'
 import { Link } from 'react-router-dom'
 
 const areas = [

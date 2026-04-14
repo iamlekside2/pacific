@@ -1,6 +1,6 @@
 import { Phone, CheckCircle, Shield, Clock, Users, Heart, ArrowRight } from 'lucide-react'
-import imgProfile from '../assets/images/profile.jpeg'
-import img82 from '../assets/images/82.png'
+import imgProfile from '../assets/images/profile.jpg'
+import img82 from '../assets/images/82.jpg'
 import { Link } from 'react-router-dom'
 
 const differentiators = [

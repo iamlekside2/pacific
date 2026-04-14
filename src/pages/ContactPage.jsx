@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, Shield, Send, Check, CheckCircle } from 'lucide-react'
-import img67 from '../assets/images/67.png'
-import img86 from '../assets/images/86.png'
+import img67 from '../assets/images/67.jpg'
+import img86 from '../assets/images/86.jpg'
 
 const whenToReach = [
   'Care needs suddenly increase',

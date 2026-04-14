@@ -1,5 +1,5 @@
 import { Phone, ArrowRight } from 'lucide-react'
-import img69 from '../assets/images/69.png'
+import img69 from '../assets/images/69.jpg'
 import { useFormModal } from '../context/FormModalContext'
 
 export default function CTA() {

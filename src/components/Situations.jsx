@@ -1,9 +1,9 @@
-import imgHospital from '../assets/images/hospital-discharge.png'
-import imgFalls from '../assets/images/falls.png'
-import imgMedMis from '../assets/images/medication-mismanagement.png'
-import imgCogChanges from '../assets/images/cognitive-changes.png'
-import imgDeclining from '../assets/images/declining-function.png'
-import imgBurnout from '../assets/images/caregiver-burnout.png'
+import imgHospital from '../assets/images/hospital-discharge.jpg'
+import imgFalls from '../assets/images/falls.jpg'
+import imgMedMis from '../assets/images/medication-mismanagement.jpg'
+import imgCogChanges from '../assets/images/cognitive-changes.jpg'
+import imgDeclining from '../assets/images/declining-function.jpg'
+import imgBurnout from '../assets/images/caregiver-burnout.jpg'
 
 const situations = [
   {

@@ -1,5 +1,5 @@
 import { CheckCircle2, ArrowRight } from 'lucide-react'
-import imgHero from '../assets/images/hero.png'
+import imgHero from '../assets/images/hero.jpg'
 import { useFormModal } from '../context/FormModalContext'
 
 const indicators = [

@@ -1,5 +1,5 @@
 import { CheckCircle, Clock, Users, Shield } from 'lucide-react'
-import img70 from '../assets/images/70.png'
+import img70 from '../assets/images/70.jpg'
 
 const items = [
   { icon: CheckCircle, title: 'Consistent Care Delivery', desc: 'Structured, dependable support with no gaps or inconsistency' },

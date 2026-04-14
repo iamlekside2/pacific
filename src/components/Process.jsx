@@ -1,7 +1,7 @@
 import { Phone } from 'lucide-react'
-import imgAssessment from '../assets/images/care-assessment.png'
-import imgCareBegins from '../assets/images/care-begins.png'
-import imgPhone from '../assets/images/phone.jpeg'
+import imgAssessment from '../assets/images/care-assessment.jpg'
+import imgCareBegins from '../assets/images/care-begins.jpg'
+import imgPhone from '../assets/images/phone.jpg'
 import { useFormModal } from '../context/FormModalContext'
 
 const steps = [

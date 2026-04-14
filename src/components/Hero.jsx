@@ -1,6 +1,6 @@
 import { Phone, ArrowRight } from 'lucide-react'
-import heroImg from '../assets/images/hero.png'
-import underHeroImg from '../assets/images/under-hero.png'
+import heroImg from '../assets/images/hero.jpg'
+import underHeroImg from '../assets/images/under-hero.jpg'
 import { useFormModal } from '../context/FormModalContext'
 
 export default function Hero() {

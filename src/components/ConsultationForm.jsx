@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Send, Check, ArrowRight, ArrowLeft } from 'lucide-react'
-import imgConsultation from '../assets/images/consultation.png'
-import img68 from '../assets/images/68.png'
+import imgConsultation from '../assets/images/consultation.jpg'
+import img68 from '../assets/images/68.jpg'
 
 export default function ConsultationForm() {
   const [step, setStep] = useState(1)

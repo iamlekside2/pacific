@@ -1,14 +1,14 @@
 import { Phone, ArrowRight, HelpCircle, BookOpen, LifeBuoy, Zap, CheckCircle, Users, Heart, Brain, Pill, Activity, Clock } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useFormModal } from '../context/FormModalContext'
-import img85 from '../assets/images/85.png'
-import img84 from '../assets/images/84.png'
-import img87 from '../assets/images/87.png'
-import img81 from '../assets/images/81.png'
-import img82 from '../assets/images/82.png'
-import img83 from '../assets/images/83.png'
-import img86 from '../assets/images/86.png'
-import imgFaq from '../assets/images/faq.png'
+import img85 from '../assets/images/85.jpg'
+import img84 from '../assets/images/84.jpg'
+import img87 from '../assets/images/87.jpg'
+import img81 from '../assets/images/81.jpg'
+import img82 from '../assets/images/82.jpg'
+import img83 from '../assets/images/83.jpg'
+import img86 from '../assets/images/86.jpg'
+import imgFaq from '../assets/images/faq.jpg'
 
 const commonQuestions = [
   'How do I know if home care is needed?',

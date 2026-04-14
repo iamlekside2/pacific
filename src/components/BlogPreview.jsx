@@ -1,8 +1,8 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import img85 from '../assets/images/85.png'
-import img84 from '../assets/images/84.png'
-import img87 from '../assets/images/87.png'
+import img85 from '../assets/images/85.jpg'
+import img84 from '../assets/images/84.jpg'
+import img87 from '../assets/images/87.jpg'
 
 const blogs = [
   {

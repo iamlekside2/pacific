@@ -1,10 +1,10 @@
 import { Pill, Users, Bath, Brain, Heart, Phone, Mail, Clock, MessageCircle } from 'lucide-react'
 import { useFormModal } from '../context/FormModalContext'
-import imgMedication from '../assets/images/medication.png'
-import imgAmbulatory from '../assets/images/ambulatory.png'
-import imgPersonalCare from '../assets/images/personal-care.png'
-import imgCognitive from '../assets/images/cognitive.png'
-import imgCompanionship from '../assets/images/companionship.png'
+import imgMedication from '../assets/images/medication.jpg'
+import imgAmbulatory from '../assets/images/ambulatory.jpg'
+import imgPersonalCare from '../assets/images/personal-care.jpg'
+import imgCognitive from '../assets/images/cognitive.jpg'
+import imgCompanionship from '../assets/images/companionship.jpg'
 
 const services = [
   {

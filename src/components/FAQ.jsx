@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import imgFaq from '../assets/images/faq.png'
+import imgFaq from '../assets/images/faq.jpg'
 import { ChevronDown } from 'lucide-react'
 import { useFormModal } from '../context/FormModalContext'
 

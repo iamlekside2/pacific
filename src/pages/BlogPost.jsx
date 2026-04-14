@@ -2,11 +2,11 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { Phone, ArrowLeft, ArrowRight, Calendar, BookOpen, Clock } from 'lucide-react'
 import { useFormModal } from '../context/FormModalContext'
 import { useEffect } from 'react'
-import img85 from '../assets/images/85.png'
-import img84 from '../assets/images/84.png'
-import img87 from '../assets/images/87.png'
-import img81 from '../assets/images/81.png'
-import img83 from '../assets/images/83.png'
+import img85 from '../assets/images/85.jpg'
+import img84 from '../assets/images/84.jpg'
+import img87 from '../assets/images/87.jpg'
+import img81 from '../assets/images/81.jpg'
+import img83 from '../assets/images/83.jpg'
 
 const posts = {
   'home-healthcare-needed': {
