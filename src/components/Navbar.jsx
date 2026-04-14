@@ -44,7 +44,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <img src={logo} alt="THE PACIFIC HOMECARE" className="h-14 w-auto" />
+            <img src={logo} alt="THE PACIFIC HOMECARE" className="h-20 w-auto" />
           </Link>
 
           {/* Desktop Menu */}
