@@ -4,6 +4,9 @@ import { useFormModal } from '../context/FormModalContext'
 import { useEffect } from 'react'
 import img85 from '../assets/images/85.png'
 import img84 from '../assets/images/84.png'
+import img87 from '../assets/images/87.png'
+import img81 from '../assets/images/81.png'
+import img83 from '../assets/images/83.png'
 
 const posts = {
   'home-healthcare-needed': {
@@ -196,6 +199,300 @@ const posts = {
           `Recovery at home isn't just about following instructions. It's about maintaining consistency in an environment that wasn't designed for clinical care.`,
           `The difference between a smooth recovery and a complicated one often comes down to how well that consistency holds.`,
           `Not perfectly. Just reliably enough to keep things moving in the right direction.`,
+        ],
+      },
+    ],
+  },
+  'reduce-fall-risk': {
+    title: 'How to Reduce Fall Risk at Home',
+    metaTitle: 'How to Reduce Fall Risk at Home for Seniors',
+    metaDesc: 'Learn how to reduce fall risk at home with practical steps, warning signs, and safety strategies for safer daily living in Maryland.',
+    image: img87,
+    readTime: '7 min read',
+    category: 'Care Guides',
+    related: [{ slug: 'manage-medication-safely', title: 'Managing Medication Safely at Home' }],
+    sections: [
+      {
+        lead: `The fall doesn't usually come out of nowhere. It happens in familiar spaces. The short walk to the bathroom. The step that's been taken a thousand times. The moment when balance shifts just slightly—and there's nothing close enough to hold onto.`,
+      },
+      {
+        body: [
+          `What makes falls difficult isn't just the injury. It's how quickly independence can change afterward.`,
+          `Reducing fall risk at home isn't about restricting movement. It's about making everyday movement safer, steadier, and more predictable.`,
+        ],
+      },
+      {
+        heading: 'What Causes Falls at Home for Older Adults?',
+        body: [
+          `Falls at home are usually caused by a combination of physical changes and environmental factors. It's rarely just one issue.`,
+          `Balance may not be as stable as it once was. Muscle strength can decline gradually. Medications may cause dizziness or fatigue. At the same time, the home environment often remains unchanged—furniture placement, lighting, flooring—all designed for a level of mobility that may no longer be the same.`,
+          `It's this mismatch that creates risk.`,
+          `A small change in physical ability, combined with an unchanged environment, is often where falls begin.`,
+        ],
+      },
+      {
+        heading: 'What Are the Early Warning Signs of Fall Risk?',
+        body: [
+          `Early signs of fall risk often show up as hesitation, instability, or changes in movement patterns. These signs usually appear before any actual fall occurs.`,
+          `You might notice slower transitions—standing up, sitting down, turning. There may be moments of reaching for support where none was needed before. Near-falls are common but often dismissed because they didn't result in injury.`,
+          `Changes in confidence are just as important. When someone becomes more cautious or avoids certain movements altogether, it often reflects an awareness that balance is no longer reliable.`,
+          `These signals matter. They are often the clearest opportunity to prevent a more serious incident.`,
+        ],
+      },
+      {
+        heading: 'How Can You Reduce Fall Risk at Home?',
+        body: [
+          `Reducing fall risk starts with making the environment and daily routines support safe movement. The goal is not to limit activity, but to remove unnecessary hazards and improve stability.`,
+          `Focus first on the areas where movement happens most frequently.`,
+          `Clear pathways so there's nothing to step over or around. Ensure lighting is consistent, especially in hallways and bathrooms where visibility matters most. Rugs, cords, and uneven surfaces should be addressed. Not because they always cause falls, but because they increase the chance when balance is already compromised.`,
+          `Support should also be placed where it's naturally needed. Bathrooms, for example, are one of the most common locations for falls—not because they're inherently unsafe, but because they combine movement, moisture, and limited space.`,
+          `Beyond the environment, routines matter. Moving too quickly, especially when getting up from bed or a chair, can increase instability. Encouraging slower, more deliberate movement often reduces risk more effectively than trying to "be careful" in a general sense.`,
+        ],
+      },
+      {
+        heading: 'A Quick Safety Check for the Home',
+        body: [`A simple way to assess fall risk is to walk through the home with attention to movement:`],
+        checklist: [
+          'Can someone move from room to room without needing to navigate obstacles?',
+          'Is there adequate lighting at all times of day, including nighttime?',
+          'Are commonly used items within easy reach?',
+          'Are high-risk areas like bathrooms and stairs supported appropriately?',
+        ],
+        afterChecklist: `If any of these require extra effort or adjustment, they're worth addressing early.`,
+      },
+      {
+        heading: 'When Does Fall Risk Become a Serious Concern?',
+        body: [
+          `Fall risk becomes more serious when instability begins to affect daily routines or when near-falls become more frequent. At this stage, the likelihood of an actual fall increases significantly.`,
+          `A previous fall is also an important indicator. Once a fall has occurred, the risk of another tends to rise—not only because of physical factors, but because confidence in movement is often reduced.`,
+          `In these situations, prevention becomes more structured. It's no longer just about removing hazards, but about actively supporting safe movement throughout the day.`,
+        ],
+      },
+      {
+        heading: 'How In-Home Care Helps Reduce Fall Risk',
+        body: [
+          `Consistent support is one of the most effective ways to reduce fall risk.`,
+          `Having someone present during movement, especially during transfers, walking, or bathroom use, adds a layer of safety that the environment alone cannot provide. It also allows early changes in mobility to be noticed and addressed before they lead to injury.`,
+          `For families in Maryland, in-home care often becomes part of fall prevention when safety can no longer rely on the environment alone.`,
+          `Support with mobility, transfers, and daily routines helps maintain independence while reducing the likelihood of injury. It also removes the pressure on family members to monitor every movement themselves.`,
+        ],
+      },
+      {
+        heading: 'What Happens After a Fall Matters Too',
+        body: [
+          `Even with precautions, falls can still happen.`,
+          `What matters then is how quickly support is provided and how recovery is managed. A fall can lead to reduced mobility, increased caution, and changes in daily routine that affect overall quality of life.`,
+          `Addressing those changes early—physically and practically—helps prevent a cycle where reduced movement leads to further decline.`,
+        ],
+      },
+      {
+        heading: 'Closing Thought',
+        body: [
+          `Fall prevention isn't about eliminating movement. It's about making movement safer in the environment where it happens every day.`,
+          `The earlier small risks are addressed, the easier it is to maintain confidence, stability, and independence over time.`,
+        ],
+      },
+    ],
+  },
+  'manage-medication-safely': {
+    title: 'Managing Medication Safely at Home',
+    metaTitle: 'Managing Medications Safely at Home for Seniors',
+    metaDesc: 'Learn how to manage medications safely at home, avoid common errors, and know when to get support for aging adults in Maryland.',
+    image: img81,
+    readTime: '8 min read',
+    category: 'Care Guides',
+    related: [
+      { slug: 'after-hospital-discharge', title: 'What to Do After Hospital Discharge' },
+      { slug: 'home-healthcare-needed', title: 'How to Know When Home Healthcare Is Needed' },
+    ],
+    sections: [
+      {
+        lead: `The pillbox is full. The instructions are written down. Everything looks organized, until a dose is missed, taken twice, or taken at the wrong time.`,
+      },
+      {
+        body: [
+          `Medication management rarely breaks down all at once. It slips in small ways. A schedule gets adjusted. A new prescription is added. An old one isn't fully discontinued. Over time, what once felt routine becomes something that requires constant attention to get right.`,
+          `And when it isn't right, the effects aren't always immediate—but they are real.`,
+        ],
+      },
+      {
+        heading: 'Why Is Medication Management So Challenging at Home?',
+        body: [
+          `Medication management becomes difficult when routines change, prescriptions increase, or memory and consistency are affected. What was once simple can become complex without much warning.`,
+          `After a hospital discharge, medication lists often change. New prescriptions are introduced, dosages adjusted, and timing becomes more specific. Even for someone who has always managed their medications well, this transition can create confusion.`,
+          `At home, there's no built-in system to ensure medications are taken correctly. It depends entirely on memory, organization, and consistency. Three things that are often under pressure during recovery or with age-related changes.`,
+        ],
+      },
+      {
+        heading: 'What Are the Most Common Medication Mistakes?',
+        body: [`Most medication errors at home are not intentional. They happen because systems aren't fully in place yet. Common issues include:`],
+        checklist: [
+          'Missing doses or taking them at inconsistent times',
+          'Taking the wrong medication due to similar packaging',
+          'Continuing medications that were meant to be stopped',
+          'Taking duplicate doses when unsure if a dose was already taken',
+        ],
+        afterChecklist: `These mistakes are easy to make, especially when multiple medications are involved. But over time, they can affect recovery, worsen existing conditions, or lead to avoidable complications.`,
+      },
+      {
+        heading: 'How Can You Manage Medications Safely at Home?',
+        body: [
+          `Safe medication management starts with creating a routine that is clear, consistent, and easy to follow—even on difficult days.`,
+          `This usually means simplifying where possible. Keep medications in one designated place. Avoid splitting them across different rooms or containers without a clear system. Use a daily schedule that reflects real-life timing, not just written instructions.`,
+          `Consistency matters more than complexity.`,
+          `It also helps to build in reminders like alarms, written checklists, or visual cues. The goal is to reduce reliance on memory alone.`,
+          `For families managing care, visibility is important. Knowing whether medications have been taken—and when—prevents guesswork later in the day.`,
+        ],
+      },
+      {
+        heading: 'How Do You Know If Medication Management Is Becoming Unsafe?',
+        body: [
+          `Medication management becomes unsafe when consistency can no longer be maintained without close supervision. This often shows up before any major issue occurs.`,
+          `You might notice increasing uncertainty. Questions like "Did I take this already?" or "Was this supposed to be taken today?" There may be missed doses, or medications taken at irregular times.`,
+          `In some cases, side effects begin to appear without a clear explanation. Fatigue, dizziness, or confusion can sometimes be linked to how medications are being taken, not just the medications themselves.`,
+          `When routines depend on constant reminders or checking, it's a sign that the margin for error is narrowing.`,
+        ],
+      },
+      {
+        heading: 'Why Medication Errors Matter More Than They Seem',
+        body: [
+          `The impact of medication errors is often gradual.`,
+          `A missed dose might not cause immediate harm. But repeated inconsistencies can affect how a condition is managed over time. Blood pressure may fluctuate. Recovery may slow. Symptoms may become harder to stabilize.`,
+          `In more serious cases, incorrect dosages or interactions between medications can lead to hospital readmission.`,
+          `This is why medication management is treated as one of the most critical parts of in-home care. Not because it's complicated, but because it requires consistency every single day.`,
+        ],
+      },
+      {
+        heading: 'A Simple Structure That Helps',
+        body: [`A reliable system doesn't need to be complicated, but it does need to be consistent.`],
+        checklist: [
+          'One clear medication list, updated and accessible',
+          'A fixed schedule that aligns with daily routines',
+          'A method for tracking whether doses have been taken',
+          'Regular review, especially after any medical change',
+        ],
+        afterChecklist: `If any part of this system feels difficult to maintain, that's usually where errors begin.`,
+      },
+      {
+        heading: 'When Additional Support Becomes Necessary',
+        body: [
+          `There's a point where managing medications safely requires more than reminders.`,
+          `If medications are frequently missed, if schedules are difficult to follow, or if there's uncertainty about what should be taken and when, additional support can bring stability back into the routine.`,
+          `This is especially true after hospital discharge, when medication changes are most common. In these cases, structured support helps ensure that recovery is not disrupted by preventable errors.`,
+        ],
+      },
+      {
+        heading: 'How In-Home Care Supports Medication Safety',
+        body: [
+          `In-home care introduces consistency where it's most needed.`,
+          `Medication schedules are followed accurately. Changes are tracked and implemented correctly. There's clarity around what has been taken and what hasn't.`,
+          `For families in Towson, Baltimore County, and surrounding Maryland areas, this kind of support often removes one of the most demanding aspects of caregiving.`,
+          `It shifts medication management from something that requires constant oversight to something that is handled reliably, day after day.`,
+        ],
+      },
+      {
+        heading: 'Closing Thought',
+        body: [
+          `Medication management at home doesn't fail because people aren't trying. It fails when the system depends too heavily on memory and too little on structure.`,
+          `Putting that structure in place early and consistently keeps small errors from becoming larger problems.`,
+          `And in most cases, that's what makes the difference.`,
+        ],
+      },
+    ],
+  },
+  'caregiver-burnout': {
+    title: 'When Caregiving Becomes Overwhelming: What to Do Next',
+    metaTitle: 'When Caregiving Becomes Overwhelming: What to Do',
+    metaDesc: "Caregiving becoming too much? Learn the signs of caregiver burnout, what to do next, and how to get support at home in Maryland.",
+    image: img83,
+    readTime: '9 min read',
+    category: 'Care Guides',
+    related: [
+      { slug: 'home-healthcare-needed', title: 'How to Know When Home Healthcare Is Needed' },
+      { slug: 'after-hospital-discharge', title: 'What to Do After Hospital Discharge' },
+    ],
+    sections: [
+      {
+        lead: `It doesn't happen all at once. It builds in the background—missed sleep, constant adjustments, the feeling that you're always needed but never quite caught up.`,
+      },
+      {
+        body: [
+          `What started as helping out becomes managing everything. And somewhere along the way, the pace changes.`,
+          `You begin organizing your day around someone else's needs entirely. Then your evenings. Then your nights.`,
+          `By the time it feels overwhelming, you've usually been carrying it for longer than you realized.`,
+        ],
+      },
+      {
+        heading: 'What Are the Signs of Caregiver Burnout?',
+        body: [
+          `Caregiver burnout shows up as ongoing physical, emotional, and mental strain that doesn't ease with rest. It's not just fatigue, it's the sense that the demands of care are exceeding what you can realistically sustain.`,
+          `You might notice that you're more easily frustrated, even by small things. Tasks that used to feel manageable now feel heavy. Sleep becomes inconsistent, either because you're needed during the night or because your mind doesn't fully switch off.`,
+          `There's also a shift in attention. It becomes harder to keep track of details like appointments, medications, routines... Not because you're careless, but because you're managing too many moving parts at once.`,
+          `In many cases, the signs aren't dramatic. They're steady. And that's what makes them easy to overlook.`,
+        ],
+      },
+      {
+        heading: 'When Does Caregiving Become Too Much to Handle Alone?',
+        body: [
+          `Caregiving becomes unsustainable when maintaining consistent care starts to depend entirely on your availability, energy, and constant attention. At that point, even short disruptions can affect the quality and safety of care.`,
+          `This often shows up in small gaps. A medication is delayed. A routine is shortened. Supervision becomes harder to maintain while balancing work or other responsibilities.`,
+          `It's not about willingness. Most caregivers continue well past what's manageable because stepping back feels difficult.`,
+          `But when care depends on one person doing everything, it becomes fragile. And fragile systems tend to break under pressure.`,
+        ],
+      },
+      {
+        heading: 'Why Many Caregivers Wait Too Long to Get Help',
+        body: [
+          `There's a quiet expectation many people carry: that they should be able to handle it.`,
+          `Sometimes it's a sense of responsibility. Sometimes it's concern about bringing someone else into their home. Sometimes it's simply not knowing what kind of help would actually make a difference.`,
+          `There's also the dynamic between caregiver and patient. When someone begins to rely on you—not just for tasks, but emotionally—it can feel difficult to change that arrangement without causing distress.`,
+          `So support is delayed. Not because it isn't needed, but because the decision carries weight on both sides.`,
+        ],
+      },
+      {
+        heading: 'What Changes When Support Is Introduced',
+        body: [
+          `Support doesn't replace the caregiver. It stabilizes the situation.`,
+          `When additional help is brought in, the immediate effect is often consistency. Tasks are handled reliably. Routines are maintained. The pressure to manage everything alone begins to ease.`,
+          `For the caregiver, it creates space—sometimes for the first time in a while. Not just physical time, but mental space. The constant monitoring, the need to remember every detail, begins to reduce.`,
+          `For the person receiving care, it can actually improve the overall experience. Care becomes more structured. Interactions with family shift away from being task-focused and back toward something more natural.`,
+        ],
+      },
+      {
+        heading: 'A Practical Way to Assess Your Situation',
+        body: [`If you're unsure whether caregiving has become too much, it can help to look at a few key areas:`],
+        checklist: [
+          'Are you able to maintain care routines consistently every day?',
+          'Are you getting enough rest to function well?',
+          'Can you step away, even briefly, without concern?',
+          'Is your own health or well-being being affected?',
+        ],
+        afterChecklist: `If these questions are difficult to answer confidently, it usually points to a need for additional support.`,
+      },
+      {
+        heading: 'How In-Home Care Supports Both the Caregiver and the Patient',
+        body: [
+          `In-home care works best when it's integrated into the existing dynamic; not imposed on it.`,
+          `Support can be focused on specific areas: helping with mobility, managing medications, assisting with personal care, or providing supervision during key parts of the day.`,
+          `This reduces the load without removing the caregiver's role entirely.`,
+          `For families in Towson, Baltimore County, and surrounding Maryland areas, this approach often makes caregiving more sustainable. It allows care to continue at home without requiring one person to carry it alone.`,
+          `In situations where medication management or daily routines have become difficult to maintain, having structured support in place can prevent the kinds of gaps that lead to larger issues over time.`,
+        ],
+      },
+      {
+        heading: 'The Emotional Side of Stepping Back',
+        body: [
+          `One of the harder parts of bringing in help is not logistical; it's emotional.`,
+          `It can feel like stepping back means giving something up. In reality, it often means preserving what matters most.`,
+          `When caregiving becomes overwhelming, the relationship itself can start to shift under the strain. Introducing support doesn't weaken that relationship. It protects it from becoming defined entirely by responsibility.`,
+        ],
+      },
+      {
+        heading: 'Closing Thought',
+        body: [
+          `Caregiving is not meant to be carried alone indefinitely.`,
+          `There's a point where sustaining care requires more than effort. It requires structure, consistency, and support that doesn't depend on one person's capacity.`,
+          `Recognizing that point isn't a failure. It's a decision to make the situation more stable for everyone involved.`,
         ],
       },
     ],
