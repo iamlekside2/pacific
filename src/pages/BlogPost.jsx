@@ -5,12 +5,12 @@ import { useEffect } from 'react'
 import img85 from '../assets/images/85.jpg'
 import img84 from '../assets/images/84.jpg'
 import img87 from '../assets/images/87.jpg'
-import img81 from '../assets/images/81.jpg'
 import img83 from '../assets/images/83.jpg'
 import img82 from '../assets/images/82.jpg'
 import img86 from '../assets/images/86.jpg'
 import img68 from '../assets/images/68.jpg'
 import img69 from '../assets/images/69.jpg'
+import imgMedication from '../assets/images/medication.jpg'
 
 const posts = {
   'home-healthcare-needed': {
@@ -302,7 +302,7 @@ const posts = {
     title: 'Managing Medication Safely at Home',
     metaTitle: 'Managing Medications Safely at Home for Seniors',
     metaDesc: 'Learn how to manage medications safely at home, avoid common errors, and know when to get support for aging adults in Maryland.',
-    image: img81,
+    image: imgMedication,
     readTime: '8 min read',
     category: 'Care Guides',
     related: [
