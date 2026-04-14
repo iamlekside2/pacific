@@ -10,6 +10,7 @@ import img83 from '../assets/images/83.jpg'
 import img86 from '../assets/images/86.jpg'
 import img68 from '../assets/images/68.jpg'
 import img69 from '../assets/images/69.jpg'
+import imgMedication from '../assets/images/medication.jpg'
 import imgFaq from '../assets/images/faq.jpg'
 
 const commonQuestions = [
@@ -69,7 +70,7 @@ const careGuides = [
     slug: 'manage-medication-safely',
     title: 'Managing Medication Safely at Home',
     desc: 'Medication errors are more common than most families realize.',
-    image: img81,
+    image: imgMedication,
     points: [
       'Common medication mistakes',
       'How to create a reliable routine',
