@@ -94,7 +94,7 @@ export default function ServicesPage() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Care That Fits the Reality of Daily Life at Home
+            Care That Fits the Reality of Daily Living at Home
           </h1>
           <p className="text-lg text-blue-100/80 max-w-2xl mx-auto leading-relaxed mb-10">
             Professional in-home healthcare services designed to support safety, stability, and independence. For recovery, ongoing care, or daily living support.
