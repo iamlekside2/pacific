@@ -74,6 +74,39 @@ const careGuides = [
       'When support is needed to prevent complications',
     ],
   },
+  {
+    slug: 'cognitive-changes',
+    title: 'When Cognitive Changes Begin to Affect Daily Life',
+    desc: 'Memory loss and confusion often start subtly—but can quickly affect safety.',
+    image: img82,
+    points: [
+      'Identify early cognitive changes',
+      'Understand risks and progression',
+      'Know when structured support becomes necessary',
+    ],
+  },
+  {
+    slug: 'daily-activities-difficult',
+    title: 'When Daily Activities Become Difficult',
+    desc: 'Difficulty with bathing, dressing, or mobility often signals a need for support.',
+    image: img86,
+    points: [
+      'Recognize declining daily function',
+      'Understand what level of care is appropriate',
+      'Maintain dignity while introducing support',
+    ],
+  },
+  {
+    slug: 'incontinence-care',
+    title: 'Incontinence Care at Home: Dignity & Practical Support',
+    desc: 'Managing incontinence while protecting comfort, confidence, and daily routine.',
+    image: img84,
+    points: [
+      'Protect dignity during care routines',
+      'Practical daily management steps',
+      'When professional support helps most',
+    ],
+  },
 ]
 
 const situations = [
