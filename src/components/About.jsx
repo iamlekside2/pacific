@@ -1,6 +1,6 @@
-import { MapPin } from 'lucide-react'
+import { MapPin, ArrowRight } from 'lucide-react'
 import imgProfile from '../assets/images/profile.jpeg'
-import { useFormModal } from '../context/FormModalContext'
+import { Link } from 'react-router-dom'
 
 const areas = [
   { city: 'Towson, MD', note: 'Primary service area' },
@@ -9,7 +9,6 @@ const areas = [
 ]
 
 export default function About() {
-  const { openModal } = useFormModal()
   return (
     <section id="about" className="py-32 bg-slate-50 relative overflow-hidden">
       {/* Subtle background */}
@@ -56,12 +55,12 @@ export default function About() {
               Care is structured to be consistent, responsive, and reliable so families are not left managing uncertainty on their own.
             </p>
 
-            <button
-              onClick={openModal}
-              className="inline-flex px-7 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 hover:-translate-y-1 transition-all border border-white/20"
+            <Link
+              to="/about#founder"
+              className="inline-flex items-center gap-2 px-7 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 hover:-translate-y-1 transition-all border border-white/20"
             >
-              Get In Touch
-            </button>
+              View Full Profile <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
 
