@@ -1,4 +1,4 @@
-import { Phone, ArrowRight } from 'lucide-react'
+import { Phone, ArrowRight, Search, Clock, Clipboard } from 'lucide-react'
 import img69 from '../assets/images/69.jpg'
 import { useFormModal } from '../context/FormModalContext'
 
@@ -18,13 +18,22 @@ export default function CTA() {
               Most families delay care. Not by choice, but because the next step isn't clear. A short consultation helps you understand:
             </p>
 
-            <ul className="text-lg text-slate-700 mb-8 space-y-3">
-              <li>• What level of care is actually needed</li>
-              <li>• How quickly support can begin</li>
-              <li>• What the process looks like from start to care delivery</li>
-            </ul>
+            <div className="space-y-4 mb-8">
+              {[
+                { icon: Search, text: 'What level of care is actually needed' },
+                { icon: Clock, text: 'How quickly support can begin' },
+                { icon: Clipboard, text: 'What the process looks like from start to care delivery' },
+              ].map(({ icon: Icon, text }) => (
+                <div key={text} className="flex items-start gap-4 p-4 bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all">
+                  <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <p className="text-slate-700 text-lg pt-1.5">{text}</p>
+                </div>
+              ))}
+            </div>
 
-            <p className="text-slate-600 text-lg mb-8">Speak with a care coordinator today.</p>
+            <p className="text-slate-600 text-lg mb-8 font-medium">Speak with a care coordinator today.</p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
