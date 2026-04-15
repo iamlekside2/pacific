@@ -11,6 +11,9 @@ import img86 from '../assets/images/86.jpg'
 import img68 from '../assets/images/68.jpg'
 import img69 from '../assets/images/69.jpg'
 import imgMedication from '../assets/images/medication.jpg'
+import imgIncontinence from '../assets/images/incontinence.jpg'
+import imgDailyActivities from '../assets/images/daily-activities.jpg'
+import imgCaregiverBurnout from '../assets/images/caregiver-burnout.jpg'
 
 const posts = {
   'home-healthcare-needed': {
@@ -408,7 +411,7 @@ const posts = {
     title: 'When Caregiving Becomes Overwhelming: What to Do Next',
     metaTitle: 'When Caregiving Becomes Overwhelming: What to Do',
     metaDesc: "Caregiving becoming too much? Learn the signs of caregiver burnout, what to do next, and how to get support at home in Maryland.",
-    image: img83,
+    image: imgCaregiverBurnout,
     readTime: '9 min read',
     category: 'Care Guides',
     related: [
@@ -676,7 +679,7 @@ const posts = {
     title: 'When Daily Activities Become Difficult: Recognizing When Home Support Becomes Necessary',
     metaTitle: 'When Daily Activities Become Difficult | Home Care Support',
     metaDesc: 'Understand when daily activities become difficult and what it signals about in-home care needs, safety risks, and support options for families.',
-    image: img86,
+    image: imgDailyActivities,
     readTime: '10 min read',
     category: 'Care Guides',
     related: [
@@ -771,7 +774,7 @@ const posts = {
     title: 'How to Handle Incontinence Care at Home While Preserving Dignity and Daily Comfort',
     metaTitle: 'Incontinence Care at Home: Dignity & Practical Support',
     metaDesc: 'Learn how to manage incontinence care at home while protecting dignity, comfort, and safety. Practical guidance for families and caregivers.',
-    image: img69,
+    image: imgIncontinence,
     readTime: '9 min read',
     category: 'Care Guides',
     related: [

@@ -11,6 +11,9 @@ import img86 from '../assets/images/86.jpg'
 import img68 from '../assets/images/68.jpg'
 import img69 from '../assets/images/69.jpg'
 import imgMedication from '../assets/images/medication.jpg'
+import imgIncontinence from '../assets/images/incontinence.jpg'
+import imgDailyActivities from '../assets/images/daily-activities.jpg'
+import imgCaregiverBurnout from '../assets/images/caregiver-burnout.jpg'
 import imgFaq from '../assets/images/faq.jpg'
 
 const commonQuestions = [
@@ -92,15 +95,15 @@ const careGuides = [
 
 const situations = [
   {
-    icon: Heart,
-    slug: 'caregiver-burnout',
-    title: 'When Caregiving Becomes Overwhelming',
-    desc: 'Balancing care with work, family, and personal responsibilities can quickly become unsustainable.',
-    image: img83,
+    icon: Users,
+    slug: 'incontinence-care',
+    title: 'Incontinence Care at Home: Dignity & Practical Support',
+    desc: 'Managing incontinence while protecting comfort, confidence, and daily routine.',
+    image: imgIncontinence,
     points: [
-      'Recognize signs of burnout early',
-      'Understand your support options',
-      'Transition from doing everything alone to structured support',
+      'Protect dignity during care routines',
+      'Practical daily management steps',
+      'When professional support helps most',
     ],
   },
   {
@@ -108,7 +111,7 @@ const situations = [
     slug: 'daily-activities-difficult',
     title: 'When Daily Activities Become Difficult',
     desc: 'Difficulty with bathing, dressing, or mobility often signals a need for support.',
-    image: img86,
+    image: imgDailyActivities,
     points: [
       'Recognize declining daily function',
       'Understand what level of care is appropriate',
@@ -116,15 +119,15 @@ const situations = [
     ],
   },
   {
-    icon: Users,
-    slug: 'incontinence-care',
-    title: 'Incontinence Care at Home: Dignity & Practical Support',
-    desc: 'Managing incontinence while protecting comfort, confidence, and daily routine.',
-    image: img69,
+    icon: Heart,
+    slug: 'caregiver-burnout',
+    title: 'When Caregiving Becomes Overwhelming',
+    desc: 'Balancing care with work, family, and personal responsibilities can quickly become unsustainable.',
+    image: imgCaregiverBurnout,
     points: [
-      'Protect dignity during care routines',
-      'Practical daily management steps',
-      'When professional support helps most',
+      'Recognize signs of burnout early',
+      'Understand your support options',
+      'Transition from doing everything alone to structured support',
     ],
   },
 ]
