@@ -886,7 +886,10 @@ export default function BlogPost() {
   return (
     <main className="pt-20">
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={post.image} alt="" className="w-full h-full object-cover opacity-20" />
+        </div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
 

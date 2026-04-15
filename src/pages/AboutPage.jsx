@@ -271,21 +271,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Introduction Letter CTA */}
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-slate-600 leading-relaxed mb-5">
-              For healthcare professionals and referral partners, a formal introduction letter outlining licensing and service scope is available below.
-            </p>
-            <a
-              href="/introduction-letter.docx"
-              download
-              className="inline-flex items-center gap-3 px-7 py-4 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark hover:shadow-xl hover:scale-105 transition-all"
-            >
-              <Shield className="w-5 h-5" />
-              View Introduction Letter
-              <span className="text-white/70 text-sm font-normal ml-1">(For Referrers & Care Coordinators)</span>
-            </a>
-          </div>
         </div>
       </section>
 

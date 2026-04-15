@@ -23,6 +23,9 @@ export default function ContactPage() {
     <main className="pt-20">
       {/* Hero Banner */}
       <section className="relative py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={img67} alt="" className="w-full h-full object-cover opacity-20" />
+        </div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
