@@ -1,5 +1,11 @@
 import { Phone, CheckCircle, Shield, Clock, Users, Heart, ArrowRight } from 'lucide-react'
 import img82 from '../assets/images/82.jpg'
+import img83 from '../assets/images/83.jpg'
+import img84 from '../assets/images/84.jpg'
+import img85 from '../assets/images/85.jpg'
+import img86 from '../assets/images/86.jpg'
+import img87 from '../assets/images/87.jpg'
+import imgConsultation from '../assets/images/consultation.jpg'
 import { Link } from 'react-router-dom'
 import { useFormModal } from '../context/FormModalContext'
 
@@ -40,6 +46,9 @@ export default function AboutPage() {
     <main className="pt-20">
       {/* Hero Banner */}
       <section className="relative py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={img85} alt="" className="w-full h-full object-cover opacity-20" />
+        </div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
@@ -159,94 +168,128 @@ export default function AboutPage() {
 
       {/* Our Role in Your Care Journey */}
       <section className="py-24 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">Our Role in Your Care Journey</h2>
-          <p className="text-lg text-slate-700 font-semibold mb-4">When care needs increase, most families face the same challenges:</p>
-          <ul className="space-y-2 mb-8">
-            {['Unclear next steps', 'Gaps in support', 'Growing pressure and responsibility'].map(item => (
-              <li key={item} className="flex items-center gap-3 text-slate-700 text-lg">
-                <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-lg text-slate-700 font-semibold mb-4">We step in to:</p>
-          <ul className="space-y-2 mb-6">
-            {['Stabilize daily routines', 'Reduce immediate risks', 'Provide dependable, ongoing support'].map(item => (
-              <li key={item} className="flex items-center gap-3 text-slate-700 text-lg">
-                <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-lg text-slate-600 leading-relaxed italic">So care continues safely—and you're not managing it alone.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-xl order-last lg:order-first">
+              <img src={img84} alt="Caregiver assisting patient" className="w-full h-[550px] object-cover" />
+            </div>
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">Our Role in Your Care Journey</h2>
+              <p className="text-lg text-slate-700 font-semibold mb-4">When care needs increase, most families face the same challenges:</p>
+              <ul className="space-y-2 mb-8">
+                {['Unclear next steps', 'Gaps in support', 'Growing pressure and responsibility'].map(item => (
+                  <li key={item} className="flex items-center gap-3 text-slate-700 text-lg">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-lg text-slate-700 font-semibold mb-4">We step in to:</p>
+              <ul className="space-y-2 mb-6">
+                {['Stabilize daily routines', 'Reduce immediate risks', 'Provide dependable, ongoing support'].map(item => (
+                  <li key={item} className="flex items-center gap-3 text-slate-700 text-lg">
+                    <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-lg text-slate-600 leading-relaxed italic">So care continues safely—and you're not managing it alone.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Our Commitment to Care */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Commitment to Care</h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-6">We approach every care situation with:</p>
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            {[
-              { label: 'Consistency', desc: 'care delivered reliably, without gaps' },
-              { label: 'Respect', desc: 'preserving dignity in every interaction' },
-              { label: 'Clarity', desc: 'clear communication and expectations' },
-              { label: 'Accountability', desc: 'responsibility in how care is delivered' },
-            ].map(({ label, desc }) => (
-              <div key={label} className="flex items-start gap-3 p-5 bg-slate-50 rounded-2xl border-2 border-slate-200 shadow-sm">
-                <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                <p className="text-slate-700"><span className="font-bold">{label}</span> — {desc}</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Commitment to Care</h2>
+              <p className="text-lg text-slate-600 leading-relaxed mb-6">We approach every care situation with:</p>
+              <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                {[
+                  { label: 'Consistency', desc: 'care delivered reliably, without gaps' },
+                  { label: 'Respect', desc: 'preserving dignity in every interaction' },
+                  { label: 'Clarity', desc: 'clear communication and expectations' },
+                  { label: 'Accountability', desc: 'responsibility in how care is delivered' },
+                ].map(({ label, desc }) => (
+                  <div key={label} className="flex items-start gap-3 p-5 bg-slate-50 rounded-2xl border-2 border-slate-200 shadow-sm">
+                    <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-slate-700"><span className="font-bold">{label}</span> — {desc}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+              <p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-blue-500 pl-6 bg-blue-50/50 py-4 rounded-r-xl">
+                Because in-home care is not just about assistance. It's about maintaining stability, safety, and quality of life.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img src={img83} alt="Compassionate care moment" className="w-full h-[600px] object-cover" />
+            </div>
           </div>
-          <p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-blue-500 pl-6 bg-blue-50/50 py-4 rounded-r-xl">
-            Because in-home care is not just about assistance. It's about maintaining stability, safety, and quality of life.
-          </p>
         </div>
       </section>
 
       {/* Why Families Trust THE PACIFIC HOMECARE */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Why Families Trust THE PACIFIC HOMECARE</h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-8">Families choose THE PACIFIC HOMECARE because care is:</p>
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            {whyTrust.map(({ label, desc }) => (
-              <div key={label} className="flex items-start gap-3 p-5 bg-white rounded-2xl border-2 border-slate-200 shadow-sm">
-                <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                <p className="text-slate-700"><span className="font-bold">{label}</span> — {desc}</p>
+      <section className="relative py-24 bg-slate-50 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={img86} alt="" className="w-full h-full object-cover opacity-[0.06]" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-xl order-last lg:order-first">
+              <img src={img87} alt="Family trusting care" className="w-full h-[550px] object-cover" />
+            </div>
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Why Families Trust THE PACIFIC HOMECARE</h2>
+              <p className="text-lg text-slate-600 leading-relaxed mb-8">Families choose THE PACIFIC HOMECARE because care is:</p>
+              <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                {whyTrust.map(({ label, desc }) => (
+                  <div key={label} className="flex items-start gap-3 p-5 bg-white rounded-2xl border-2 border-slate-200 shadow-sm">
+                    <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-slate-700"><span className="font-bold">{label}</span> — {desc}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+              <p className="text-lg text-slate-600 leading-relaxed">This reduces uncertainty and creates a more stable, manageable care experience.</p>
+            </div>
           </div>
-          <p className="text-lg text-slate-600 leading-relaxed">This reduces uncertainty and creates a more stable, manageable care experience.</p>
         </div>
       </section>
 
       {/* If You're Unsure What to Do Next */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">If You're Unsure What to Do Next</h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-6">You don't need to have all the answers before reaching out. A short conversation can help you:</p>
-          <ul className="text-lg text-slate-700 space-y-2 mb-10 inline-block text-left">
-            <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Understand your current situation more clearly</li>
-            <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Identify what level of care is needed</li>
-            <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Determine how quickly support can begin</li>
-          </ul>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark transition-all">
-              <Phone className="w-5 h-5" /> Call Now +1 (443) 460-8684
-            </a>
-            <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary/5 transition-all">
-              Book a Consultation <ArrowRight className="w-5 h-5" />
-            </button>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">If You're Unsure What to Do Next</h2>
+              <p className="text-lg text-slate-600 leading-relaxed mb-6">You don't need to have all the answers before reaching out. A short conversation can help you:</p>
+              <ul className="text-lg text-slate-700 space-y-3 mb-8">
+                <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Understand your current situation more clearly</li>
+                <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Identify what level of care is needed</li>
+                <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Determine how quickly support can begin</li>
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark transition-all">
+                  <Phone className="w-5 h-5" /> Call Now +1 (443) 460-8684
+                </a>
+                <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary/5 transition-all">
+                  Book a Consultation <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img src={imgConsultation} alt="Care consultation" className="w-full h-[500px] object-cover" />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="py-20 bg-navy text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={img82} alt="" className="w-full h-full object-cover opacity-15" />
+        </div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-4xl font-bold mb-6">When care becomes uncertain, having the right support changes everything.</h2>
