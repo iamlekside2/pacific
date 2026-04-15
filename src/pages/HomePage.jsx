@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import HowToKnow from '../components/HowToKnow'
 import Services from '../components/Services'
+import ParallaxSection from '../components/ParallaxSection'
 import Situations from '../components/Situations'
 import Trust from '../components/Trust'
 import Process from '../components/Process'
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Hero />
       <HowToKnow />
       <Services />
+      <ParallaxSection />
       <Situations />
       <Trust />
       <Process />
