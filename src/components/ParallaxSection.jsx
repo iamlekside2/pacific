@@ -48,26 +48,6 @@ export default function ParallaxSection() {
           alt="Caregiving can be overwhelming"
           className="w-full h-full object-cover"
         />
-        {/* Subtle darkening overlay */}
-        <div className="absolute inset-0 bg-slate-900/30" />
-      </div>
-
-      {/* Centered caption fades in/out */}
-      <div
-        className="relative z-10 flex items-center justify-center h-full px-4"
-        style={{ opacity: arch }}
-      >
-        <div className="max-w-3xl text-center">
-          <p className="text-xs md:text-sm font-bold text-blue-300 uppercase tracking-widest mb-4 drop-shadow-md">
-            We See You
-          </p>
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
-            Caring for someone you love shouldn't have to drain you.
-          </h2>
-          <p className="mt-6 text-lg md:text-xl text-white/90 leading-relaxed drop-shadow">
-            We step in with consistency — so you don't have to carry it alone.
-          </p>
-        </div>
       </div>
     </section>
   )
