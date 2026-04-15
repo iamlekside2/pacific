@@ -184,39 +184,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Founder Profile */}
-      <section id="founder" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative group">
-              <div className="absolute -inset-3 bg-gradient-to-r from-blue-400/20 to-blue-600/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-              <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-slate-200 group-hover:border-blue-400 group-hover:shadow-2xl group-hover:shadow-blue-500/15 transition-all duration-500">
-                <img
-                  src={imgProfile}
-                  alt="Blessing Okeke – Founder, THE PACIFIC HOMECARE"
-                  className="w-full h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-white/10 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/30">
-                    <p className="text-white font-bold text-lg">Blessing Okeke</p>
-                    <p className="text-blue-200 text-sm">Founder, THE PACIFIC HOMECARE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-8">
-              <p className="text-sm font-bold text-blue-600 uppercase tracking-widest">Founder Profile</p>
-              <h2 className="text-4xl font-bold text-slate-900">Blessing Okeke</h2>
-              <p className="text-lg text-slate-700 leading-relaxed">THE PACIFIC HOMECARE is led by a dedicated healthcare professional focused on delivering dependable, patient-centered in-home care.</p>
-              <p className="text-lg text-slate-700 leading-relaxed border-l-4 border-blue-500 pl-6 bg-blue-50/50 py-4 rounded-r-xl italic">
-                Care is structured to be consistent, responsive, and reliable so families are not left managing uncertainty on their own.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-20 bg-navy text-white text-center relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />

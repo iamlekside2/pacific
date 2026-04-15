@@ -1,6 +1,4 @@
-import { MapPin, ArrowRight } from 'lucide-react'
-import imgProfile from '../assets/images/profile.jpg'
-import { Link } from 'react-router-dom'
+import { MapPin } from 'lucide-react'
 
 const areas = [
   { city: 'Towson, MD', note: 'Primary service area' },
@@ -16,53 +14,6 @@ export default function About() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-50/40 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
-        {/* Founder Row */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-
-          {/* Photo */}
-          <div className="relative group">
-            {/* Glow */}
-            <div className="absolute -inset-3 bg-gradient-to-r from-blue-400/20 to-blue-600/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-            {/* Image card */}
-            <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-slate-200 group-hover:border-blue-400 group-hover:shadow-2xl group-hover:shadow-blue-500/15 transition-all duration-500">
-              <img
-                src={imgProfile}
-                alt="Blessing Okeke – Founder, THE PACIFIC HOMECARE"
-                className="w-full h-[600px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-          </div>
-
-          {/* Content */}
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                Built on Professional Care and Personal Commitment
-              </h2>
-            </div>
-
-            <div>
-              <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Founder</p>
-              <h3 className="text-3xl font-bold text-slate-900 mb-4">Blessing Okeke</h3>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                THE PACIFIC HOMECARE is led by a dedicated healthcare professional focused on delivering dependable, patient-centered in-home care.
-              </p>
-            </div>
-
-            <p className="text-lg text-slate-700 leading-relaxed border-l-4 border-blue-500 pl-6 bg-blue-50/50 py-4 rounded-r-xl">
-              Care is structured to be consistent, responsive, and reliable so families are not left managing uncertainty on their own.
-            </p>
-
-            <Link
-              to="/about#founder"
-              className="inline-flex items-center gap-2 px-7 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 hover:-translate-y-1 transition-all border border-white/20"
-            >
-              View Full Profile <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
 
         {/* Service Areas */}
         <div className="bg-white rounded-3xl p-12 border-2 border-slate-200 shadow-sm">

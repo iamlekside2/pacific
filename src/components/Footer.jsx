@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="group hover:scale-105 transition-transform duration-300">
             <h4 className="font-bold mb-6 group-hover:text-blue-100 transition-colors">Navigation</h4>
             <ul className="space-y-3 text-sm text-white/80">
-              {[{label: 'Home', to: '/'}, {label: 'Services', to: '/services'}, {label: 'About', to: '/about'}, {label: 'Founder', to: '/about#founder'}, {label: 'Contact', to: '/contact'}].map(({label, to}) => (
+              {[{label: 'Home', to: '/'}, {label: 'Services', to: '/services'}, {label: 'About', to: '/about'}, {label: 'Contact', to: '/contact'}].map(({label, to}) => (
                 <li key={to}><Link to={to} className="hover:text-white hover:translate-x-1 transition-all inline-block">{label}</Link></li>
               ))}
             </ul>
