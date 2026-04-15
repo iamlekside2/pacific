@@ -197,7 +197,7 @@ const posts = {
           `In-home care introduces structure at a point where it's often missing.`,
           `Medication schedules are followed consistently. Movement is supported safely. Daily routines regain predictability. Changes in condition are noticed earlier.`,
           `For families, this reduces the need to manage every detail personally. For patients, it allows recovery to continue in a familiar environment with the right level of support in place.`,
-          `For those in Towson, Baltimore County, and surrounding Maryland areas, having access to professional in-home care means the transition from hospital to home doesn't have to rely on improvisation. It can be structured, monitored, and steady.`,
+          `For those in Baltimore City, surrounding counties, and the greater Washington suburbs in Maryland, having access to professional in-home care means the transition from hospital to home doesn't have to rely on improvisation. It can be structured, monitored, and steady.`,
         ],
       },
       {
