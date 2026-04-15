@@ -53,9 +53,13 @@ export default function Footer() {
           <div className="group hover:scale-105 transition-transform duration-300">
             <h4 className="font-bold mb-6 group-hover:text-blue-100 transition-colors">Service Areas</h4>
             <ul className="space-y-3 text-sm text-white/80">
-              <li>Towson, MD</li>
               <li>Baltimore County</li>
-              <li>Surrounding Maryland</li>
+              <li>Baltimore City</li>
+              <li>Montgomery County</li>
+              <li>Prince George's County</li>
+              <li>Anne Arundel County</li>
+              <li>Howard County</li>
+              <li>Harford County</li>
             </ul>
           </div>
         </div>
