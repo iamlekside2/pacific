@@ -652,7 +652,7 @@ const posts = {
           `Cognitive changes respond best to consistency.`,
           `Rather than correcting every mistake, structured support focuses on creating a predictable rhythm—where daily tasks happen in the same way, at the same time, with calm guidance.`,
           `This might include support with medications, assistance with daily routines, or gentle cueing to help with sequencing. The goal is not to take over independence, but to reinforce it where it's beginning to weaken.`,
-          `For families in Towson, Baltimore County, and surrounding Maryland areas, this kind of in-home support often becomes the difference between managing uncertainty and restoring stability at home.`,
+          `For families in Baltimore City, surrounding counties, and the greater Washington suburbs in Maryland, this kind of in-home support often becomes the difference between managing uncertainty and restoring stability at home.`,
         ],
       },
       {
