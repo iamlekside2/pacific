@@ -174,7 +174,7 @@ export default function AboutPage() {
               <img src={img84} alt="Caregiver assisting patient" className="w-full h-[550px] object-cover" />
             </div>
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">Our Role in Your Care Journey</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">Our Role in Your Care</h2>
               <p className="text-lg text-slate-700 font-semibold mb-4">When care needs increase, most families face the same challenges:</p>
               <ul className="space-y-2 mb-8">
                 {['Unclear next steps', 'Gaps in support', 'Growing pressure and responsibility'].map(item => (
@@ -193,8 +193,98 @@ export default function AboutPage() {
                   </li>
                 ))}
               </ul>
-              <p className="text-lg text-slate-600 leading-relaxed italic">So care continues safely—and you're not managing it alone.</p>
+              <p className="text-lg text-slate-600 leading-relaxed italic">So care continues safely—and you're not left managing it alone.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Clinical Credentials & Service Coverage */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border-2 border-blue-200 mb-4">
+              <Shield className="w-4 h-4 text-blue-600" />
+              <p className="text-sm font-bold text-blue-600 uppercase tracking-widest">Licensed & Credentialed</p>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Our Clinical Credentials & Service Coverage</h2>
+          </div>
+
+          {/* Licensing */}
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border-2 border-blue-200 shadow-sm mb-10">
+            <div className="flex items-start gap-4">
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/30">
+                <Shield className="w-7 h-7 text-white" />
+              </div>
+              <div>
+                <p className="text-lg text-slate-700 leading-relaxed mb-3">
+                  THE PACIFIC HOMECARE operates as a licensed <span className="font-bold text-blue-700">Residential Services Agency (RSA)</span> under the Maryland Department of Health, Office of Health Care Quality.
+                </p>
+                <p className="text-slate-600 leading-relaxed italic">
+                  This means care is delivered within regulated standards designed to ensure safety, accountability, and consistency.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Services Offered */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">Our services include:</h3>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                'Skilled nursing under registered nurse (RN) supervision',
+                'Medication management and administration',
+                'Assistance with activities of daily living (ADLs)',
+                'Companion care and routine support',
+              ].map(item => (
+                <div key={item} className="flex items-start gap-3 p-5 bg-white rounded-xl border-2 border-slate-200 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-slate-700">{item}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-slate-600 leading-relaxed mt-6 italic">
+              Care is provided by trained healthcare professionals, with oversight that ensures reliability across every care plan.
+            </p>
+          </div>
+
+          {/* Service Coverage */}
+          <div className="max-w-5xl mx-auto bg-slate-50 rounded-2xl p-8 border-2 border-slate-200 mb-10">
+            <p className="text-lg text-slate-700 font-semibold mb-5 text-center">We support adults 18 and older and provide services across:</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {[
+                'Baltimore County',
+                'Baltimore City',
+                'Montgomery County',
+                "Prince George's County",
+                'Anne Arundel County',
+                'Howard County',
+                'Harford County',
+              ].map(county => (
+                <div key={county} className="flex items-center gap-3 p-3 bg-white rounded-lg border border-slate-200">
+                  <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <p className="font-semibold text-slate-800">{county}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Introduction Letter CTA */}
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-slate-600 leading-relaxed mb-5">
+              For healthcare professionals and referral partners, a formal introduction letter outlining licensing and service scope is available below.
+            </p>
+            <a
+              href="/introduction-letter.docx"
+              download
+              className="inline-flex items-center gap-3 px-7 py-4 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark hover:shadow-xl hover:scale-105 transition-all"
+            >
+              <Shield className="w-5 h-5" />
+              View Introduction Letter
+              <span className="text-white/70 text-sm font-normal ml-1">(For Referrers & Care Coordinators)</span>
+            </a>
           </div>
         </div>
       </section>
@@ -292,8 +382,8 @@ export default function AboutPage() {
         </div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-4xl font-bold mb-6">When care becomes uncertain, having the right support changes everything.</h2>
-          <p className="text-white/80 text-lg mb-10 leading-relaxed">We're here to provide clarity, structure, and dependable care—when it matters most.</p>
+          <h2 className="text-4xl font-bold mb-6">When care becomes uncertain, having the right support changes how everything is managed.</h2>
+          <p className="text-white/80 text-lg mb-10 leading-relaxed">The goal isn't just to respond. It's to bring structure, stability, and clarity into daily life at home.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all">
               <Phone className="w-5 h-5" /> Call Now
