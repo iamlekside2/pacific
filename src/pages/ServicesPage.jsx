@@ -4,7 +4,7 @@ import imgAmbulatory from '../assets/images/ambulatory.jpg'
 import imgPersonalCare from '../assets/images/personal-care.jpg'
 import imgCognitive from '../assets/images/cognitive.jpg'
 import imgCompanionship from '../assets/images/companionship.jpg'
-import img94 from '../assets/images/94.jpg'
+import img98 from '../assets/images/98.jpg'
 import img82 from '../assets/images/82.jpg'
 import imgCareOverview from '../assets/images/care-overview.jpg'
 import img83 from '../assets/images/83.jpg'
@@ -346,7 +346,7 @@ export default function ServicesPage() {
             <div className="relative grid lg:grid-cols-2 gap-10 items-center">
               {/* Left: Image */}
               <div className="hidden lg:block rounded-2xl overflow-hidden shadow-xl">
-                <img src={img94} alt="Care consultation" className="w-full h-[350px] object-cover" />
+                <img src={img98} alt="Care consultation" className="w-full h-[350px] object-cover" />
               </div>
 
               {/* Right: Content */}
