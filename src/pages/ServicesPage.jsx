@@ -6,6 +6,7 @@ import imgCognitive from '../assets/images/cognitive.jpg'
 import imgCompanionship from '../assets/images/companionship.jpg'
 import img81 from '../assets/images/81.jpg'
 import img82 from '../assets/images/82.jpg'
+import imgCareOverview from '../assets/images/care-overview.jpg'
 import img83 from '../assets/images/83.jpg'
 import img86 from '../assets/images/86.jpg'
 import { Link } from 'react-router-dom'
@@ -119,7 +120,7 @@ export default function ServicesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img src={img82} alt="Caregiver assisting patient" className="w-full h-[450px] object-cover" />
+              <img src={imgCareOverview} alt="Care overview" className="w-full h-[450px] object-cover" />
             </div>
             {/* Right: Content */}
             <div>
