@@ -48,6 +48,18 @@ export default function ParallaxSection() {
           alt="Caregiving can be overwhelming"
           className="w-full h-full object-cover"
         />
+        {/* Caption gradient for readability */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent pointer-events-none" />
+      </div>
+
+      {/* Caption overlay */}
+      <div
+        className="relative z-10 flex items-end justify-center h-full pb-8 md:pb-14 px-4"
+        style={{ opacity: arch }}
+      >
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white text-center leading-tight drop-shadow-lg max-w-5xl">
+          Daily Care Can Feel Overwhelming Without The Right Support
+        </h2>
       </div>
     </section>
   )
