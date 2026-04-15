@@ -1,13 +1,13 @@
 import { Phone, CheckCircle, Shield, Clock, Users, Heart, ArrowRight } from 'lucide-react'
-import imgProfile from '../assets/images/profile.jpg'
 import img82 from '../assets/images/82.jpg'
 import { Link } from 'react-router-dom'
+import { useFormModal } from '../context/FormModalContext'
 
 const differentiators = [
-  { title: 'Care That Is Structured, Not Improvised', desc: 'Inconsistent care leads to setbacks. Our services are delivered through clear routines, defined responsibilities, and consistent execution; so nothing important is missed.', icon: Shield },
-  { title: 'Responsiveness When It Matters Most', desc: "Care needs don't follow a schedule. We remain accessible and responsive, ensuring families are not left waiting or guessing when situations change.", icon: Clock },
-  { title: 'Personalized Based on Real Needs', desc: 'No two care situations are the same. We assess actual conditions and build care plans around what is truly needed—not assumptions or generic templates.', icon: Users },
-  { title: 'Professional Oversight and Accountability', desc: 'Care is delivered with clinical awareness and responsibility. Every service is structured to maintain safety, reduce risk, and support measurable stability over time.', icon: Heart },
+  { title: 'Care That Is Structured, Not Improvised', sub: 'Inconsistent care leads to setbacks.', desc: 'Our services are delivered through clear routines, defined responsibilities, and consistent execution; so nothing important is missed.', icon: Shield },
+  { title: 'Responsiveness When It Matters Most', sub: "Care needs don't follow a schedule.", desc: 'We remain accessible and responsive, ensuring families are not left waiting or guessing when situations change.', icon: Clock },
+  { title: 'Personalized Based on Real Needs', sub: 'No two care situations are the same.', desc: 'We assess actual conditions and build care plans around what is truly needed—not assumptions or generic templates.', icon: Users },
+  { title: 'Professional Oversight and Accountability', sub: 'Care is delivered with clinical awareness and responsibility.', desc: 'Every service is structured to maintain safety, reduce risk, and support measurable stability over time.', icon: Heart },
 ]
 
 const weSupport = [
@@ -26,7 +26,16 @@ const familySupport = [
   'Trying to prevent further health complications',
 ]
 
+const whyTrust = [
+  { label: 'Reliable', desc: 'delivered consistently without disruption' },
+  { label: 'Responsive', desc: 'support is available when needed' },
+  { label: 'Structured', desc: 'clear systems guide every aspect of care' },
+  { label: 'Personalized', desc: 'tailored to real, evolving needs' },
+]
+
 export default function AboutPage() {
+  const { openModal } = useFormModal()
+
   return (
     <main className="pt-20">
       {/* Hero Banner */}
@@ -40,13 +49,16 @@ export default function AboutPage() {
           <p className="text-lg text-blue-100/80 max-w-2xl mx-auto leading-relaxed mb-10">
             THE PACIFIC HOMECARE provides structured, dependable in-home care designed to support safety, stability, and dignity for individuals and the families who rely on us.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <a href="tel:+14434608684" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-2xl font-bold shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/80 hover:scale-105 hover:-translate-y-1 transition-all duration-300 border border-white/20">
               <Phone className="w-5 h-5" /> Call Now +1 (443) 460-8684
             </a>
-            <Link to="/contact" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/40 text-white rounded-2xl font-bold backdrop-blur-md bg-white/10 hover:bg-white/20 hover:border-white/70 hover:scale-105 hover:-translate-y-1 transition-all duration-300">
+            <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/40 text-white rounded-2xl font-bold backdrop-blur-md bg-white/10 hover:bg-white/20 hover:border-white/70 hover:scale-105 hover:-translate-y-1 transition-all duration-300">
               Request Support
-            </Link>
+            </button>
+            <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/40 text-white rounded-2xl font-bold backdrop-blur-md bg-white/10 hover:bg-white/20 hover:border-white/70 hover:scale-105 hover:-translate-y-1 transition-all duration-300">
+              Speak with a Care Coordinator
+            </button>
           </div>
         </div>
       </section>
@@ -55,7 +67,6 @@ export default function AboutPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Content */}
             <div>
               <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">About Us</p>
               <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Who We Are</h2>
@@ -75,8 +86,6 @@ export default function AboutPage() {
                 <p className="text-slate-700 leading-relaxed italic">Our role is simple but critical: to bring <span className="font-bold text-blue-700">clarity, structure, and reliable care</span> into situations that often feel uncertain.</p>
               </div>
             </div>
-
-            {/* Right: Image */}
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img src={img82} alt="Caregiver supporting patient" className="w-full h-[550px] object-cover" />
             </div>
@@ -90,13 +99,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-20">What Makes Our Approach Different</h2>
           <div className="grid md:grid-cols-2 gap-12">
-            {differentiators.map(({ title, desc, icon: Icon }) => (
+            {differentiators.map(({ title, sub, desc, icon: Icon }) => (
               <div key={title} className="flex gap-5 group">
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-500/10 to-blue-400/5 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:from-blue-500/20 group-hover:to-blue-400/10 transition-all">
                   <Icon className="w-7 h-7 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">{title}</h3>
+                  <p className="text-slate-700 leading-relaxed font-medium mb-1">{sub}</p>
                   <p className="text-slate-700 leading-relaxed">{desc}</p>
                 </div>
               </div>
@@ -108,23 +118,14 @@ export default function AboutPage() {
       {/* Who We Support */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Our Community</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Who We Support</h2>
-            <p className="text-lg text-slate-600">Whether it's individual care or family relief — we're built to serve both.</p>
-          </div>
-
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-16">Who We Support</h2>
           <div className="grid lg:grid-cols-2 gap-8">
-            {/* Individuals Card */}
             <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-10 border-2 border-blue-200 shadow-sm hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-4 mb-6 pb-6 border-b-2 border-blue-100">
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30">
                   <Users className="w-7 h-7 text-white" />
                 </div>
-                <div>
-                  <p className="text-xs font-bold text-blue-600 uppercase tracking-wider">For Individuals</p>
-                  <h3 className="text-xl font-bold text-slate-900">Our services are designed for individuals who:</h3>
-                </div>
+                <h3 className="text-xl font-bold text-slate-900">Our services are designed for individuals who:</h3>
               </div>
               <ul className="space-y-3">
                 {weSupport.map(item => (
@@ -136,16 +137,12 @@ export default function AboutPage() {
               </ul>
             </div>
 
-            {/* Families Card */}
             <div className="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-10 border-2 border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-4 mb-6 pb-6 border-b-2 border-slate-100">
                 <div className="w-14 h-14 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl flex items-center justify-center shadow-lg shadow-slate-500/30">
                   <Heart className="w-7 h-7 text-white" />
                 </div>
-                <div>
-                  <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">For Families</p>
-                  <h3 className="text-xl font-bold text-slate-900">We also support families who are:</h3>
-                </div>
+                <h3 className="text-xl font-bold text-slate-900">We also support families who are:</h3>
               </div>
               <ul className="space-y-3">
                 {familySupport.map(item => (
@@ -160,8 +157,34 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Commitment + Founder */}
+      {/* Our Role in Your Care Journey */}
       <section className="py-24 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8">Our Role in Your Care Journey</h2>
+          <p className="text-lg text-slate-700 font-semibold mb-4">When care needs increase, most families face the same challenges:</p>
+          <ul className="space-y-2 mb-8">
+            {['Unclear next steps', 'Gaps in support', 'Growing pressure and responsibility'].map(item => (
+              <li key={item} className="flex items-center gap-3 text-slate-700 text-lg">
+                <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-lg text-slate-700 font-semibold mb-4">We step in to:</p>
+          <ul className="space-y-2 mb-6">
+            {['Stabilize daily routines', 'Reduce immediate risks', 'Provide dependable, ongoing support'].map(item => (
+              <li key={item} className="flex items-center gap-3 text-slate-700 text-lg">
+                <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-lg text-slate-600 leading-relaxed italic">So care continues safely—and you're not managing it alone.</p>
+        </div>
+      </section>
+
+      {/* Our Commitment to Care */}
+      <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Commitment to Care</h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-6">We approach every care situation with:</p>
@@ -172,7 +195,7 @@ export default function AboutPage() {
               { label: 'Clarity', desc: 'clear communication and expectations' },
               { label: 'Accountability', desc: 'responsibility in how care is delivered' },
             ].map(({ label, desc }) => (
-              <div key={label} className="flex items-start gap-3 p-5 bg-white rounded-2xl border-2 border-slate-200 shadow-sm">
+              <div key={label} className="flex items-start gap-3 p-5 bg-slate-50 rounded-2xl border-2 border-slate-200 shadow-sm">
                 <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                 <p className="text-slate-700"><span className="font-bold">{label}</span> — {desc}</p>
               </div>
@@ -181,6 +204,44 @@ export default function AboutPage() {
           <p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-blue-500 pl-6 bg-blue-50/50 py-4 rounded-r-xl">
             Because in-home care is not just about assistance. It's about maintaining stability, safety, and quality of life.
           </p>
+        </div>
+      </section>
+
+      {/* Why Families Trust THE PACIFIC HOMECARE */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Why Families Trust THE PACIFIC HOMECARE</h2>
+          <p className="text-lg text-slate-600 leading-relaxed mb-8">Families choose THE PACIFIC HOMECARE because care is:</p>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            {whyTrust.map(({ label, desc }) => (
+              <div key={label} className="flex items-start gap-3 p-5 bg-white rounded-2xl border-2 border-slate-200 shadow-sm">
+                <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                <p className="text-slate-700"><span className="font-bold">{label}</span> — {desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-lg text-slate-600 leading-relaxed">This reduces uncertainty and creates a more stable, manageable care experience.</p>
+        </div>
+      </section>
+
+      {/* If You're Unsure What to Do Next */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">If You're Unsure What to Do Next</h2>
+          <p className="text-lg text-slate-600 leading-relaxed mb-6">You don't need to have all the answers before reaching out. A short conversation can help you:</p>
+          <ul className="text-lg text-slate-700 space-y-2 mb-10 inline-block text-left">
+            <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Understand your current situation more clearly</li>
+            <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Identify what level of care is needed</li>
+            <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Determine how quickly support can begin</li>
+          </ul>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark transition-all">
+              <Phone className="w-5 h-5" /> Call Now +1 (443) 460-8684
+            </a>
+            <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary/5 transition-all">
+              Book a Consultation <ArrowRight className="w-5 h-5" />
+            </button>
+          </div>
         </div>
       </section>
 
@@ -194,9 +255,9 @@ export default function AboutPage() {
             <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all">
               <Phone className="w-5 h-5" /> Call Now
             </a>
-            <Link to="/contact" className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/50 text-white rounded-2xl font-bold hover:bg-white/10 hover:border-white/80 hover:scale-105 hover:-translate-y-1 transition-all backdrop-blur-sm">
+            <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/50 text-white rounded-2xl font-bold hover:bg-white/10 hover:border-white/80 hover:scale-105 hover:-translate-y-1 transition-all backdrop-blur-sm">
               Request Support
-            </Link>
+            </button>
           </div>
         </div>
       </section>
