@@ -61,7 +61,7 @@ export default function FormModal() {
             </div>
             <h2 className="text-3xl font-bold text-slate-900 mb-3">Thank You!</h2>
             <p className="text-slate-700 text-base mb-4 leading-relaxed">We've received your consultation request. A care coordinator will review your information and reach out within 24 hours.</p>
-            <p className="text-slate-600">For immediate assistance, call <a href="tel:+14434608684" className="text-primary font-bold">+1 (443) 460-8684</a></p>
+            <p className="text-slate-600">For immediate assistance, call <a href="tel:+14434608684" className="text-primary font-bold">+1 (443) 589-6889</a></p>
             <button
               onClick={closeModal}
               className="mt-8 px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-colors"

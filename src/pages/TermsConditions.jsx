@@ -175,7 +175,7 @@ export default function TermsConditions() {
                 <Mail className="w-4 h-4" /> Contact Us
               </Link>
               <a href="tel:+14434608684" className="inline-flex items-center gap-2 px-5 py-3 border-2 border-primary text-primary rounded-xl font-semibold hover:bg-primary/5 transition-colors">
-                <Phone className="w-4 h-4" /> Call +1 (443) 460-8684
+                <Phone className="w-4 h-4" /> Call +1 (443) 589-6889
               </a>
             </div>
           </div>

@@ -128,7 +128,7 @@ export default function Services() {
               href="tel:+14434608684"
               className="relative inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-600 rounded-xl font-bold hover:bg-slate-100 hover:scale-105 hover:-translate-y-1 transition-all shadow-lg"
             >
-              <Phone className="w-4 h-4" /> Call Now +1 (443) 460-8684
+              <Phone className="w-4 h-4" /> Call Now +1 (443) 589-6889
             </a>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function Services() {
               href="tel:+14434608684"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark hover:scale-105 hover:-translate-y-0.5 transition-all whitespace-nowrap"
             >
-              Call Now +1 (443) 460-8684
+              Call Now +1 (443) 589-6889
             </a>
             <button
               onClick={openModal}

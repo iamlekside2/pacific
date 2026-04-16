@@ -995,7 +995,7 @@ export default function BlogPost() {
           <p className="text-white/80 text-lg mb-8">Early action prevents complications and brings stability to daily life.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-navy rounded-xl font-bold shadow-lg hover:scale-105 transition-all">
-              <Phone className="w-5 h-5" /> Call +1 (443) 460-8684
+              <Phone className="w-5 h-5" /> Call +1 (443) 589-6889
             </a>
             <button onClick={openModal} className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white/50 text-white rounded-xl font-bold hover:bg-white/10 transition-all">
               Request Support

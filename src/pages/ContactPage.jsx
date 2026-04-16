@@ -89,7 +89,7 @@ export default function ContactPage() {
               </div>
               <h2 className="text-4xl font-bold text-slate-900 mb-3">Thank You!</h2>
               <p className="text-slate-700 text-lg mb-4">We've received your request. A care coordinator will review your information and reach out shortly to discuss your situation and next steps.</p>
-              <p className="text-slate-600">If you need immediate assistance, you can call: <a href="tel:+14434608684" className="text-primary font-bold">+1 (443) 460-8684</a></p>
+              <p className="text-slate-600">If you need immediate assistance, you can call: <a href="tel:+14434608684" className="text-primary font-bold">+1 (443) 589-6889</a></p>
             </div>
           ) : (
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-slate-200">
@@ -266,7 +266,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-500">Phone</p>
-                    <p className="text-lg font-bold text-slate-900">+1 (443) 460-8684</p>
+                    <p className="text-lg font-bold text-slate-900">+1 (443) 589-6889</p>
                   </div>
                 </a>
                 <a href="mailto:info@thepacifichomecare.com" className="flex items-center gap-4 p-6 bg-white rounded-2xl border-2 border-slate-200 shadow-sm hover:border-blue-400 hover:shadow-lg transition-all group">
@@ -301,7 +301,7 @@ export default function ContactPage() {
           <p className="text-white/80 text-lg mb-10 leading-relaxed">Early support prevents complications and makes care more manageable.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all">
-              <Phone className="w-5 h-5" /> Call Now for Immediate Assistance +1 (443) 460-8684
+              <Phone className="w-5 h-5" /> Call Now for Immediate Assistance +1 (443) 589-6889
             </a>
           </div>
         </div>

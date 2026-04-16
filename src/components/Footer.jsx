@@ -19,7 +19,7 @@ export default function Footer() {
             <p className="text-white/80 text-sm mb-6">Professional in-home healthcare across Maryland, delivered with consistency, compassion, and clinical expertise.</p>
             <div className="space-y-3 text-sm">
               <a href="tel:+14434608684" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors group/link">
-                <Phone className="w-4 h-4 group-hover/link:scale-110 transition-transform" /> +1 (443) 460-8684
+                <Phone className="w-4 h-4 group-hover/link:scale-110 transition-transform" /> +1 (443) 589-6889
               </a>
               <a href="mailto:info@thepacifichomecare.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors group/link">
                 <Mail className="w-4 h-4 group-hover/link:scale-110 transition-transform" /> info@thepacifichomecare.com

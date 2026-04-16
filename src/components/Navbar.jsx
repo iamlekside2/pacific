@@ -67,7 +67,7 @@ export default function Navbar() {
               href="tel:+14434608684"
               className="px-4 py-2 text-primary font-semibold hover:bg-primary/5 rounded-lg transition-colors text-sm"
             >
-              +1 (443) 460-8684
+              +1 (443) 589-6889
             </a>
             <button
               onClick={openModal}

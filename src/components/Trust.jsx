@@ -50,7 +50,7 @@ export default function Trust() {
             href="tel:+14434608684"
             className="inline-flex items-center justify-center gap-3 px-8 py-5 border-2 border-white/50 text-white rounded-2xl font-bold text-base hover:bg-white/10 hover:border-white/80 hover:scale-105 hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm"
           >
-            Call Now: +1 (443) 460-8684
+            Call Now: +1 (443) 589-6889
           </a>
         </div>
       </div>
