@@ -21,7 +21,7 @@ export default function ConsultationForm() {
             </div>
             <h2 className="text-4xl font-bold text-slate-900 mb-3">Thank You!</h2>
             <p className="text-slate-700 text-lg mb-4">We've received your consultation request. A care coordinator will review your information and reach out within 24 hours.</p>
-            <p className="text-slate-600">For immediate assistance, call <a href="tel:+14434608684" className="text-primary font-bold">+1 (443) 589-6889</a></p>
+            <p className="text-slate-600">For immediate assistance, call <a href="tel:+14435896889" className="text-primary font-bold">+1 (443) 589-6889</a></p>
           </div>
         </div>
       </section>

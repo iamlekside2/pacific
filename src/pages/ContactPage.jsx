@@ -89,7 +89,7 @@ export default function ContactPage() {
               </div>
               <h2 className="text-4xl font-bold text-slate-900 mb-3">Thank You!</h2>
               <p className="text-slate-700 text-lg mb-4">We've received your request. A care coordinator will review your information and reach out shortly to discuss your situation and next steps.</p>
-              <p className="text-slate-600">If you need immediate assistance, you can call: <a href="tel:+14434608684" className="text-primary font-bold">+1 (443) 589-6889</a></p>
+              <p className="text-slate-600">If you need immediate assistance, you can call: <a href="tel:+14435896889" className="text-primary font-bold">+1 (443) 589-6889</a></p>
             </div>
           ) : (
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-slate-200">
@@ -260,7 +260,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-4xl font-bold text-slate-900 mb-8">Contact Details</h2>
               <div className="space-y-6 mb-8">
-                <a href="tel:+14434608684" className="flex items-center gap-4 p-6 bg-white rounded-2xl border-2 border-slate-200 shadow-sm hover:border-blue-400 hover:shadow-lg transition-all group">
+                <a href="tel:+14435896889" className="flex items-center gap-4 p-6 bg-white rounded-2xl border-2 border-slate-200 shadow-sm hover:border-blue-400 hover:shadow-lg transition-all group">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500/10 to-blue-400/5 rounded-2xl flex items-center justify-center group-hover:from-blue-500/20 group-hover:to-blue-400/10 transition-all">
                     <Phone className="w-6 h-6 text-blue-600" />
                   </div>
@@ -300,7 +300,7 @@ export default function ContactPage() {
           <h2 className="text-4xl font-bold mb-6">If care needs are increasing or becoming uncertain, don't wait.</h2>
           <p className="text-white/80 text-lg mb-10 leading-relaxed">Early support prevents complications and makes care more manageable.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all">
+            <a href="tel:+14435896889" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all">
               <Phone className="w-5 h-5" /> Call Now for Immediate Assistance +1 (443) 589-6889
             </a>
           </div>

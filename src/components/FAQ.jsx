@@ -94,7 +94,7 @@ export default function FAQ() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:+14434608684"
+              href="tel:+14435896889"
               className="group inline-flex px-8 py-5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105 hover:-translate-y-1 transition-all border border-white/20"
             >
               Call Now for Immediate Assistance +1 (443) 589-6889

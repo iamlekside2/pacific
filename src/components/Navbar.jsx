@@ -64,7 +64,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+14434608684"
+              href="tel:+14435896889"
               className="px-4 py-2 text-primary font-semibold hover:bg-primary/5 rounded-lg transition-colors text-sm"
             >
               +1 (443) 589-6889
@@ -100,7 +100,7 @@ export default function Navbar() {
             ))}
             <div className="pt-4 space-y-3 border-t border-slate-200">
               <a
-                href="tel:+14434608684"
+                href="tel:+14435896889"
                 className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary rounded-lg font-semibold"
               >
                 <Phone className="w-4 h-4" /> Call

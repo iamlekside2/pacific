@@ -348,7 +348,7 @@ export default function ResourcesPage() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-700 rounded-xl font-bold shadow-lg hover:scale-105 hover:-translate-y-0.5 transition-all">
+                  <a href="tel:+14435896889" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-700 rounded-xl font-bold shadow-lg hover:scale-105 hover:-translate-y-0.5 transition-all">
                     <Phone className="w-5 h-5" /> Call Now +1 (443) 589-6889
                   </a>
                   <button onClick={openModal} className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white/40 text-white rounded-xl font-bold backdrop-blur-md bg-white/10 hover:bg-white/20 hover:scale-105 hover:-translate-y-0.5 transition-all">

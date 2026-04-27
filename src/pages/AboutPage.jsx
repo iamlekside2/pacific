@@ -59,7 +59,7 @@ export default function AboutPage() {
             THE PACIFIC HOMECARE provides structured, dependable in-home care designed to support safety, stability, and dignity for individuals and the families who rely on us.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-            <a href="tel:+14434608684" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-2xl font-bold shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/80 hover:scale-105 hover:-translate-y-1 transition-all duration-300 border border-white/20">
+            <a href="tel:+14435896889" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-2xl font-bold shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/80 hover:scale-105 hover:-translate-y-1 transition-all duration-300 border border-white/20">
               <Phone className="w-5 h-5" /> Call Now +1 (443) 589-6889
             </a>
             <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/40 text-white rounded-2xl font-bold backdrop-blur-md bg-white/10 hover:bg-white/20 hover:border-white/70 hover:scale-105 hover:-translate-y-1 transition-all duration-300">
@@ -345,7 +345,7 @@ export default function AboutPage() {
                 <li className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" /> Determine how quickly support can begin</li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark transition-all">
+                <a href="tel:+14435896889" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark transition-all">
                   <Phone className="w-5 h-5" /> Call Now +1 (443) 589-6889
                 </a>
                 <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary/5 transition-all">
@@ -370,7 +370,7 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold mb-6">When care becomes uncertain, having the right support changes how everything is managed.</h2>
           <p className="text-white/80 text-lg mb-10 leading-relaxed">The goal isn't just to respond. It's to bring structure, stability, and clarity into daily life at home.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all">
+            <a href="tel:+14435896889" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all">
               <Phone className="w-5 h-5" /> Call Now
             </a>
             <button onClick={openModal} className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white/50 text-white rounded-2xl font-bold hover:bg-white/10 hover:border-white/80 hover:scale-105 hover:-translate-y-1 transition-all backdrop-blur-sm">

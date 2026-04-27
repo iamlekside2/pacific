@@ -957,7 +957,7 @@ export default function BlogPost() {
                 <p className="text-lg font-semibold text-slate-900">Speak with a care coordinator today.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-                <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark transition-all whitespace-nowrap">
+                <a href="tel:+14435896889" className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-white rounded-xl font-bold shadow-lg hover:bg-primary-dark transition-all whitespace-nowrap">
                   <Phone className="w-4 h-4" /> Call Now
                 </a>
                 <button onClick={openModal} className="inline-flex items-center justify-center gap-2 px-5 py-3 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary/5 transition-all whitespace-nowrap">
@@ -994,7 +994,7 @@ export default function BlogPost() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">Get Clarity. Get Support. Without Delay.</h2>
           <p className="text-white/80 text-lg mb-8">Early action prevents complications and brings stability to daily life.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+14434608684" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-navy rounded-xl font-bold shadow-lg hover:scale-105 transition-all">
+            <a href="tel:+14435896889" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-navy rounded-xl font-bold shadow-lg hover:scale-105 transition-all">
               <Phone className="w-5 h-5" /> Call +1 (443) 589-6889
             </a>
             <button onClick={openModal} className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white/50 text-white rounded-xl font-bold hover:bg-white/10 transition-all">
